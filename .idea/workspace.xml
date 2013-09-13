@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6991852d-49b5-49be-805e-829646ef492d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/application.rb" afterPath="$PROJECT_DIR$/config/application.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
     </list>
     <ignored path="Remember.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,7 +23,7 @@
     <file path="$PROJECT_DIR$/../Grave/app/controllers/carts_controller.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1378882703055" ignored="false" />
     <file path="$PROJECT_DIR$/../Grave/app/views/layouts/devise_layout.html.erb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1378977087088" ignored="false" />
     <file path="/devise_layout.html.erb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1378977080757" ignored="false" />
-    <file path="/Gemfile" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379076038932" ignored="false" />
+    <file path="/Gemfile" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379080837480" ignored="false" />
     <file path="$PROJECT_DIR$/../Grave/db/schema.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1378985927315" ignored="false" />
     <file path="$PROJECT_DIR$/../Grave/app/models/user.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1378995185236" ignored="false" />
     <file path="$PROJECT_DIR$/../Grave/config/deploy.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1378892767468" ignored="false" />
@@ -97,10 +96,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="0" selection-start="871" selection-end="871" vertical-scroll-proportion="0.0">
+            <state line="29" column="3" selection-start="705" selection-end="705" vertical-scroll-proportion="0.38540334">
               <folding />
             </state>
           </provider>
@@ -124,10 +123,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="application.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/application.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="63" selection-start="2867" selection-end="2867" vertical-scroll-proportion="0.79897565">
+            <state line="61" column="63" selection-start="2867" selection-end="2867" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -164,9 +163,9 @@
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/authentications_controller.rb" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/config/database.yml" />
         <option value="$PROJECT_DIR$/config/application.rb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
       </list>
     </option>
   </component>
@@ -1079,13 +1078,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="0" selection-start="871" selection-end="871" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/database.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="40" selection-start="457" selection-end="457" vertical-scroll-proportion="0.0">
@@ -1102,7 +1094,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/application.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="63" selection-start="2867" selection-end="2867" vertical-scroll-proportion="0.79897565">
+        <state line="61" column="63" selection-start="2867" selection-end="2867" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="3" selection-start="705" selection-end="705" vertical-scroll-proportion="0.38540334">
           <folding />
         </state>
       </provider>
