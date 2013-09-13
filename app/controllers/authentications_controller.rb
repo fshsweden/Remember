@@ -1,5 +1,11 @@
 class AuthenticationsController < ApplicationController
 
+  before_filter :check_logged_in
+
+  def check_logged_in
+    logger.info params.inspect
+  end
+
   def index
     @authentications = Authentication.all
   end
