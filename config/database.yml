@@ -19,11 +19,12 @@ test:
   timeout: 5000
 
 production:
+  host: ec2-184-73-162-34.compute-1.amazonaws.com
   adapter: postgresql
   encoding: unicode
-  database: remember_production
+  database: d8oaeudfn5krus
   pool: 5
   timeout: 5000
-  username: rem_user
-  password: rem password
+  username: pufeygaxwwzbff
+  password: 6dKh8e0CAsyte9BCrqQ2grYUKf
 
