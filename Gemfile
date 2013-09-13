@@ -4,7 +4,6 @@ gem 'rails', '3.2.13'
 gem 'devise'
 gem 'rails-i18n'
 gem 'devise-i18n'
-gem 'thin' 				    # solves: "WARN  Could not determine....."  etc in log file
 gem "paperclip", "~> 3.0"
 gem 'wicked'
 gem 'detect_timezone_rails'
@@ -28,6 +27,7 @@ gem 'cancan'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 group :development do
+  gem 'thin' 				    # solves: "WARN  Could not determine....."  etc in log file
   gem 'sqlite3'
   gem 'quiet_assets' #fantastic gem of a gem!
 end
