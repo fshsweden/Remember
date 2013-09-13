@@ -1,0 +1,13 @@
+rails
+
+config/boot.rb
+bundler reads Gemfile
+rails/commands
+
+'runs rails server'
+
+------------
+
+
+config/environment.rb
+    config/application.rb

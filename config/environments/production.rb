@@ -67,4 +67,9 @@ Remember::Application.configure do
 
 
   config.assets.initialize_on_precompile = false  # new for HEROKU
+
+  # PROD versions of API keys
+  config.omniauth :twitter, "-------------", "-----------------------------"
+  config.omniauth :facebook, '1383730465191729', '8627fdbaeefebf7a79a3f80b9e36ccbe', {:scope => 'publish_stream, email'}
+
 end

@@ -34,4 +34,10 @@ Remember::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+
+
+  # DEV versions of API keys
+  config.omniauth :twitter, "DGEVy4Z0WMm1qfsJPs5TQ", "PBY3HUtppttMsGEIJWjXeksQQeLybOACzlwzpUaUU"
+  config.omniauth :facebook, '430836557026587', 'f8171469fe0860f32207002a00b90465', {:scope => 'publish_stream, email'}
+
 end

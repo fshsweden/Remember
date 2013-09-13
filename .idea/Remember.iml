@@ -39,12 +39,10 @@
     <orderEntry type="library" scope="PROVIDED" name="compass (v0.12.2, RVM: ruby-1.9.3-p429) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="compass-rails (v1.0.3, RVM: ruby-1.9.3-p429) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="country_select (v1.1.3, RVM: ruby-1.9.3-p429) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="daemons (v1.1.9, RVM: ruby-1.9.3-p429) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="detect_timezone_rails (v0.0.5, RVM: ruby-1.9.3-p429) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="devise (v2.2.3, RVM: ruby-1.9.3-p429) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="devise-i18n (v0.8.4, RVM: ruby-1.9.3-p429) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="erubis (v2.7.0, RVM: ruby-1.9.3-p429) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="eventmachine (v1.0.3, RVM: ruby-1.9.3-p429) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="execjs (v2.0.1, RVM: ruby-1.9.3-p429) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="faraday (v0.8.8, RVM: ruby-1.9.3-p429) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="fb_graph (v2.7.8, RVM: ruby-1.9.3-p429) [gem]" level="application" />
@@ -106,7 +104,6 @@
     <orderEntry type="library" scope="PROVIDED" name="sprockets (v2.2.2, RVM: ruby-1.9.3-p429) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sqlite3 (v1.3.8, RVM: ruby-1.9.3-p429) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="therubyracer (v0.11.4, RVM: ruby-1.9.3-p429) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="thin (v1.5.1, RVM: ruby-1.9.3-p429) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="thor (v0.18.1, RVM: ruby-1.9.3-p429) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="tilt (v1.4.1, RVM: ruby-1.9.3-p429) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="treetop (v1.4.15, RVM: ruby-1.9.3-p429) [gem]" level="application" />
