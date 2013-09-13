@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hash>
+  <provider>facebook</provider>
+  <uid>581781957</uid>
+
+  <info>
+    <nickname>peterandersson1963</nickname>
+    <email>fshsweden@hotmail.com</email>
+    <name>Peter Andersson</name>
+    <first-name>Peter</first-name>
+    <last-name>Andersson</last-name>
+    <image>http://graph.facebook.com/581781957/picture?type=square</image>
+    <urls>
+      <Facebook>https://www.facebook.com/peterandersson1963</Facebook>
+    </urls>
+    <location>Mackmyra, Gävleborgs Län, Sweden</location>
+    <verified type="boolean">true</verified>
+  </info>
+
+  <credentials>
+    <token>CAAGH1ZCPwFRsBAESAElHXbTkAp2SKZAePBhBaDrEf8zVnx2LBjK5ZAuSplaMgZB0sL2MFwjmNyMgz4tlkvJI31L5f6ORmpA0p8PFa4GWkqpAoo3WZCD88nuI1YYuE2sSg7fGJFEjwj5ZB9Ote5vRr4vxHJ1rXNDqWIrr4qi6g69mR9YxvtrfZB3Tyze1HXRSZA0ZD</token>
+    <expires-at type="integer">1384204198</expires-at>
+    <expires type="boolean">true</expires>
+  </credentials>
+
+  <extra>
+    <raw-info>
+      <id>581781957</id>
+      <name>Peter Andersson</name>
+      <first-name>Peter</first-name>
+      <last-name>Andersson</last-name>
+      <link>https://www.facebook.com/peterandersson1963</link>
+      <username>peterandersson1963</username>
+      <hometown>
+        <id>114228198590651</id>
+        <name>Mackmyra, Gävleborgs Län, Sweden</name>
+      </hometown>
+      <location>
+        <id>114228198590651</id>
+        <name>Mackmyra, Gävleborgs Län, Sweden</name>
+      </location>
+      <gender>male</gender>
+      <email>fshsweden@hotmail.com</email>
+      <timezone type="integer">2</timezone>
+      <locale>sv_SE</locale>
+      <verified type="boolean">true</verified>
+      <updated-time>2013-07-14T22:21:49+0000</updated-time>
+    </raw-info>
+  </extra>
+
+</hash>

@@ -16,6 +16,12 @@ gem 'http_accept_language', '~> 2.0.0.pre' # A small effort in making a plugin w
 gem 'simple_form'
 gem 'country_select'
 gem 'jquery-rails'
+gem 'nifty-generators'
+
+gem 'omniauth-twitter'
+gem 'omniauth-facebook'
+gem 'twitter'
+gem 'fb_graph'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -58,3 +64,5 @@ gem 'zurb-foundation'
 # gem 'capistrano'
 # To use debugger
 # gem 'debugger'
+
+gem "mocha", :group => :test
