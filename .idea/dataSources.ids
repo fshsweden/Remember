@@ -52,4 +52,16 @@
     </libraries>
     <schema name="" catalog=""/>
   </data-source>
+  <data-source source="LOCAL" name="Rails Remember: production" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="73f5fcb3-bd0d-4e57-8422-fad865089226">
+    <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+    <jdbc-url>jdbc:postgresql:db/production.sqlite3</jdbc-url>
+    <libraries>
+      <library>
+        <url>file://$USER_HOME$/Library/Preferences/RubyMine40/jdbc-drivers/postgresql-driver-license.txt</url>
+      </library>
+      <library>
+        <url>file://$USER_HOME$/Library/Preferences/RubyMine40/jdbc-drivers/postgresql-9.1-901.jdbc3.jar</url>
+      </library>
+    </libraries>
+  </data-source>
 </component>

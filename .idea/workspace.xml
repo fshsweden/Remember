@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6991852d-49b5-49be-805e-829646ef492d" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Remember.iml" afterPath="$PROJECT_DIR$/.idea/Remember.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/authentications_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/authentications_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/database.yml" afterPath="$PROJECT_DIR$/config/database.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/production.rb" afterPath="$PROJECT_DIR$/config/environments/production.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Remember.iws" />
@@ -26,7 +30,7 @@
     <file path="$PROJECT_DIR$/../Grave/app/controllers/carts_controller.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1378882703055" ignored="false" />
     <file path="$PROJECT_DIR$/../Grave/app/views/layouts/devise_layout.html.erb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1378977087088" ignored="false" />
     <file path="/devise_layout.html.erb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1378977080757" ignored="false" />
-    <file path="/Gemfile" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379070346464" ignored="false" />
+    <file path="/Gemfile" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379076038932" ignored="false" />
     <file path="$PROJECT_DIR$/../Grave/db/schema.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1378985927315" ignored="false" />
     <file path="$PROJECT_DIR$/../Grave/app/models/user.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1378995185236" ignored="false" />
     <file path="$PROJECT_DIR$/../Grave/config/deploy.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1378892767468" ignored="false" />
@@ -77,6 +81,8 @@
     <file path="/authentication.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379052516416" ignored="false" />
     <file path="/authentications_controller.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379070107609" ignored="false" />
     <file path="$PROJECT_DIR$/../authtest/config/initializers/devise.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379065357497" ignored="false" />
+    <file path="/database.yml" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379076119367" ignored="false" />
+    <file path="/production.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379076305666" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,19 +129,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/authentications/index.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-              <folding>
-                <marker date="1379016731000" expanded="true" signature="37:433" placeholder="..." />
-                <marker date="1379016731000" expanded="true" signature="44:109" placeholder="..." />
-                <marker date="1379016731000" expanded="true" signature="165:412" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="authentications_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/authentications_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
@@ -145,19 +138,46 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="0" selection-start="670" selection-end="670" vertical-scroll-proportion="0.0">
+            <state line="70" column="0" selection-start="1809" selection-end="1809" vertical-scroll-proportion="0.815621">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ability.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/models/ability.rb">
+      <file leaf-file-name="production.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="68" column="66" selection-start="2546" selection-end="2546" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="database.yml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/database.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="2" selection-start="643" selection-end="643" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ability.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/ability.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="154" selection-start="370" selection-end="370" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -167,24 +187,6 @@
         <entry file="file://$PROJECT_DIR$/app/controllers/registrations_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/user.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="28" selection-start="679" selection-end="679" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/registrations/new.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="0" selection-start="126" selection-end="126" vertical-scroll-proportion="-6.5454545">
               <folding />
             </state>
           </provider>
@@ -208,8 +210,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/db/migrate/20130912194929_add_authentications.rb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/views/authentications/home.html.erb" />
         <option value="$PROJECT_DIR$/db/migrate/20130912201211_create_authentications.rb" />
         <option value="$PROJECT_DIR$/app/models/authentication.rb" />
@@ -223,7 +223,9 @@
         <option value="$PROJECT_DIR$/config/initializers/devise.rb" />
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/authentications_controller.rb" />
+        <option value="$PROJECT_DIR$/config/database.yml" />
         <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/config/environments/production.rb" />
       </list>
     </option>
   </component>
@@ -409,7 +411,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="initializers" />
+              <option name="myItemId" value="environments" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1043,31 +1045,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p429/gems/devise-2.2.3/app/controllers/devise/confirmations_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p429/gems/devise-2.2.3/lib/devise/controllers/helpers.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="19" selection-end="121" vertical-scroll-proportion="-7.2727275">
-          <folding>
-            <marker date="1379063844000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1379063844000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1379063844000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/devise/sessions/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="0" selection-start="125" selection-end="125" vertical-scroll-proportion="-5.818182">
@@ -1104,9 +1081,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding>
-            <marker date="1379016731000" expanded="true" signature="37:433" placeholder="..." />
-            <marker date="1379016731000" expanded="true" signature="44:109" placeholder="..." />
-            <marker date="1379016731000" expanded="true" signature="165:412" placeholder="..." />
+            <marker date="1379016731000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1379016731000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1379016731000" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -1114,7 +1091,12 @@
     <entry file="file://$PROJECT_DIR$/app/views/registrations/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="0" selection-start="126" selection-end="126" vertical-scroll-proportion="-6.5454545">
-          <folding />
+          <folding>
+            <marker date="1379063973000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1379063973000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1379063973000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1379063973000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1153,16 +1135,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
+    <entry file="file://$PROJECT_DIR$/app/models/ability.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="0" selection-start="670" selection-end="670" vertical-scroll-proportion="0.0">
+        <state line="13" column="154" selection-start="370" selection-end="370" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/ability.rb">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/database.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="2" selection-start="643" selection-end="643" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="68" column="66" selection-start="2546" selection-end="2546" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="70" column="0" selection-start="1809" selection-end="1809" vertical-scroll-proportion="0.815621">
           <folding />
         </state>
       </provider>
