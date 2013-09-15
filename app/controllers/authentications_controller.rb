@@ -7,7 +7,11 @@ class AuthenticationsController < ApplicationController
   end
 
   def index
-    @authentications = Authentication.all
+    if current_user
+      @authentications = Authentication.where (:user_id == current_user.id)
+    else
+      redirect_to welcome_index_path
+    end
   end
 
   def home
@@ -47,26 +51,30 @@ class AuthenticationsController < ApplicationController
 
   def facebook
 
-    logger.info "--------------------------------------------------------------------------------------"
-    hash = request.env["omniauth.auth"].info
-    hash.each do |key, value|
-      logger.info "#{key} = #{value}"
-    end
-    logger.info "--------------------------------------------------------------------------------------"
-    logger.info "--------------------------------------------------------------------------------------"
-    hash = request.env["omniauth.auth"].extra.raw_info
-    hash.each do |key, value|
-      logger.info "#{key} = #{value}"
-    end
-    logger.info "--------------------------------------------------------------------------------------"
+    logger.info "- callback from facebook ----------------------------------------------"
+
+    #logger.info "- callback from facebook authentication DUMP of 'info' 1)----------------------------------------------"
+    #hash = request.env["omniauth.auth"].info
+    #hash.each do |key, value|
+    #  logger.info "#{key} = #{value}"
+    #end
+    #logger.info "- callback from facebook authentication DUMP of 'extra.raw_info' 2) -----------------------------------"
+    #hash = request.env["omniauth.auth"].extra.raw_info
+    #hash.each do |key, value|
+    #  logger.info "#{key} = #{value}"
+    #end
 
     omni = request.env["omniauth.auth"]
 
+    logger.info "- callback from facebook authentication LOOKING up facebook + #{omni['uid']} --------------------------"
+
     authentication = Authentication.find_by_provider_and_uid(omni['provider'], omni['uid'])
     if authentication
+      logger.info "- callback from facebook authentication FOUND facebook + #{omni['uid']} -----------------------------"
       flash[:notice] = "Logged in Successfully"
       sign_in_and_redirect User.find(authentication.user_id)
     elsif current_user
+      logger.info "- callback from facebook authentication DIDN'T FIND facebook + #{omni['uid']} BUT CURRENT_USER ------"
       token = omni['credentials'].token
       token_secret = omni['credentials'].secret
 
@@ -74,6 +82,7 @@ class AuthenticationsController < ApplicationController
       flash[:notice] = "Authentication successful."
       sign_in_and_redirect current_user
     else
+      logger.info "- callback from facebook authentication DIDN'T FIND facebook + #{omni['uid']} AND NO CURRENT_USER ---"
       user = User.new
 
       #user.email = omni['info']['email']
@@ -83,9 +92,11 @@ class AuthenticationsController < ApplicationController
       user.apply_omniauth(omni)
 
       if user.save
+        logger.info "- Saved User OK - sign_in_and_redirect ---"
         flash[:notice] = "Logged in."
         sign_in_and_redirect User.find(user.id)
       else
+        logger.info "- Couldnt save User.... - storing omni[] array ---"
         session[:omniauth] = omni.except('extra')
         redirect_to new_user_registration_path
       end

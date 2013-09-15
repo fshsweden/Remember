@@ -27,7 +27,7 @@ gem 'cancan'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 group :development do
-  #gem 'thin' 				    # solves: "WARN  Could not determine....."  etc in log file
+  gem 'thin' 				    # solves: "WARN  Could not determine....."  etc in log file
   gem 'sqlite3'
   gem 'quiet_assets' #fantastic gem of a gem!
 end

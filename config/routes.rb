@@ -1,11 +1,20 @@
 Remember::Application.routes.draw do
 
+  get "profile/index"
+
+  resources :credit_cards
+  resources :welcome
+
+  match '/profile' => 'profile#index'
+
   #match '/auth/:provider/callback' => 'authentications#create'
   resources :authentications
 
   devise_for :users,
              path_names:  {sign_in: "login"},
              controllers: {omniauth_callbacks: "authentications", registrations: "registrations"}
+
+  match "/addcc" => "credit_cards#addcc"
 
   root to: 'authentications#home'
 

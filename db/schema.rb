@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130912201211) do
+ActiveRecord::Schema.define(:version => 20130913171429) do
 
   create_table "authentications", :force => true do |t|
     t.integer  "user_id"
@@ -22,6 +22,20 @@ ActiveRecord::Schema.define(:version => 20130912201211) do
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
   end
+
+  create_table "credit_cards", :force => true do |t|
+    t.integer  "user_id"
+    t.string   "cc_number"
+    t.string   "cc_cvc"
+    t.string   "cc_exp_year"
+    t.string   "cc_exp_month"
+    t.string   "cc_name"
+    t.string   "cc_type"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+  end
+
+  add_index "credit_cards", ["user_id"], :name => "index_credit_cards_on_user_id"
 
   create_table "users", :force => true do |t|
     t.string   "username",               :default => "", :null => false

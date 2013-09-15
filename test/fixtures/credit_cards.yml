@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  user_id: 
+  cc_number: MyString
+  cc_cvc: MyString
+  cc_exp_year: MyString
+  cc_exp_month: MyString
+  cc_name: MyString
+  cc_type: MyString
+
+two:
+  user_id: 
+  cc_number: MyString
+  cc_cvc: MyString
+  cc_exp_year: MyString
+  cc_exp_month: MyString
+  cc_name: MyString
+  cc_type: MyString

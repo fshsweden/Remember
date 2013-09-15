@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>User:</b>
+  <%= @credit_card.user_id %>
+</p>
+
+<p>
+  <b>Cc number:</b>
+  <%= @credit_card.cc_number %>
+</p>
+
+<p>
+  <b>Cc cvc:</b>
+  <%= @credit_card.cc_cvc %>
+</p>
+
+<p>
+  <b>Cc exp year:</b>
+  <%= @credit_card.cc_exp_year %>
+</p>
+
+<p>
+  <b>Cc exp month:</b>
+  <%= @credit_card.cc_exp_month %>
+</p>
+
+<p>
+  <b>Cc name:</b>
+  <%= @credit_card.cc_name %>
+</p>
+
+<p>
+  <b>Cc type:</b>
+  <%= @credit_card.cc_type %>
+</p>
+
+
+<%= link_to 'Edit', edit_credit_card_path(@credit_card) %> |
+<%= link_to 'Back', credit_cards_path %>
