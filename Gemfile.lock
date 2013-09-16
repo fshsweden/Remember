@@ -111,6 +111,7 @@ GEM
       i18n (~> 0.6.0)
     multi_json (1.7.9)
     multipart-post (1.2.0)
+    nested_form (0.3.2)
     nifty-generators (0.4.6)
     nokogiri (1.5.10)
     oauth (0.4.7)
@@ -255,6 +256,7 @@ DEPENDENCIES
   jquery-rails
   jquery-ui-rails
   mocha
+  nested_form
   nifty-generators
   omniauth-facebook
   omniauth-twitter

@@ -22,6 +22,7 @@ gem 'omniauth-facebook'
 gem 'twitter'
 gem 'fb_graph'
 gem 'cancan'
+gem 'nested_form'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
