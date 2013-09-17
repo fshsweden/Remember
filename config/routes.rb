@@ -1,5 +1,11 @@
 Remember::Application.routes.draw do
 
+  resources :events
+
+
+  resources :people
+
+
   resources :welcome
   resources :cards
   resources :authentications

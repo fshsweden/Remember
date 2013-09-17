@@ -27,7 +27,7 @@
     </data-source>
     <data-source source="LOCAL" name="Rails Remember: production" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="73f5fcb3-bd0d-4e57-8422-fad865089226">
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://ec2-184-73-162-34.compute-1.amazonaws.com/d8oaeudfn5krus</jdbc-url>
+      <jdbc-url>jdbc:postgresql:db/production.sqlite3</jdbc-url>
       <user-name>pufeygaxwwzbff</user-name>
       <user-password>df9cdfcedfe1dfc2df92dfcfdf9adfe9dfebdfd9dfd3dfdedfcfdf93dfe8dfe9dfd8dfdbdffbdf98dfcddfd8dff3dfffdfe1dfcc</user-password>
       <libraries>

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130916085208) do
+ActiveRecord::Schema.define(:version => 20130916175116) do
 
   create_table "authentications", :force => true do |t|
     t.integer  "user_id"
@@ -50,6 +50,22 @@ ActiveRecord::Schema.define(:version => 20130916085208) do
   end
 
   add_index "credit_cards", ["user_id"], :name => "index_credit_cards_on_user_id"
+
+  create_table "events", :force => true do |t|
+    t.string   "name"
+    t.string   "date"
+    t.string   "comment"
+    t.integer  "person_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "people", :force => true do |t|
+    t.string   "name"
+    t.string   "surname"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "users", :force => true do |t|
     t.string   "username",               :default => "", :null => false

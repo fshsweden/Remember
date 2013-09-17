@@ -1,0 +1,44 @@
+
+
+<%= simple_nested_form_for @person do |f| %>
+
+    <% if @person.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@person.errors.count, "error") %> prohibited this person from being saved:</h2>
+
+          <ul>
+            <% @person.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+
+    <div class="field">
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+    </div>
+
+    <div class="field">
+      <%= f.label :surname %>
+      <%= f.text_field :surname %>
+    </div>
+
+    <% if !@person.new_record? %>
+        <h3>Events in <%= @person.fullname %>'s life </h3>
+        <%= f.simple_fields_for :events do |event_form| %>
+            <%= event_form.input :name, :placeholder => 'Event name', :readonly => readonly %>
+            <%= event_form.input :date, :placeholder => 'Event date', :readonly => readonly  %>
+            <%= event_form.input :comment, :placeholder => 'Event comment', :readonly => readonly  %>
+        <% end %>
+
+        <p><%= f.link_to_add "Add an event", :events %></p>
+    <% end %>
+
+    <% if !readonly %>
+    <div class="actions">
+      <%= f.submit %>
+    </div>
+    <% end  %>
+
+<% end %>

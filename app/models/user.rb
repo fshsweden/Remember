@@ -14,7 +14,12 @@ class User < ActiveRecord::Base
   accepts_nested_attributes_for :cards, :allow_destroy => true
 
   # Setup accessible (or protected) attributes for your model
-  attr_accessible :cards_attributes, :credit_cards_attributes, :email, :password, :password_confirmation, :remember_me, :token, :token_secret
+  attr_accessible :cards_attributes,
+                  :credit_cards_attributes,
+                  :email,
+                  :password, :password_confirmation, :current_password,
+                  :remember_me,
+                  :token, :token_secret
   # attr_accessible :title, :body
 
   def apply_omniauth(omni)

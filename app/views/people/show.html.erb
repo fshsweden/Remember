@@ -1,0 +1,8 @@
+<h1><%= @person.fullname %></h1>
+
+<p id="notice"><%= notice %></p>
+
+<%= render 'form', :readonly => true %>
+
+<%= link_to 'Edit', edit_person_path(@person) %> |
+<%= link_to 'Back', people_path %>
