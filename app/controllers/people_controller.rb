@@ -2,7 +2,7 @@ class PeopleController < ApplicationController
   # GET /people
   # GET /people.json
   def index
-    @people = Person.all
+    @people = search(params[:search])
 
     respond_to do |format|
       format.html # index.html.erb
@@ -10,10 +10,30 @@ class PeopleController < ApplicationController
     end
   end
 
+  def search(args)
+    if args && !args.empty?
+      Person.where("name LIKE '#{args}' or surname LIKE '#{args}'" ).page(params[:page])
+    else
+      Person.order(:surname, :name).page(params[:page])
+end
+  end
+
   # GET /people/1
   # GET /people/1.json
   def show
     @person = Person.find(params[:id])
+
+    logger.info "Current user is:" + current_user.id.to_s
+    logger.info "Looking for Person: " + @person.id.to_s + " (" + @person.fullname + ")"
+
+    c = current_user.clicks.find_by_user_id_and_person_id(current_user.id, @person.id)
+    if c != nil
+      c.count = c.count+1
+    else
+      c = Click.new(:user_id => current_user.id, :person_id => @person.id, :count => 1)
+      current_user.clicks << c
+    end
+    c.save!
 
     respond_to do |format|
       format.html # show.html.erb
@@ -25,6 +45,7 @@ class PeopleController < ApplicationController
   # GET /people/new.json
   def new
     @person = Person.new
+    @person.admins << current_user
 
     respond_to do |format|
       format.html # new.html.erb
@@ -41,6 +62,8 @@ class PeopleController < ApplicationController
   # POST /people.json
   def create
     @person = Person.new(params[:person])
+    @person.admins << current_user
+    logger.info @person.inspect
 
     respond_to do |format|
       if @person.save

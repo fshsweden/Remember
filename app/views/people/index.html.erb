@@ -1,5 +1,12 @@
 <h1>Listing people</h1>
 
+<%= form_tag @person_path, :method => :get do %>
+  <%= label_tag :search %>
+  <%= text_field_tag :search %><br />
+  <%= submit_tag "Search" %>
+<% end %>
+
+
 <table>
   <tr>
     <th>Name</th>
@@ -19,6 +26,8 @@
   </tr>
 <% end %>
 </table>
+
+<%= paginate @people %>
 
 <br />
 

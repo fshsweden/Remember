@@ -7,20 +7,42 @@ class User < ActiveRecord::Base
 
   has_many :authentications, :dependent => :destroy
 
+  #
+  # C R E D I T   C A R D S (NOT USED)
+  #
   has_many :credit_cards, :dependent => :destroy
   accepts_nested_attributes_for :credit_cards, :allow_destroy => true
+  attr_accessible :credit_cards_attributes
 
+  #
+  #  C A R D S
+  #
   has_many :cards, :dependent => :destroy
   accepts_nested_attributes_for :cards, :allow_destroy => true
+  attr_accessible :cards_attributes
+
+  #
+  #  C L I C K S
+  #
+  has_many :clicks
+  has_many :persons, :through => :clicks
+  accepts_nested_attributes_for :persons, :allow_destroy => true
+  attr_accessible :persons_attributes
+
 
   # Setup accessible (or protected) attributes for your model
-  attr_accessible :cards_attributes,
-                  :credit_cards_attributes,
-                  :email,
+  attr_accessible :email,
                   :password, :password_confirmation, :current_password,
                   :remember_me,
                   :token, :token_secret
   # attr_accessible :title, :body
+
+  #
+  # Always these together!
+  #
+  has_and_belongs_to_many :clients, :class_name => 'Person'
+  accepts_nested_attributes_for :clients, :allow_destroy => true
+  attr_accessible :clients_attributes
 
   def apply_omniauth(omni)
     authentications.build(:provider     => omni['provider'],

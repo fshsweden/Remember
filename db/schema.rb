@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130916175116) do
+ActiveRecord::Schema.define(:version => 20130918111939) do
 
   create_table "authentications", :force => true do |t|
     t.integer  "user_id"
@@ -37,6 +37,14 @@ ActiveRecord::Schema.define(:version => 20130916175116) do
 
   add_index "cards", ["user_id"], :name => "index_cards_on_user_id"
 
+  create_table "clicks", :force => true do |t|
+    t.integer "user_id"
+    t.integer "person_id"
+    t.integer "count"
+  end
+
+  add_index "clicks", ["user_id", "person_id"], :name => "index_clicks_on_user_id_and_person_id"
+
   create_table "credit_cards", :force => true do |t|
     t.integer  "user_id"
     t.string   "cc_number"
@@ -60,11 +68,24 @@ ActiveRecord::Schema.define(:version => 20130916175116) do
     t.datetime "updated_at", :null => false
   end
 
-  create_table "people", :force => true do |t|
-    t.string   "name"
-    t.string   "surname"
+  create_table "histories", :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "person_id"
+    t.datetime "when"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+  end
+
+  add_index "histories", ["user_id"], :name => "index_histories_on_user_id"
+
+  create_table "people", :force => true do |t|
+    t.string "name",    :limit => 50
+    t.string "surname", :limit => 50
+  end
+
+  create_table "people_users", :id => false, :force => true do |t|
+    t.integer "person_id"
+    t.integer "user_id"
   end
 
   create_table "users", :force => true do |t|

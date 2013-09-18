@@ -1,6 +1,5 @@
 
-
-<%= simple_nested_form_for @person do |f| %>
+<%= simple_nested_form_for @person, :html => { :class => "form-horizontal" } do |f| %>
 
     <% if @person.errors.any? %>
         <div id="error_explanation">
@@ -25,15 +24,31 @@
     </div>
 
     <% if !@person.new_record? %>
+
         <h3>Events in <%= @person.fullname %>'s life </h3>
         <%= f.simple_fields_for :events do |event_form| %>
-            <%= event_form.input :name, :placeholder => 'Event name', :readonly => readonly %>
-            <%= event_form.input :date, :placeholder => 'Event date', :readonly => readonly  %>
-            <%= event_form.input :comment, :placeholder => 'Event comment', :readonly => readonly  %>
+            <%= event_form.input :name,     :label_html => {:class => 'horiz_input'}, :input_html => {:class => 'horiz_input'}, :placeholder => 'Event name', :readonly => readonly %>
+            <%= event_form.input :date,     :label_html => {:class => 'horiz_input'}, :input_html => {:class => 'horiz_input'}, :placeholder => 'Event date', :readonly => readonly  %>
+            <%= event_form.input :comment,  :label_html => {:class => 'horiz_input'}, :input_html => {:class => 'horiz_input'}, :placeholder => 'Event comment', :readonly => readonly  %>
         <% end %>
 
-        <p><%= f.link_to_add "Add an event", :events %></p>
+        <% if !readonly %>
+            <p><%= f.link_to_add "Add an event", :events %></p>
+        <% end  %>
+
+
+        <h3>Administrators </h3>
+        <%= f.simple_fields_for :admins do |event_form| %>
+            <%= event_form.input :email  %>
+        <% end %>
+
+        <% if !readonly %>
+            <p><%= f.link_to_add "Add an admin", :admins %></p>
+        <% end  %>
+
     <% end %>
+
+
 
     <% if !readonly %>
     <div class="actions">

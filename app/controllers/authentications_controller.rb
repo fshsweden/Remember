@@ -12,20 +12,28 @@ class AuthenticationsController < ApplicationController
     else
       redirect_to welcome_index_path
     end
+
   end
 
   def home
+    @people_with_activity = Click.where("count > 0").order(:count).reverse
+  end
 
+  def failure
+    render "auth_error"
   end
 
   def twitter
     omni = request.env["omniauth.auth"]
     logger.info request.env["omniauth.auth"].to_xml
+
     authentication = Authentication.find_by_provider_and_uid(omni['provider'], omni['uid'])
     if authentication
+      # This Twitter user already exists
       flash[:notice] = "Logged in Successfully"
       sign_in_and_redirect User.find(authentication.user_id)
     elsif current_user
+      # Twitter uid not found but we ARE logged in so add Twitter auth!
       token = omni['credentials'].token
       token_secret = omni['credentials'].secret
 
@@ -33,19 +41,30 @@ class AuthenticationsController < ApplicationController
       flash[:notice] = "Authentication successful."
       sign_in_and_redirect current_user
     else
-      user = User.new
-      user.apply_omniauth(omni)
 
-      if user.save
-        flash[:notice] = "Logged in."
-        sign_in_and_redirect User.find(user.id)
-      else
-        session[:omniauth] = omni.except('extra')
-        redirect_to new_user_registration_path
-      end
+      session[:twitter_data] = omni.except('extra')  # extra makes it too big!
+
+      # We MUST complete with an e-mail address!
+
+      render "add_email"
+
+
+
+      # Twitter uid not found so create a new User and add Twitter auth!
+      #user = User.find_by_email(omni['extra']['raw_info']['email']) || User.new
+      #user.apply_omniauth(omni)
+
+      #if user.save
+      #  flash[:notice] = "Logged in."
+      #  sign_in_and_redirect User.find(user.id)
+      #else
+      #  session[:omniauth] = omni.except('extra')
+      #  redirect_to new_user_registration_path
+      #end
+
     end
 
-    session[:omniauth] = omni.except('extra')
+
 
   end
 
@@ -67,7 +86,7 @@ class AuthenticationsController < ApplicationController
     omni = request.env["omniauth.auth"]
 
     if params['error_code']
-      render "facebook_error", params
+      render "auth_error", params
     else
 
       logger.info "- callback from facebook authentication LOOKING up facebook + #{omni['uid']} --------------------------"

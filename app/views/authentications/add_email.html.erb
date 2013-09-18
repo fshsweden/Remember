@@ -1,0 +1,17 @@
+<h5>Here we should input e-mail to complete the registration!</h5>
+
+This we got from Twitter:
+<code>
+  <%= session[:twitter_data].to_xml %>
+</code>
+
+<br>
+
+We should create a new User and add an authentication for "Twitter" + <%= session[:twitter_data]['uid'] %>
+
+<br>
+
+User name is '<%= session[:twitter_data]['info']['nickname'] %>' but we haven't much use for that
+
+
+<h5>Until then, Twitter registration of a new account is not supported!</h5>

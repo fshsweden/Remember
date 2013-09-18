@@ -16,6 +16,7 @@ gem 'simple_form'
 gem 'country_select'
 gem 'jquery-rails'
 gem 'nifty-generators'
+gem 'kaminari'  #pagination
 
 gem 'omniauth-twitter'
 gem 'omniauth-facebook'
