@@ -1,23 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6991852d-49b5-49be-805e-829646ef492d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/authentications/add_email.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/authentications/auth_error.html.erb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/authentications/facebook_error.html.erb" afterPath="$PROJECT_DIR$/app/models/click.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/people/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/people/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/authentications_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/authentications_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/authentications/home.html.erb" afterPath="$PROJECT_DIR$/app/views/authentications/home.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/people/index.html.erb" afterPath="$PROJECT_DIR$/app/views/people/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/people.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/people.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/people_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/people_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/person.rb" afterPath="$PROJECT_DIR$/app/models/person.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="6991852d-49b5-49be-805e-829646ef492d" name="Default" comment="" />
     <ignored path="Remember.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/application.html.erb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1378979037547" ignored="false" />
@@ -133,10 +117,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="20130918103055_add_clicks_table.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="20130918103055_add_clicks_table.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/db/migrate/20130918103055_add_clicks_table.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="45" selection-start="218" selection-end="218" vertical-scroll-proportion="0.0">
+            <state line="7" column="45" selection-start="218" selection-end="218" vertical-scroll-proportion="0.22134387">
               <folding />
             </state>
           </provider>
@@ -169,10 +153,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="home.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/authentications/home.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="51" selection-start="1064" selection-end="1064" vertical-scroll-proportion="0.7933884">
+            <state line="24" column="51" selection-start="1064" selection-end="1064" vertical-scroll-proportion="-16.90909">
               <folding />
             </state>
           </provider>
@@ -1205,14 +1189,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="11" y="31" width="2535" height="1326" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3283582" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1783849" sideWeight="0.67164177" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1783849" sideWeight="0.67164177" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
@@ -1358,27 +1342,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130918103055_add_clicks_table.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="45" selection-start="218" selection-end="218" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130918111939_add_clickcount_to_clicks.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="26" selection-start="66" selection-end="66" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/click.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="46" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/authentications_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="49" selection-start="380" selection-end="380" vertical-scroll-proportion="0.0">
@@ -1395,7 +1358,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/authentications/home.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="51" selection-start="1064" selection-end="1064" vertical-scroll-proportion="0.7933884">
+        <state line="24" column="51" selection-start="1064" selection-end="1064" vertical-scroll-proportion="-16.90909">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/click.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="46" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130918111939_add_clickcount_to_clicks.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="26" selection-start="66" selection-end="66" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130918103055_add_clicks_table.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="45" selection-start="218" selection-end="218" vertical-scroll-proportion="0.22134387">
           <folding />
         </state>
       </provider>

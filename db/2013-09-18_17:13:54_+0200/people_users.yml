@@ -1,0 +1,11 @@
+
+---
+people_users:
+  columns:
+  - person_id
+  - user_id
+  records: 
+  - - 1
+    - 1
+  - - 2
+    - 1

@@ -1,0 +1,21 @@
+
+---
+authentications:
+  columns:
+  - id
+  - user_id
+  - provider
+  - uid
+  - token
+  - token_secret
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - 1
+    - facebook
+    - '581781957'
+    - CAAGH1ZCPwFRsBAJ73iTJoYqNmfEFKiqXL7vd3WYWa9Imxj1DE82OCZC4rVRr4FLkHqCZBKpfKscfambUQbEzoZCNsl0IG1MnGQCJZCKOx3GXC39qcAOMpKTtaWuLvbQ2HZBZAlb3HLNWEEwPrW9MEAVoHX5DB0T6P4peN1tCKiwB8MJ7YFrW0SATRYfWrdNWV0ZD
+    - 
+    - '2013-09-17 21:43:20.741440'
+    - '2013-09-17 21:43:20.741440'
