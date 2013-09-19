@@ -15,14 +15,21 @@ class Person < ActiveRecord::Base
   accepts_nested_attributes_for :admins, :allow_destroy => true
   attr_accessible :admins_attributes
 
-
   #
   #
   #
   has_many :clicks
   has_many :users, :through => :clicks
-  accepts_nested_attributes_for :users, :allow_destroy => true  # really??
+  accepts_nested_attributes_for :users, :allow_destroy => true
   attr_accessible :users_attributes
+
+  #
+  #
+  #
+  has_many :gifts
+  has_many :products, :through => :gifts
+  accepts_nested_attributes_for :products, :allow_destroy => true
+  attr_accessible :products_attributes
 
 
   def fullname

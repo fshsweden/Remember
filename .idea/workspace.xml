@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6991852d-49b5-49be-805e-829646ef492d" name="Default" comment="" />
+    <list default="true" id="6991852d-49b5-49be-805e-829646ef492d" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/person.rb" afterPath="$PROJECT_DIR$/app/models/person.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
+    </list>
     <ignored path="Remember.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/application.html.erb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1378979037547" ignored="false" />
@@ -58,7 +62,7 @@
     <file path="$PROJECT_DIR$/../Grave/app/models/credit_card.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1378991845954" ignored="false" />
     <file path="/credit_card.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379193968035" ignored="false" />
     <file path="$PROJECT_DIR$/../Grave/app/views/credit_cards/_form.html.erb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1378991904142" ignored="false" />
-    <file path="/_form.html.erb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379453890470" ignored="false" />
+    <file path="/_form.html.erb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379534383829" ignored="false" />
     <file path="$PROJECT_DIR$/../Grave/app/views/credit_cards/show.html.erb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1378992159672" ignored="false" />
     <file path="$PROJECT_DIR$/../Grave/app/assets/javascripts/application.js" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1378992466011" ignored="false" />
     <file path="/application.js" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1378992368293" ignored="false" />
@@ -84,7 +88,7 @@
     <file path="/home.html.erb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379504891500" ignored="false" />
     <file path="/facebook_controller.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379328995444" ignored="false" />
     <file path="/send_hello.html.erb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379328828225" ignored="false" />
-    <file path="/person.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379500213357" ignored="false" />
+    <file path="/person.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379533753689" ignored="false" />
     <file path="/20130916175116_create_events.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379353971359" ignored="false" />
     <file path="/event.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379354210086" ignored="false" />
     <file path="/a.html" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379371490681" ignored="false" />
@@ -98,6 +102,10 @@
     <file path="/click.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379503841598" ignored="false" />
     <file path="/20130918103055_add_clicks_table.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379500325167" ignored="false" />
     <file path="/20130918111939_add_clickcount_to_clicks.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379503256027" ignored="false" />
+    <file path="/20130918194536_create_gifts.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379535027125" ignored="false" />
+    <file path="/product.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379535320413" ignored="false" />
+    <file path="/category.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379533657426" ignored="false" />
+    <file path="/gift.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379534930940" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,62 +125,56 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="20130918103055_add_clicks_table.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20130918103055_add_clicks_table.rb">
+      <file leaf-file-name="product.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/models/product.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="45" selection-start="218" selection-end="218" vertical-scroll-proportion="0.22134387">
+            <state line="12" column="44" selection-start="387" selection-end="387" vertical-scroll-proportion="0.36828643">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="people_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/people_controller.rb">
+      <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/products/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="43" selection-start="465" selection-end="465" vertical-scroll-proportion="0.0">
+            <state line="6" column="19" selection-start="193" selection-end="193" vertical-scroll-proportion="-4.3636365">
+              <folding>
+                <marker date="1379534379000" expanded="true" signature="97:192" placeholder="..." />
+                <marker date="1379534379000" expanded="true" signature="222:259" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="category.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/category.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="2" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="click.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/click.rb">
+      <file leaf-file-name="gift.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/gift.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="46" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0">
+            <state line="3" column="48" selection-start="123" selection-end="123" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="20130918111939_add_clickcount_to_clicks.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20130918111939_add_clickcount_to_clicks.rb">
+      <file leaf-file-name="person.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/person.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="26" selection-start="66" selection-end="66" vertical-scroll-proportion="0.0">
+            <state line="32" column="0" selection-start="613" selection-end="777" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/authentications/home.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="51" selection-start="1064" selection-end="1064" vertical-scroll-proportion="-16.90909">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="authentications_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/authentications_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="49" selection-start="380" selection-end="380" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="20130917170506_add_join_model_for_user_and_people.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20130917170506_add_join_model_for_user_and_people.rb">
+      <file leaf-file-name="history.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/history.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
@@ -180,28 +182,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="20130918093028_create_histories.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20130918093028_create_histories.rb">
+      <file leaf-file-name="20130918194536_create_gifts.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20130918194536_create_gifts.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="0" selection-start="61" selection-end="234" vertical-scroll-proportion="0.0">
+            <state line="4" column="23" selection-start="153" selection-end="153" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="20130912201211_create_authentications.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20130912201211_create_authentications.rb">
+      <file leaf-file-name="user.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/user.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="20130906193317_devise_create_users.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20130906193317_devise_create_users.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="35" selection-start="630" selection-end="630" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -225,22 +218,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/people.css.scss" />
-        <option value="$PROJECT_DIR$/db/migrate/20130917154733_people_users.rb" />
-        <option value="$PROJECT_DIR$/app/models/responsibility.rb" />
-        <option value="$PROJECT_DIR$/app/models/admin.rb" />
-        <option value="$PROJECT_DIR$/app/views/people/_form.html.erb" />
-        <option value="$PROJECT_DIR$/db/migrate/20130917170506_add_join_model_for_user_and_people.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/views/people/index.html.erb" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
-        <option value="$PROJECT_DIR$/app/models/person.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20130918103055_add_clicks_table.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20130918111939_add_clickcount_to_clicks.rb" />
         <option value="$PROJECT_DIR$/app/models/click.rb" />
         <option value="$PROJECT_DIR$/app/controllers/authentications_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/people_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/authentications/home.html.erb" />
+        <option value="$PROJECT_DIR$/db/migrate/20130918194637_create_categories.rb" />
+        <option value="$PROJECT_DIR$/app/models/category.rb" />
+        <option value="$PROJECT_DIR$/app/models/person.rb" />
+        <option value="$PROJECT_DIR$/app/views/products/_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/models/gift.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20130918194536_create_gifts.rb" />
+        <option value="$PROJECT_DIR$/app/models/product.rb" />
       </list>
     </option>
   </component>
@@ -561,6 +554,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="profile" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Remember" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Remember" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="products" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1189,14 +1204,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="11" y="31" width="2535" height="1326" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3283582" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1783849" sideWeight="0.67164177" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1783849" sideWeight="0.67164177" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
@@ -1272,76 +1287,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="6" selection-start="786" selection-end="786" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/person.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="10" selection-start="473" selection-end="473" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130916175116_create_events.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130916161751_create_people.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130916085208_create_cards.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130913171429_create_credit_cards.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130912201211_create_authentications.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130906193317_devise_create_users.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="35" selection-start="630" selection-end="630" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130917170506_add_join_model_for_user_and_people.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130918093028_create_histories.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="61" selection-end="234" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/authentications_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="49" selection-start="380" selection-end="380" vertical-scroll-proportion="0.0">
@@ -1377,9 +1322,82 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/category.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="2" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/history.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/products/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="19" selection-start="193" selection-end="193" vertical-scroll-proportion="-4.3636365">
+          <folding>
+            <marker date="1379534379000" expanded="true" signature="97:192" placeholder="..." />
+            <marker date="1379534379000" expanded="true" signature="222:259" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20130918103055_add_clicks_table.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="45" selection-start="218" selection-end="218" vertical-scroll-proportion="0.22134387">
+        <state line="7" column="45" selection-start="218" selection-end="218" vertical-scroll-proportion="0.21483377">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130918194402_create_products.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130918194637_create_categories.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="0" selection-start="119" selection-end="119" vertical-scroll-proportion="0.12276215">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/gift.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="48" selection-start="123" selection-end="123" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130918194536_create_gifts.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="23" selection-start="153" selection-end="153" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/person.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="0" selection-start="613" selection-end="777" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/product.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="44" selection-start="387" selection-end="387" vertical-scroll-proportion="0.36828643">
           <folding />
         </state>
       </provider>

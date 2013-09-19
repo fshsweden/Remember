@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130918111939) do
+ActiveRecord::Schema.define(:version => 20130918194637) do
 
   create_table "authentications", :force => true do |t|
     t.integer  "user_id"
@@ -36,6 +36,12 @@ ActiveRecord::Schema.define(:version => 20130918111939) do
   end
 
   add_index "cards", ["user_id"], :name => "index_cards_on_user_id"
+
+  create_table "categories", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "clicks", :force => true do |t|
     t.integer "user_id"
@@ -68,6 +74,14 @@ ActiveRecord::Schema.define(:version => 20130918111939) do
     t.datetime "updated_at", :null => false
   end
 
+  create_table "gifts", :force => true do |t|
+    t.integer  "person_id"
+    t.integer  "product_id"
+    t.string   "comment"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
   create_table "histories", :force => true do |t|
     t.integer  "user_id"
     t.integer  "person_id"
@@ -86,6 +100,13 @@ ActiveRecord::Schema.define(:version => 20130918111939) do
   create_table "people_users", :id => false, :force => true do |t|
     t.integer "person_id"
     t.integer "user_id"
+  end
+
+  create_table "products", :force => true do |t|
+    t.string   "name"
+    t.integer  "category_id"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
   end
 
   create_table "users", :force => true do |t|
