@@ -17,7 +17,8 @@ gem 'country_select'
 gem 'jquery-rails'
 gem 'nifty-generators'
 gem 'kaminari'  #pagination
-
+gem "paperclip", "~> 3.0"
+gem 'paypal-sdk-rest'
 gem 'omniauth-twitter'
 gem 'omniauth-facebook'
 gem 'twitter'
@@ -58,6 +59,10 @@ gem 'jquery-ui-rails'
 gem 'compass-rails' #NEW
 gem 'zurb-foundation'
 
+group :test do
+  gem "mocha", :require => false
+end
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 # To use Jbuilder templates for JSON
@@ -69,4 +74,4 @@ gem 'zurb-foundation'
 # To use debugger
 # gem 'debugger'
 
-gem "mocha", :group => :test
+

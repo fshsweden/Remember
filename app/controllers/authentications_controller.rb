@@ -16,7 +16,7 @@ class AuthenticationsController < ApplicationController
   end
 
   def home
-    @people_with_activity = Click.where("count > 0").order(:count).reverse
+
   end
 
   def failure

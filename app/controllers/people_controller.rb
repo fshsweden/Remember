@@ -23,15 +23,19 @@ end
   def show
     @person = Person.find(params[:id])
 
-    logger.info "Current user is:" + current_user.id.to_s
-    logger.info "Looking for Person: " + @person.id.to_s + " (" + @person.fullname + ")"
+    # current_user can very well be NIL
+    #logger.info "Current user is:" + current_user.id.to_s
+    #logger.info "Looking for Person: " + @person.id.to_s + " (" + @person.fullname + ")"
 
-    c = current_user.clicks.find_by_user_id_and_person_id(current_user.id, @person.id)
+
+    #
+    #
+    #
+    c = Click.find_by_person_id(@person.id)
     if c != nil
       c.count = c.count+1
     else
-      c = Click.new(:user_id => current_user.id, :person_id => @person.id, :count => 1)
-      current_user.clicks << c
+      c = Click.new(:person_id => @person.id, :count => 1)
     end
     c.save!
 
@@ -65,8 +69,13 @@ end
     @person.admins << current_user
     logger.info @person.inspect
 
+
     respond_to do |format|
       if @person.save
+
+        c = UpdateAction.new(:person_id => @person.id, :comment => 'Created')
+        c.save!
+
         format.html { redirect_to @person, notice: 'Person was successfully created.' }
         format.json { render json: @person, status: :created, location: @person }
       else
@@ -81,8 +90,18 @@ end
   def update
     @person = Person.find(params[:id])
 
+    logger.info "+++++++Debugging:"+params[:person].inspect
+
     respond_to do |format|
       if @person.update_attributes(params[:person])
+
+        c = UpdateAction.find_by_id(@person.id)
+        if c != nil
+        else
+          c = UpdateAction.new(:person_id => @person.id, :comment => 'Updated')
+        end
+        c.save!
+
         format.html { redirect_to @person, notice: 'Person was successfully updated.' }
         format.json { head :no_content }
       else

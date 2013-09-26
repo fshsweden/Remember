@@ -1,10 +1,21 @@
 class User < ActiveRecord::Base
+
+  # Setup accessible (or protected) attributes for your model
+  attr_accessible :email,
+                  :password, :password_confirmation, :current_password,
+                  :remember_me,
+                  :token, :token_secret
+  # attr_accessible :title, :body
+
   # Include default devise modules. Others available are:
   # :token_authenticatable, :confirmable,
   # :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable, :omniauthable,
          :recoverable, :rememberable, :trackable, :validatable
 
+  #
+  #
+  #
   has_many :authentications, :dependent => :destroy
 
   #
@@ -22,23 +33,7 @@ class User < ActiveRecord::Base
   attr_accessible :cards_attributes
 
   #
-  #  C L I C K S
-  #
-  has_many :clicks
-  has_many :persons, :through => :clicks
-  accepts_nested_attributes_for :persons, :allow_destroy => true
-  attr_accessible :persons_attributes
-
-
-  # Setup accessible (or protected) attributes for your model
-  attr_accessible :email,
-                  :password, :password_confirmation, :current_password,
-                  :remember_me,
-                  :token, :token_secret
-  # attr_accessible :title, :body
-
-  #
-  # Always these together!
+  # C L I E N T S  (that we (the user) administrates)
   #
   has_and_belongs_to_many :clients, :class_name => 'Person'
   accepts_nested_attributes_for :clients, :allow_destroy => true

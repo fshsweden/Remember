@@ -19,8 +19,3 @@
     <li><%= link_to "Sign up/Login using Facebook", user_omniauth_authorize_path(:facebook) %></li>
 <% end %>
 
-
-<h5>Recent activity:</h5>
-<% @people_with_activity.each do |c|  %>
-    <h5><%= link_to c.person.fullname, person_path(c.person) %>(clicks:<%= c.count %>)</h5>
-<% end %>

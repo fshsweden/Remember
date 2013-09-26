@@ -2,20 +2,45 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6991852d-49b5-49be-805e-829646ef492d" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/shared/_footer.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/inputs/avatar_input.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/facebook/show_fb_friends.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Remember.iml" afterPath="$PROJECT_DIR$/.idea/Remember.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/people/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/people/_form.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/authentications_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/authentications_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/functional/authentications_controller_test.rb" afterPath="$PROJECT_DIR$/test/functional/authentications_controller_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/click.rb" afterPath="$PROJECT_DIR$/app/models/click.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/devise.rb" afterPath="$PROJECT_DIR$/config/initializers/devise.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/people/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/people/edit.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/facebook_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/facebook_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/fixtures/gifts.yml" afterPath="$PROJECT_DIR$/test/fixtures/gifts.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/authentications/home.html.erb" afterPath="$PROJECT_DIR$/app/views/authentications/home.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/facebook/index.html.erb" afterPath="$PROJECT_DIR$/app/views/facebook/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/people/index.html.erb" afterPath="$PROJECT_DIR$/app/views/people/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/welcome/index.html.erb" afterPath="$PROJECT_DIR$/app/views/welcome/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/people_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/people_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/person.rb" afterPath="$PROJECT_DIR$/app/models/person.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/people/show.html.erb" afterPath="$PROJECT_DIR$/app/views/people/show.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/simple_form.rb" afterPath="$PROJECT_DIR$/config/initializers/simple_form.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/fixtures/users.yml" afterPath="$PROJECT_DIR$/test/fixtures/users.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/welcome_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/welcome_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Remember.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/application.html.erb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1378979037547" ignored="false" />
-    <file path="/routes.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379327954589" ignored="false" />
-    <file path="/welcome_controller.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379165855622" ignored="false" />
+    <file path="/application.html.erb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1380014804139" ignored="false" />
+    <file path="/routes.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1380106193852" ignored="false" />
+    <file path="/welcome_controller.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1380036402495" ignored="false" />
     <file path="$PROJECT_DIR$/../Grave/app/controllers/users_controller.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1378880787703" ignored="false" />
     <file path="/users_controller.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1378880786917" ignored="false" />
     <file path="$PROJECT_DIR$/../Grave/app/views/users/show,html.erb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1378880810178" ignored="false" />
     <file path="/show,html.erb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1378880810178" ignored="false" />
-    <file path="$PROJECT_DIR$/../Grave/Gemfile" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1378884813990" ignored="false" />
+    <file path="$PROJECT_DIR$/../Grave/Gemfile" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379572574005" ignored="false" />
     <file path="$PROJECT_DIR$/../Grave/app/views/devise/registrations/new.html.erb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1378881385337" ignored="false" />
     <file path="$PROJECT_DIR$/../Grave/app/views/devise/confirmations/new.html.erb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1378881385337" ignored="false" />
     <file path="$PROJECT_DIR$/../Grave/config/routes.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1378992673445" ignored="false" />
@@ -25,19 +50,19 @@
     <file path="$PROJECT_DIR$/../Grave/app/controllers/carts_controller.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1378882703055" ignored="false" />
     <file path="$PROJECT_DIR$/../Grave/app/views/layouts/devise_layout.html.erb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1378977087088" ignored="false" />
     <file path="/devise_layout.html.erb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1378977080757" ignored="false" />
-    <file path="/Gemfile" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379498855929" ignored="false" />
+    <file path="/Gemfile" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379664425298" ignored="false" />
     <file path="$PROJECT_DIR$/../Grave/db/schema.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1378985927315" ignored="false" />
     <file path="$PROJECT_DIR$/../Grave/app/models/user.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1378995185236" ignored="false" />
     <file path="$PROJECT_DIR$/../Grave/config/deploy.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1378892767468" ignored="false" />
     <file path="/deploy.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1378892767468" ignored="false" />
     <file path="$PROJECT_DIR$/../Grave/db/seeds.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1378992981642" ignored="false" />
     <file path="/seeds.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1378992842829" ignored="false" />
-    <file path="/user.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379500018490" ignored="false" />
+    <file path="/user.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379690832427" ignored="false" />
     <file path="$PROJECT_DIR$/../Grave/config/initializers/devise.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1378901751742" ignored="false" />
-    <file path="/devise.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379089552616" ignored="false" />
+    <file path="/devise.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1380143464897" ignored="false" />
     <file path="$PROJECT_DIR$/../Grave/app/views/layouts/welcome_layout.html.erb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1378969523407" ignored="false" />
     <file path="$PROJECT_DIR$/../Grave/app/views/individuals/show.html.erb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1378914738647" ignored="false" />
-    <file path="/show.html.erb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379371563424" ignored="false" />
+    <file path="/show.html.erb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1380014749315" ignored="false" />
     <file path="$PROJECT_DIR$/../Grave/app/helpers/application_helper.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1378968645392" ignored="false" />
     <file path="/application_helper.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1378968645392" ignored="false" />
     <file path="$PROJECT_DIR$/../Grave/app/models/cart.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1378915924742" ignored="false" />
@@ -46,7 +71,7 @@
     <file path="/foundation_and_overrides.scss" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1378976851754" ignored="false" />
     <file path="/welcome_layout.html.erb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1378969367593" ignored="false" />
     <file path="$PROJECT_DIR$/../Grave/app/views/welcome/index.html.erb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1378995227884" ignored="false" />
-    <file path="/index.html.erb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379498994114" ignored="false" />
+    <file path="/index.html.erb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1380106369133" ignored="false" />
     <file path="$PROJECT_DIR$/../Grave/app/assets/stylesheets/fonts.css" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1378970060947" ignored="false" />
     <file path="/fonts.css" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1378970044290" ignored="false" />
     <file path="$PROJECT_DIR$/../Grave/app/assets/stylesheets/custom.css.scss" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1378970087748" ignored="false" />
@@ -62,15 +87,15 @@
     <file path="$PROJECT_DIR$/../Grave/app/models/credit_card.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1378991845954" ignored="false" />
     <file path="/credit_card.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379193968035" ignored="false" />
     <file path="$PROJECT_DIR$/../Grave/app/views/credit_cards/_form.html.erb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1378991904142" ignored="false" />
-    <file path="/_form.html.erb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379534383829" ignored="false" />
+    <file path="/_form.html.erb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1380103532624" ignored="false" />
     <file path="$PROJECT_DIR$/../Grave/app/views/credit_cards/show.html.erb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1378992159672" ignored="false" />
     <file path="$PROJECT_DIR$/../Grave/app/assets/javascripts/application.js" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1378992466011" ignored="false" />
     <file path="/application.js" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1378992368293" ignored="false" />
-    <file path="/a.dummy" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379452267044" ignored="false" />
+    <file path="/a.dummy" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379932097435" ignored="false" />
     <file path="$PROJECT_DIR$/../Grave/app/views/devise/sessions/new.html.erb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1378995060891" ignored="false" />
     <file path="/new.html.erb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379370881512" ignored="false" />
     <file path="/20130906193317_devise_create_users.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379000969232" ignored="false" />
-    <file path="/Dummy.txt" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379411712383" ignored="false" />
+    <file path="/Dummy.txt" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379620822335" ignored="false" />
     <file path="/20130912194929_add_authentications.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379015394087" ignored="false" />
     <file path="/authentication.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379052516416" ignored="false" />
     <file path="/authentications_controller.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379504145695" ignored="false" />
@@ -80,15 +105,15 @@
     <file path="/application.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379080239338" ignored="false" />
     <file path="/load_order.txt" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379087290339" ignored="false" />
     <file path="/profile_controller.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379166072975" ignored="false" />
-    <file path="/edit.html.erb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379370851720" ignored="false" />
+    <file path="/edit.html.erb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379934166379" ignored="false" />
     <file path="/credit_cards_controller.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379272981513" ignored="false" />
     <file path="/addcc.html.erb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379322808980" ignored="false" />
     <file path="/20130913171429_create_credit_cards.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379320804640" ignored="false" />
     <file path="/card.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379322032141" ignored="false" />
     <file path="/home.html.erb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379504891500" ignored="false" />
-    <file path="/facebook_controller.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379328995444" ignored="false" />
+    <file path="/facebook_controller.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1380142597867" ignored="false" />
     <file path="/send_hello.html.erb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379328828225" ignored="false" />
-    <file path="/person.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379533753689" ignored="false" />
+    <file path="/person.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1380103249125" ignored="false" />
     <file path="/20130916175116_create_events.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379353971359" ignored="false" />
     <file path="/event.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379354210086" ignored="false" />
     <file path="/a.html" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379371490681" ignored="false" />
@@ -98,14 +123,45 @@
     <file path="/20130917154733_people_users.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379433034099" ignored="false" />
     <file path="/responsibility.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379437341771" ignored="false" />
     <file path="/20130917170506_add_join_model_for_user_and_people.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379453420759" ignored="false" />
-    <file path="/people_controller.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379504629207" ignored="false" />
-    <file path="/click.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379503841598" ignored="false" />
+    <file path="/people_controller.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1380019390138" ignored="false" />
+    <file path="/click.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379946606480" ignored="false" />
     <file path="/20130918103055_add_clicks_table.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379500325167" ignored="false" />
     <file path="/20130918111939_add_clickcount_to_clicks.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379503256027" ignored="false" />
     <file path="/20130918194536_create_gifts.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379535027125" ignored="false" />
     <file path="/product.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379535320413" ignored="false" />
     <file path="/category.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379533657426" ignored="false" />
     <file path="/gift.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379534930940" ignored="false" />
+    <file path="/photo.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379590264122" ignored="false" />
+    <file path="/20130919073946_add_belongs_to_person_to_photos.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379576410000" ignored="false" />
+    <file path="$PROJECT_DIR$/../Grave/app/models/photo.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379590270145" ignored="false" />
+    <file path="/avatar_input.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1380022644712" ignored="false" />
+    <file path="/gifts.yml" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379666088373" ignored="false" />
+    <file path="/users.yml" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379666263891" ignored="false" />
+    <file path="/authentications_controller_test.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379666714625" ignored="false" />
+    <file path="$PROJECT_DIR$/../Grave/config/paypal.yml" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379683355880" ignored="false" />
+    <file path="/paypal.yml" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379683355877" ignored="false" />
+    <file path="$PROJECT_DIR$/../ZurbTest/app/views/layouts/application.html.erb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379794910248" ignored="false" />
+    <file path="$PROJECT_DIR$/../ZurbTest/config/routes.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379794808214" ignored="false" />
+    <file path="$PROJECT_DIR$/../ZurbTest/app/views/shared/_topnav.html.erb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379794836722" ignored="false" />
+    <file path="$PROJECT_DIR$/../ZurbTest/app/assets/stylesheets/foundation_and_overrides.scss" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379795026665" ignored="false" />
+    <file path="$PROJECT_DIR$/../blorgh2/blorgh2-test/Gemfile" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379885422246" ignored="false" />
+    <file path="$PROJECT_DIR$/../blorgh2/blorgh2-test/app/assets/stylesheets/application.css" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379885885045" ignored="false" />
+    <file path="$PROJECT_DIR$/../template-multipurpose-test/app/assets/stylesheets/application.css" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379929883716" ignored="false" />
+    <file path="/application.css" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379929882017" ignored="false" />
+    <file path="$PROJECT_DIR$/../template-multipurpose-test/app/views/welcome/header15a.html" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379929908233" ignored="false" />
+    <file path="$PROJECT_DIR$/../template-multipurpose-test/app/views/welcome/index.html.erb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379932193370" ignored="false" />
+    <file path="$PROJECT_DIR$/../template-multipurpose-test/config/routes.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379929967780" ignored="false" />
+    <file path="$PROJECT_DIR$/../template-multipurpose-test/config/environments/development.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379930446205" ignored="false" />
+    <file path="/development.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379930446206" ignored="false" />
+    <file path="$PROJECT_DIR$/../template-multipurpose-test/app/assets/stylesheets/multipurpose/style.css" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379930588439" ignored="false" />
+    <file path="/20130923143201_remove_user_id_from_clicks.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379946837848" ignored="false" />
+    <file path="/20130923203801_create_update_actions.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379969041329" ignored="false" />
+    <file path="/_footer.html.erb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1380015272102" ignored="false" />
+    <file path="/20130924101219_add_comment_to_update_actions.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1380017646990" ignored="false" />
+    <file path="/update_action.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1380028472954" ignored="false" />
+    <file path="/20130924144741_add_timestamps_to_persons.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1380034122775" ignored="false" />
+    <file path="/story.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1380105588536" ignored="false" />
+    <file path="/show_fb_friends.html.erb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1380107572172" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,76 +181,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="product.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/models/product.rb">
+      <file leaf-file-name="show_fb_friends.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/facebook/show_fb_friends.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="44" selection-start="387" selection-end="387" vertical-scroll-proportion="0.36828643">
+            <state line="4" column="14" selection-start="100" selection-end="100" vertical-scroll-proportion="-2.909091">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/products/_form.html.erb">
+      <file leaf-file-name="facebook_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/facebook_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="19" selection-start="193" selection-end="193" vertical-scroll-proportion="-4.3636365">
-              <folding>
-                <marker date="1379534379000" expanded="true" signature="97:192" placeholder="..." />
-                <marker date="1379534379000" expanded="true" signature="222:259" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="category.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/category.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="2" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0">
+            <state line="30" column="46" selection-start="899" selection-end="899" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gift.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/gift.rb">
+      <file leaf-file-name="devise.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/initializers/devise.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="48" selection-start="123" selection-end="123" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="person.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/person.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="0" selection-start="613" selection-end="777" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="history.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/history.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="20130918194536_create_gifts.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20130918194536_create_gifts.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="23" selection-start="153" selection-end="153" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/user.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="270" column="58" selection-start="16427" selection-end="16427" vertical-scroll-proportion="0.6012024">
               <folding />
             </state>
           </provider>
@@ -218,30 +226,37 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/app/views/people/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/models/user.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20130918103055_add_clicks_table.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20130918111939_add_clickcount_to_clicks.rb" />
-        <option value="$PROJECT_DIR$/app/models/click.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/authentications_controller.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20130924101219_add_comment_to_update_actions.rb" />
         <option value="$PROJECT_DIR$/app/controllers/people_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/authentications/home.html.erb" />
-        <option value="$PROJECT_DIR$/db/migrate/20130918194637_create_categories.rb" />
-        <option value="$PROJECT_DIR$/app/models/category.rb" />
+        <option value="$PROJECT_DIR$/app/inputs/avatar_input.rb" />
+        <option value="$PROJECT_DIR$/app/models/update_action.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20130924144741_add_timestamps_to_persons.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/welcome_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/welcome/index.html.erb" />
         <option value="$PROJECT_DIR$/app/models/person.rb" />
-        <option value="$PROJECT_DIR$/app/views/products/_form.html.erb" />
-        <option value="$PROJECT_DIR$/app/models/gift.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20130918194536_create_gifts.rb" />
-        <option value="$PROJECT_DIR$/app/models/product.rb" />
+        <option value="$PROJECT_DIR$/app/views/people/_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/models/story.rb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/views/facebook/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/authentications/home.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/facebook/show_fb_friends.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/facebook_controller.rb" />
+        <option value="$PROJECT_DIR$/config/initializers/devise.rb" />
       </list>
     </option>
   </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="11" />
-    <option name="y" value="31" />
-    <option name="width" value="2535" />
-    <option name="height" value="1326" />
+    <option name="x" value="172" />
+    <option name="y" value="61" />
+    <option name="width" value="1834" />
+    <option name="height" value="1159" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -311,6 +326,164 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="simple_form (v2.1.0, RVM: ruby-1.9.3-p429) [gem]" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Remember" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="simple_form (v2.1.0, RVM: ruby-1.9.3-p429) [gem]" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="simple_form" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Remember" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="simple_form (v2.1.0, RVM: ruby-1.9.3-p429) [gem]" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="simple_form" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wrappers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Remember" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nested_form (v0.3.2, RVM: ruby-1.9.3-p429) [gem]" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Remember" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nested_form (v0.3.2, RVM: ruby-1.9.3-p429) [gem]" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Remember" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nested_form (v0.3.2, RVM: ruby-1.9.3-p429) [gem]" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nested_form" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Remember" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nested_form (v0.3.2, RVM: ruby-1.9.3-p429) [gem]" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="generators" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nested_form" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Remember" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="fb_graph (v2.7.8, RVM: ruby-1.9.3-p429) [gem]" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
             </PATH_ELEMENT>
@@ -361,7 +534,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Remember" />
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="activerecord (v3.2.13, RVM: ruby-1.9.3-p429) [gem]" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -371,23 +552,19 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Remember" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="activerecord (v3.2.13, RVM: ruby-1.9.3-p429) [gem]" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="erb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scaffold" />
+              <option name="myItemId" value="active_record" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -397,11 +574,77 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Remember" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="activerecord (v3.2.13, RVM: ruby-1.9.3-p429) [gem]" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="active_record" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="connection_adapters" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Remember" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="activerecord (v3.2.13, RVM: ruby-1.9.3-p429) [gem]" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="active_record" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="connection_adapters" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abstract" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Remember" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="activemodel (v3.2.13, RVM: ruby-1.9.3-p429) [gem]" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Remember" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Remember" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -416,24 +659,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="db" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Remember" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Remember" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="migrate" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -486,248 +711,6 @@
               <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="welcome" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Remember" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Remember" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shared" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Remember" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Remember" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="registrations" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Remember" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Remember" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="profile" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Remember" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Remember" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="products" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Remember" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Remember" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="people" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Remember" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Remember" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layouts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Remember" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Remember" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="facebook" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Remember" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Remember" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Remember" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Remember" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="devise" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Remember" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Remember" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cards" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Remember" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Remember" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="authentications" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -775,7 +758,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="helpers" />
+              <option name="myItemId" value="inputs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -814,10 +797,6 @@
               <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stylesheets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -841,24 +820,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Remember" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Remember" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="RailsProjectView" />
@@ -868,13 +829,14 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="editing.templates" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../017-habtm-checkboxes-revised/store-after" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="options.searchVisible" value="true" />
+    <property name="recentsLimit" value="5" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ZurbTest" />
+    <property name="FullScreen" value="false" />
     <property name="GoToClass.includeJavaFiles" value="false" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -885,7 +847,69 @@
       <recent name="$PROJECT_DIR$/app/views/cards" />
     </key>
   </component>
-  <component name="RunManager" selected="Rails.Development: Remember">
+  <component name="RunManager" selected="Test::Unit/Shoulda/Minitest.All tests in: test">
+    <configuration default="false" name="authentications_controller_test" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
+      <predefined_log_file id="RUBY_TESTUNIT" enabled="true" />
+      <module name="Remember" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift) -Itest" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="RAILS_ENV" value="test" />
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/test/functional/authentications_controller_test.rb" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="All tests in: Remember" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
+      <predefined_log_file id="RUBY_TESTUNIT" enabled="true" />
+      <module name="Remember" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="RAILS_ENV" value="test" />
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="$PROJECT_DIR$" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/{*_test,test_*}.rb" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="ALL_IN_FOLDER" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
     <configuration default="true" type="RakeRunConfigurationType" factoryName="Rake">
       <module name="" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -1012,13 +1036,6 @@
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugSession" factoryName="Remote" singleton="true">
-      <JSRemoteDebuggerConfigurationSettings>
-        <option name="engineId" value="embedded" />
-        <option name="fileUrl" />
-      </JSRemoteDebuggerConfigurationSettings>
-      <method />
-    </configuration>
     <configuration default="true" type="CucumberRunConfigurationType" factoryName="Cucumber">
       <predefined_log_file id="RUBY_CUCUMBER" enabled="true" />
       <module name="" />
@@ -1054,6 +1071,13 @@
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SETTINGS_VERSION" VALUE="2" />
       <method />
     </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Remote" singleton="true">
+      <JSRemoteDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSRemoteDebuggerConfigurationSettings>
+      <method />
+    </configuration>
     <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
       <JSDebuggerConfigurationSettings>
         <option name="engineId" value="embedded" />
@@ -1065,6 +1089,37 @@
       <option name="VM_PARAMETERS" value="" />
       <option name="USER_CFG_CLASS" />
       <option name="CONTEXT_PROVIDER" />
+      <method />
+    </configuration>
+    <configuration default="false" name="All tests in: test" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest">
+      <predefined_log_file id="RUBY_TESTUNIT" enabled="true" />
+      <module name="Remember" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift) -Itest" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="RAILS_ENV" value="test" />
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="$PROJECT_DIR$/test" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/{*_test,test_*}.rb" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="ALL_IN_FOLDER" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
     </configuration>
     <configuration default="false" name="test" type="RakeRunConfigurationType" factoryName="Rake">
@@ -1169,12 +1224,21 @@
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="LAUNCH_JS" VALUE="false" />
       <method />
     </configuration>
-    <list size="4">
-      <item index="0" class="java.lang.String" itemvalue="Rake.test" />
-      <item index="1" class="java.lang.String" itemvalue="Rake.spec" />
-      <item index="2" class="java.lang.String" itemvalue="Rails.Production: Remember" />
-      <item index="3" class="java.lang.String" itemvalue="Rails.Development: Remember" />
+    <list size="7">
+      <item index="0" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.All tests in: test" />
+      <item index="1" class="java.lang.String" itemvalue="Rake.test" />
+      <item index="2" class="java.lang.String" itemvalue="Rake.spec" />
+      <item index="3" class="java.lang.String" itemvalue="Rails.Production: Remember" />
+      <item index="4" class="java.lang.String" itemvalue="Rails.Development: Remember" />
+      <item index="5" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.authentications_controller_test" />
+      <item index="6" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.All tests in: Remember" />
     </list>
+    <recent_temporary>
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.All tests in: Remember" />
+        <item index="1" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.authentications_controller_test" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="sslv3">
@@ -1203,19 +1267,19 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="11" y="31" width="2535" height="1326" extended-state="0" />
+    <frame x="172" y="61" width="1834" height="1159" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3283582" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1783849" sideWeight="0.67164177" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18232661" sideWeight="0.6434494" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291874" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35655057" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1287,117 +1351,114 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/authentications_controller.rb">
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="49" selection-start="380" selection-end="380" vertical-scroll-proportion="0.0">
+        <state line="26" column="2" selection-start="605" selection-end="605" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/people_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/shared/_topnav.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="43" selection-start="465" selection-end="465" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/facebook/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="96" selection-start="209" selection-end="209" vertical-scroll-proportion="-0.72727275">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/authentication.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/authentications_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/welcome/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/welcome/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="13" selection-start="437" selection-end="437" vertical-scroll-proportion="-12.363636">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/registrations/edit.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/authentications/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/authentications/home.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="51" selection-start="1064" selection-end="1064" vertical-scroll-proportion="-16.90909">
+        <state line="21" column="0" selection-start="945" selection-end="945" vertical-scroll-proportion="-15.272727">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/click.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/facebook/show_fb_friends.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="46" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0">
+        <state line="4" column="14" selection-start="100" selection-end="100" vertical-scroll-proportion="-2.909091">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130918111939_add_clickcount_to_clicks.rb">
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p429/gems/fb_graph-2.7.8/lib/fb_graph/node.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="26" selection-start="66" selection-end="66" vertical-scroll-proportion="0.0">
+        <state line="139" column="55" selection-start="4355" selection-end="4355" vertical-scroll-proportion="0.61523044">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/category.rb">
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p429/gems/fb_graph-2.7.8/lib/fb_graph/user.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="2" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0">
+        <state line="1" column="17" selection-start="32" selection-end="32" vertical-scroll-proportion="0.023738872">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/history.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/facebook_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="30" column="46" selection-start="899" selection-end="899" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/products/_form.html.erb">
+    <entry file="file://$PROJECT_DIR$/config/initializers/devise.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="19" selection-start="193" selection-end="193" vertical-scroll-proportion="-4.3636365">
-          <folding>
-            <marker date="1379534379000" expanded="true" signature="97:192" placeholder="..." />
-            <marker date="1379534379000" expanded="true" signature="222:259" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130918103055_add_clicks_table.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="45" selection-start="218" selection-end="218" vertical-scroll-proportion="0.21483377">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130918194402_create_products.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130918194637_create_categories.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="119" selection-end="119" vertical-scroll-proportion="0.12276215">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/gift.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="48" selection-start="123" selection-end="123" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130918194536_create_gifts.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="23" selection-start="153" selection-end="153" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/person.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="0" selection-start="613" selection-end="777" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/product.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="44" selection-start="387" selection-end="387" vertical-scroll-proportion="0.36828643">
+        <state line="270" column="58" selection-start="16427" selection-end="16427" vertical-scroll-proportion="0.6012024">
           <folding />
         </state>
       </provider>

@@ -1,1 +1,37 @@
-<h5>welcome</h5>
+<h5>Welcome <%= current_user.email if current_user %></h5>
+
+<% if current_user %>
+
+<h1>Select one of your sites</h1>
+
+<ul>
+  <% current_user.clients.each do |p|  %>
+      <li><%= link_to p.fullname, edit_person_path(p) %></li>
+  <% end %>
+
+  <h3>Recently created sites:</h3>
+  <% @people_created_lately.each do |p|  %>
+      <h5><%= link_to p.fullname, person_path(p) %></h5>
+  <% end %>
+
+  <h3>Recently updated sites:</h3>
+  <% @people_updated_lately.each do |p|  %>
+      <h5><%= link_to p.fullname, person_path(p) %></h5>
+  <% end %>
+
+</ul>
+
+<%= link_to "Add new site", new_person_path %>
+
+<% else %>
+
+    <h5>Recent activity:</h5>
+    <% @people_with_activity.each do |c|  %>
+        <% if c.person %>
+        <h5><%= link_to c.person.fullname, person_path(c.person) %>(clicks:<%= c.count %>)</h5>
+        <% else %>
+            <h1>ERROR IN DATA</h1>
+        <% end  %>
+    <% end %>
+
+<% end %>

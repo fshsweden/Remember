@@ -215,6 +215,92 @@ Devise.setup do |config|
   # up on your models and hooks.
   # config.omniauth :github, 'APP_ID', 'APP_SECRET', :scope => 'user,public_repo'
 
+  #
+  # scopes
+  # EMAIL PERMISSIONS
+  #    email
+  # EXTENDED PERMISSIONS
+  #   read_friendlists	Provides access to any friend lists the user created. All user's friends are provided as part of basic data, this extended permission grants access to the lists of friends a user has created, and should only be requested if your application utilizes lists of friends.
+  #   read_insights	Provides read access to the Insights data for pages, applications, and domains the user owns.
+  #   read_mailbox	Provides the ability to read from a user's Facebook Inbox.
+  #   read_stream	Provides access to all the posts in the user's News Feed and enables your application to perform searches against the user's News Feed
+  #   xmpp_login	Provides applications that integrate with Facebook Chat the ability to log in users.
+  #   user_online_presence	Provides access to the user's online/offline presence
+  #   friends_online_presence	Provides access to the user's friend's online/offline presence
+
+  # ads_management	Provides the ability to manage ads and call the Facebook Ads API on behalf of a user.
+  # create_event	Enables your application to create and modify events on the user's behalf
+  # manage_friendlists	Enables your app to create and edit the user's friend lists.
+  # manage_notifications	Enables your app to read notifications and mark them as read. Intended usage:
+  #   This permission should be used to let users read and act on their notifications; it should not be used
+  #   to for the purposes of modeling user behavior or data mining. Apps that misuse this permission may be
+  #   banned from requesting it.
+  # publish_actions	Enables your app to post content, comments and likes to a user's stream and requires
+  #   extra permissions from a person using your app. Because this permission lets you publish on behalf of
+  #   a user please read the Platform Policies to ensure you understand how to properly use this permission.
+  #   Note, you do not need to request the publish_actions permission in order to use the Feed Dialog, the
+  #   Requests Dialog or the Send Dialog. Facebook used to have a permission called publish_stream, publish_actions
+  #   replaces it in most cases, for users. For pages, publish_stream is still required to publish to a page's timeline.
+  # publish_stream	The publish_stream permission is required to post to a Facebook Page's timeline. For a Facebook
+  #   User use publish_actions.
+  # rsvp_event	Enables your application to RSVP to events on the user's behalf
+  #
+  # EXTENDED PROFILE
+  #   User permission           Friends permission	      Description
+  #   user_about_me	            friends_about_me	        Provides access to the "About Me" section of the profile in the about property
+  #   user_activities	          friends_activities	      Provides access to the user's list of activities as the activities connection
+  #   user_birthday	            friends_birthday	        Provides access to the birthday with year as the birthday property. Note that your app may determine if a user is "old enough" to use an app by obtaining the age_range public profile property
+  #   user_checkins	            friends_checkins	        Provides read access to the authorized user's check-ins or a friend's check-ins that the user can see. This permission is superseded by user_status for new applications as of March, 2012.
+  #   user_education_history	  friends_education_history	Provides access to education history as the education property
+  #   user_events	              friends_events	          Provides access to the list of events the user is attending as the events connection
+  #   user_groups	              friends_groups	          Provides access to the list of groups the user is a member of as the groups connection
+  #   user_hometown	            friends_hometown	        Provides access to the user's hometown in the hometown property
+  #   user_interests	          friends_interests	        Provides access to the user's list of interests as the interests connection
+  #   user_likes	              friends_likes	            Provides access to the list of all of the pages the user has liked as the likes connection
+  #   user_location	            friends_location	        Provides access to the user's current city as the location property
+  #   user_notes	              friends_notes	            Provides access to the user's notes as the notes connection
+  #   user_photos	              friends_photos	          Provides access to the photos the user has uploaded, and photos the user has been tagged in
+  #   user_questions	          friends_questions	        Provides access to the questions the user or friend has asked
+  #   user_relationships	      friends_relationships     Provides access to the user's family and personal relationships and relationship status
+  #   user_relationship_details	friends_relationship_details	Provides access to the user's relationship preferences
+  #   user_religion_politics	  friends_religion_politics	Provides access to the user's religious and political affiliations
+  #   user_status	              friends_status	          Provides access to the user's status messages and checkins. Please see the documentation for the location_post table for information on how this permission may affect retrieval of information about the locations associated with posts.
+  #   user_subscriptions	      friends_subscriptions	    Provides access to the user's subscribers and subscribees
+  #   user_videos	              friends_videos	          Provides access to the videos the user has uploaded, and videos the user has been tagged in
+  #   user_website	            friends_website	          Provides access to the user's web site URL
+  #   user_work_history         friends_work_history	    Provides access to work history as the work property
+  #
+  # OPEN GRAPH PROPERTIES
+  #
+  # User Permission	Friends Permission	Description
+  #   publish_actions	              N/A	Allows your app to publish to the Open Graph using Built-in Actions, Achievements, Scores, or Custom Actions. Your app can also publish other activity which is detailed in the Publishing Permissions doc.
+  #   user_actions.music  	        friends_actions.music	Allows you to retrieve the actions published by all applications using the built-in music.listens action.
+  #   user_actions.news	            friends_actions.news	Allows you to retrieve the actions published by all applications using the built-in news.reads action.
+  #   user_actions.video	          friends_actions.video	Allows you to retrieve the actions published by all applications using the built-in video.watches action.
+  #   user_actions:APP_NAMESPACE
+  #   friends_actions:APP_NAMESPACE Allows you retrieve the actions published by another application as specified by the app namespace. For example, to request the ability to retrieve the actions published by an app which has the namespace awesomeapp, prompt the user for the user_actions:awesomeapp and/or friends_actions:awesomeapp permissions.
+  #   user_games_activity	          friends_games_activity	Allows you post and retrieve game achievement activity.
+
+  # PAGE PERMISSIONS
+  # manage_pages                    Enables your application to retrieve access_tokens for Pages and Applications that the user administrates. The access tokens can be queried by calling /<user_id>/accounts via the Graph API.
+  # See here for generating long-lived Page access tokens that do not expire after 60 days.
+
+  # PUBLIC PROFILE AND FRIENDS LIST
+  Public Profile and Friend List
+
+  # When a user logs into your app and you request no additional permissions, the app will have access to only the user's public profile and also their friend list. Public profile refers to the following properties by default:
+
+  # id
+  # name
+  # first_name
+  # last_name
+  # link
+  # username
+  # gender
+  # locale
+  # age_range
+  # Other public information
+
   if Rails.env.development?
     # DEV versions of API keys
     config.omniauth :twitter, "DGEVy4Z0WMm1qfsJPs5TQ", "PBY3HUtppttMsGEIJWjXeksQQeLybOACzlwzpUaUU"

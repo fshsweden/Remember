@@ -19,9 +19,6 @@ class Person < ActiveRecord::Base
   #
   #
   has_many :clicks
-  has_many :users, :through => :clicks
-  accepts_nested_attributes_for :users, :allow_destroy => true
-  attr_accessible :users_attributes
 
   #
   #
@@ -31,9 +28,24 @@ class Person < ActiveRecord::Base
   accepts_nested_attributes_for :products, :allow_destroy => true
   attr_accessible :products_attributes
 
+  has_many :photos
+  accepts_nested_attributes_for :photos, :allow_destroy => true
+  attr_accessible :photos_attributes
+
+  has_many :stories
+  accepts_nested_attributes_for :stories, :allow_destroy => true
+  attr_accessible :stories_attributes
 
   def fullname
     "#{name} #{surname}"
+  end
+
+  def get_primary_photo_tag
+    if photos && photos.count > 0
+      photos.first.image.url(:thumb)
+    else
+      ''
+    end
   end
 
 end

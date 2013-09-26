@@ -1,6 +1,7 @@
 <h1>Editing person</h1>
 
+<h5><%= link_to "Show site", person_path(@person) %></h5>
+
 <%= render 'form', :readonly => false %>
 
-<%= link_to 'Show', @person %> |
-<%= link_to 'Back', people_path %>
+<%= link_to 'Back', root_path %>

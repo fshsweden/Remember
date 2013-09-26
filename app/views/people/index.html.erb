@@ -2,13 +2,13 @@
 
 <%= form_tag @person_path, :method => :get do %>
   <%= label_tag :search %>
-  <%= text_field_tag :search %><br />
+  <%= text_field_tag :search, params[:search] %><br />
   <%= submit_tag "Search" %>
 <% end %>
 
-
 <table>
   <tr>
+    <th>Pic</th>
     <th>Name</th>
     <th>Surname</th>
     <th></th>
@@ -18,6 +18,8 @@
 
 <% @people.each do |person| %>
   <tr>
+    <% url = person.get_primary_photo_tag %>
+    <td><%= image_tag(url) if !url.blank? %></td>
     <td><%= person.name %></td>
     <td><%= person.surname %></td>
     <td><%= link_to 'Show', person %></td>

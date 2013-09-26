@@ -1,17 +1,13 @@
 Remember::Application.routes.draw do
 
+  resources :stories
+
+
+  resources :photos
   resources :categories
-
-
   resources :products
-
-
   resources :events
-
-
   resources :people
-
-
   resources :welcome
   resources :cards
   resources :authentications
@@ -23,10 +19,12 @@ Remember::Application.routes.draw do
              path_names:  {sign_in: "login"},
              controllers: {omniauth_callbacks: "authentications", registrations: "registrations"}
 
-  root to: 'authentications#home'
+  root to: 'welcome#index'
 
   match 'facebook' => 'facebook#index'
+
   get "facebook/send_hello"
+  get "facebook/show_fb_friends"
 
 
   # The priority is based upon order of creation:
