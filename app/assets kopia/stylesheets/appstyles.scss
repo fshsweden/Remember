@@ -1,0 +1,47 @@
+
+@mixin rounded_corners($radius) {
+  border-radius: $radius;
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+}
+
+@mixin transform_rotate($deg) {
+  -webkit-transform: rotate($deg);
+  -moz-transform: rotate($deg);
+}
+
+.sidebar {
+  @include rounded_corners(15px);
+  /* @include transform_rotate(-2deg); */
+  width: 100%;
+  height: 800px;
+  #background-color: AntiqueWhite;
+}
+
+/* Fat Stroke
+*/
+.lobster h2 {
+  font-size: 220px;
+  line-height: 220px;
+  font-family: 'Lobster', Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, .1) 3px 3px 3px;
+
+  /*text stroke*/
+  -webkit-text-stroke: 4px rgba(0, 0, 0, .6);
+}
+
+body {
+  #background-color: white;
+}
+
+.content {
+  #background-color: LightSkyBlue;
+}
+
+#container {
+  #background-color: white;
+  padding: 10px;
+}
+

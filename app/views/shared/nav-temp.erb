@@ -1,0 +1,114 @@
+<nav class="top-bar" data-options="is_hover:false">
+
+  <ul class="title-area">
+    <!-- Title Area -->
+    <li class="name">
+      <h1><a href="#">Top Bar Title </a></h1>
+    </li>
+    <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+  </ul>
+
+  <section class="top-bar-section">
+
+    <!-- Left Nav Section -->
+    <ul class="left">
+      <li class="divider"></li>
+      <li><%= link_to "Admin", "/admin" %></li>
+      <li class="divider"></li>
+
+      <!--         -->
+      <!-- S I T E -->
+      <!--         -->
+      <li class="has-dropdown"><a href="#">Site</a>
+
+        <ul class="dropdown">
+
+          <li class="has-dropdown">
+            <a href="#">Products</a>
+            <ul class="dropdown">
+              <li><label>Products</label></li>
+              <li><%= link_to "New product", new_product_path %></li>
+              <li><%= link_to "List products", products_path %></li>
+            </ul>
+          </li>
+
+          <li class="has-dropdown">
+            <a href="#">Categories</a>
+            <ul class="dropdown">
+              <li><label>Categories</label></li>
+              <li><%= link_to "New category", new_category_path %></li>
+              <li><%= link_to "List categories", categories_path %></li>
+            </ul>
+          </li>
+
+          <li class="has-dropdown">
+            <a href="#">Admin site</a>
+            <ul class="dropdown">
+              <li><label>Admin sites</label></li>
+              <li><%= link_to "New site", new_person_path %></li>
+              <li><%= link_to "List sites", people_path %></li>
+            </ul>
+          </li>
+
+          <li class="has-dropdown">
+            <a href="#">Admin photos</a>
+
+            <ul class="dropdown">
+              <li><label>Admin photos</label></li>
+              <li><%= link_to "New site", new_person_path %></li>
+              <li><%= link_to "List sites", people_path %></li>
+            </ul>
+          </li>
+
+        </ul>
+      </li>
+
+      <li class="divider"></li>
+    </ul>
+
+    <!-- Right Nav Section -->
+    <ul class="right">
+
+      <li class="has-form">
+
+        <%= simple_form_for Person.new, :url => people_search_with_param_path, :method => :get do |f| %>
+            <div class="row collapse">
+              <div class="small-8 columns">
+                <input type="text" name="search" value="search">
+              </div>
+              <div class="small-4 columns">
+                <button type="submit" value="submit" class="alert button">Search</button>
+              </div>
+            </div>
+        <% end %>
+
+        <!--
+        <form action="/persons/search" method="get">
+          <div class="row collapse">
+            <div class="small-8 columns">
+              <input type="text">
+            </div>
+            <div class="small-4 columns">
+              <a href="#" class="alert button">Search</a>
+            </div>
+          </div>
+        </form>
+        -->
+
+      </li>
+
+      <li class="divider show-for-small"></li>
+
+      <li>
+        <% if current_user %>
+            <%= link_to "Logout " + current_user.email, destroy_user_session_path, :method => :delete, :class => 'button' %>
+        <% else %>
+            <%= link_to "Login", new_user_session_path, :class => 'button' %>
+        <% end %>
+      </li>
+
+    </ul>
+
+  </section>
+</nav>

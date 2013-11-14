@@ -1,0 +1,129 @@
+
+<form accept-charset="UTF-8" 
+      action="/people/4331" 
+      class="simple_form form-horizontal" 
+      id="edit_person_4331" 
+      method="post" 
+      novalidate="novalidate">
+	
+	<div style="margin:0;padding:0;display:inline">
+		<input name="utf8" type="hidden" value="&#x2713;" />
+		<input name="_method" type="hidden" value="put" />
+		<input name="authenticity_token" type="hidden" value="DOhMt0Umdyt2qFQ06/KbIpVYFTN8W34XGUVsaTnlSKo=" />
+	</div>
+
+	<a href="javascript:void(0)" class="add_nested_fields" data-association="stories" data-blueprint-id="stories_fields_blueprint">Add Story</a>
+
+	<div class="fields">
+		<div class="input string required person_stories_title">
+			<label class="string required control-label" for="person_stories_attributes_0_title">
+				<abbr title="required">*</abbr> Title</label>
+			<input class="string required" id="person_stories_attributes_0_title" name="person[stories_attributes][0][title]" size="50" type="text" value="A funny story about XXX" />
+		</div>
+		<div class="input text required person_stories_content">
+			<label class="text required control-label" for="person_stories_attributes_0_content">
+				<abbr title="required">*</abbr> Content
+			</label>
+			<textarea class="text required" cols="40" id="person_stories_attributes_0_content" name="person[stories_attributes][0][content]" rows="20">It was so funny. I was goinf to step into a....</textarea>
+		</div>
+		<hr>
+		<input id="person_stories_attributes_0_id" name="person[stories_attributes][0][id]" type="hidden" value="3" />
+	</div>
+
+	<div class="fields">
+		<div class="input string required person_stories_title">
+			<label class="string required control-label" for="person_stories_attributes_1_title">
+				<abbr title="required">*</abbr> Title
+			</label>
+			<input class="string required" id="person_stories_attributes_1_title" name="person[stories_attributes][1][title]" size="50" type="text" />
+		</div>
+		<div class="input text required person_stories_content">
+			<label class="text required control-label" for="person_stories_attributes_1_content">
+				<abbr title="required">*</abbr>Content
+			</label><textarea class="text required" cols="40" id="person_stories_attributes_1_content" name="person[stories_attributes][1][content]" rows="20">
+		</textarea>
+		</div>
+		<hr>
+	</div>
+
+	<div class="actions">
+		<input class="btn" name="commit" type="submit" value="Update Person" />
+	</div>
+
+	<div data-blueprint="<div class='fields'>
+		<div class="input string required person_stories_title">
+		<label class="string required control-label" for="person_stories_attributes_new_stories_title">
+			<abbr title="required">*</abbr>Title
+		</label>
+		<input class='string required'
+		       id='person_stories_attributes_new_stories_title'
+		       name='person[stories_attributes][new_stories][title]'
+		       size='50'
+		       type='text' />
+	</div>
+	<div class='input text required person_stories_content'>
+		<label class='text required control-label' for='person_stories_attributes_new_stories_content'>
+			<abbr title='required'>*</abbr>Content
+		</label>
+
+		<textarea class='text required'
+		          cols='40'
+		          id='person_stories_attributes_new_stories_content'
+		          name='person[stories_attributes][new_stories][content]'
+		          rows='20'>
+		</textarea>
+	</div>
+
+	<hr>
+
+	<div id="stories_fields_blueprint" style="display: none"></div>
+</form>
+
+<hr>
+
+
+
+<form   accept-charset="UTF-8"
+        action="/stories"
+        class="simple_form form-horizontal"
+        id="new_story"
+        method="post"
+        novalidate="novalidate">
+
+	<div style="margin:0;padding:0;display:inline">
+		<input name="utf8" type="hidden" value="&#x2713;" />
+		<input name="authenticity_token" type="hidden" value="DOhMt0Umdyt2qFQ06/KbIpVYFTN8W34XGUVsaTnlSKo=" />
+	</div>
+
+	<h1>Add another story</h1>
+
+	<div class="input string required story_title">
+		<label class="string required control-label" for="story_title">
+			<abbr title="required">*</abbr>Title
+		</label>
+		<input class="string required"
+		       id="story_title"
+		       name="story[title]"
+		       size="50" type="text" />
+	</div>
+
+	<div class="input text required story_content">
+		<label class="text required control-label"
+		       for="story_content">
+			<abbr title="required">*</abbr>Content
+		</label>
+		<textarea class="text required"
+		          cols="40"
+		          id="story_content"
+		          name="story[content]"
+		          rows="20">
+		</textarea>
+	</div>
+
+	<div class="actions">
+		<input class="btn"
+		       name="commit"
+		       type="submit"
+		       value="Create Story" />
+	</div>
+</form>

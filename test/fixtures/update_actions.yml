@@ -1,7 +1,7 @@
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
-
-one:
-  person_id: 
-
-two:
-  person_id: 
+---
+update_actions_001:
+  id: 1
+  person_id: 1
+  created_at: '2013-09-27 09:23:52.364373'
+  updated_at: '2013-09-27 09:23:52.364373'
+  comment: Created

@@ -2,7 +2,7 @@ require 'test_helper'
 
 class CategoriesControllerTest < ActionController::TestCase
   setup do
-    @category = categories(:one)
+    @category = categories(:categories_001)
   end
 
   test "should get index" do

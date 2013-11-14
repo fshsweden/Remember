@@ -1,19 +1,123 @@
-<h1>Profile for <%= current_user.email %> (<%= current_user.id %>)</h1>
+<!--
+
+<form>
+  <fieldset>
+    <legend>Fieldset</legend>
+
+    <div class="row">
+      <div class="large-12 columns">
+        <label>Input Label</label>
+        <input type="text" placeholder="large-12.columns">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="large-4 columns">
+        <label>Input Label</label>
+        <input type="text" placeholder="large-4.columns">
+      </div>
+      <div class="large-4 columns">
+        <label>Input Label</label>
+        <input type="text" placeholder="large-4.columns">
+      </div>
+      <div class="large-4 columns">
+        <div class="row collapse">
+          <label>Input Label</label>
+          <div class="small-9 columns">
+            <input type="text" placeholder="small-9.columns">
+          </div>
+          <div class="small-3 columns">
+            <span class="postfix">.com</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="large-12 columns">
+        <label>Textarea Label</label>
+        <textarea placeholder="small-12.columns"></textarea>
+      </div>
+    </div>
+
+  </fieldset>
+</form>
+
+-->
+
+<h1></i>Profile for <%= current_user.email %></h1>
+
+
+<%= simple_form_for Person.new, :url => people_search_with_param_path, :method => :get do |f| %>
+    <div class="row collapse">
+      <div class="small-8 columns">
+        <input type="text" name="search" value="search">
+      </div>
+      <div class="small-4 columns">
+        <button type="submit" value="submit" class="alert button">Search</button>
+      </div>
+    </div>
+<% end %>
+
+
 
 <%= simple_nested_form_for current_user, :url => user_registration_path do |f| %>
 
     <%= f.fields_for :cards do |card_form| %>
-        <h3>Credit card</h3>
-        <%= card_form.text_field :cc_type, :placeholder => 'Credit Card Type', :collection => ['Visa', 'Amex','Diners'] %>
-        <%= card_form.text_field :cc_number, :placeholder => 'Credit Card Number' %>
-        <%= card_form.text_field :cc_cvc, :placeholder => 'Credit Card CVC Code' %>
-        <%= card_form.text_field :cc_exp_month, :placeholder => 'Expiration Month' %>
-        <%= card_form.text_field :cc_exp_year, :placeholder => 'Expiration Year' %>
-        <%= card_form.text_field :cc_name, :placeholder => 'Name on Credit Card' %>
-        <%= card_form.link_to_remove "Remove this card" %>
+
+        <fieldset>
+
+          <legend>Credit card details</legend>
+
+          <div class="row">
+            <div class="large-12 columns">
+              <fieldset>
+                <legend>Credit Card</legend>
+                <div class="row">
+                  <div class="large-2 columns">
+                    <%= card_form.input :cc_type, :placeholder => 'Credit Card Type', :collection => ['Visa', 'Amex', 'Diners'] %>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="large-4 columns">
+                    <%= card_form.input :cc_number, :placeholder => 'Credit Card Number' %>
+                  </div>
+                  <div class="large-4 columns">
+                    <%= card_form.input :cc_cvc, :placeholder => 'Credit Card CVC Code' %>
+                  </div>
+                  <div class="large-4 columns">
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="large-4 columns">
+              <fieldset>
+                <legend>Expiration</legend>
+                <%= card_form.input :cc_exp_month, :label => 'Month', :placeholder => 'Mon', :collection => 1..12 %>
+                <%= card_form.input :cc_exp_year, :label => 'Year', :placeholder => 'Year' %>
+              </fieldset>
+            </div>
+            <div class="large-8 columns">
+              <fieldset>
+                <legend>Name on credit card</legend>
+                <%= card_form.text_field :cc_name, :placeholder => 'Name on Credit Card' %>
+              </fieldset>
+            </div>
+            <div class="row">
+              <div class="large-12 columns">
+                <%= card_form.link_to_remove "Remove this card" %>
+              </div>
+            </div>
+          </div>
+
+        </fieldset>
+
         <hr>
     <% end %>
     <p><%= f.link_to_add "Add a card", :cards %></p>
     <hr>
     <%= f.submit %>
-<% end  %>
+<% end %>

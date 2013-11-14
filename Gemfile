@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.13'
+gem 'rails'
 gem 'devise'
 gem 'rails-i18n'
 gem 'devise-i18n'
@@ -17,15 +17,17 @@ gem 'country_select'
 gem 'jquery-rails'
 gem 'nifty-generators'
 gem 'kaminari'  #pagination
-gem "paperclip", "~> 3.0"
-gem 'paypal-sdk-rest'
+
 gem 'omniauth-twitter'
 gem 'omniauth-facebook'
+gem 'omniauth-google-oauth2'
+
 gem 'twitter'
 gem 'fb_graph'
 gem 'cancan'
 gem 'nested_form'
 gem 'thin' 				    # solves: "WARN  Could not determine....."  etc in log file
+gem 'rails_admin'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -44,6 +46,7 @@ end
 # in production environments by default.
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
+  gem 'less-rails'
   gem 'coffee-rails', '~> 3.2.1'
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   gem 'therubyracer', :platforms => :ruby
@@ -51,16 +54,32 @@ group :assets do
   gem 'coffee-rails', '~> 3.2.1'
   gem 'jquery-rails'
   gem 'uglifier', '>= 1.0.3'
+  gem 'jquery-ui-rails'
+  gem 'compass-rails' #NEW
+  gem 'zurb-foundation'
 end
 
 # Keeping these inside :assets group causes error when running rake assets:precompile:all in production!!!
 # *** INVESTIGATE WHY? ***
-gem 'jquery-ui-rails'
-gem 'compass-rails' #NEW
-gem 'zurb-foundation'
+# 2013-10-03 MOVED THEM BACK INTO ASSETS WHERE THEY BELONG - KEEP TRACK OF!
+#gem 'jquery-ui-rails'
+#gem 'compass-rails' #NEW
+#gem 'zurb-foundation'
 
 group :test do
   gem "mocha", :require => false
+end
+
+group :development, :test do
+	gem 'rspec-rails'
+	gem 'factory_girl_rails'
+end
+
+group :test do
+	gem 'faker'
+	gem 'capybara'
+	gem 'guard-rspec'
+	gem 'launchy'
 end
 
 # To use ActiveModel has_secure_password

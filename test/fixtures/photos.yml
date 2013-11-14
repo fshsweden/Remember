@@ -1,11 +1,25 @@
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
-
-one:
-  title: MyString
-  description: MyString
-  location: MyString
-
-two:
-  title: MyString
-  description: MyString
-  location: MyString
+---
+photos_001:
+  id: 1
+  title: 
+  description: 
+  location: 
+  created_at: '2013-09-27 09:24:55.831385'
+  updated_at: '2013-09-27 09:24:55.831385'
+  image_file_name: 1.jpeg
+  image_content_type: image/jpeg
+  image_file_size: 4665
+  image_updated_at: '2013-09-27 09:24:54.675864'
+  person_id: 1
+photos_002:
+  id: 2
+  title: 
+  description: 
+  location: 
+  created_at: '2013-09-27 09:24:55.856215'
+  updated_at: '2013-09-27 09:24:55.856215'
+  image_file_name: 12.jpeg
+  image_content_type: image/jpeg
+  image_file_size: 7432
+  image_updated_at: '2013-09-27 09:24:55.483612'
+  person_id: 1

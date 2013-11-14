@@ -1,7 +1,9 @@
 class Person < ActiveRecord::Base
   attr_accessible :name, :surname
 
-  #
+  validates_presence_of :surname, :name
+
+                        #
   # Always these three together!
   #
   has_many :events
@@ -38,6 +40,10 @@ class Person < ActiveRecord::Base
 
   def fullname
     "#{name} #{surname}"
+  end
+
+  def fullname_surname_first
+	  "#{surname}, #{name}"
   end
 
   def get_primary_photo_tag

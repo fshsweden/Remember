@@ -1,36 +1,41 @@
-<h1>Listing people</h1>
 
-<%= form_tag @person_path, :method => :get do %>
-  <%= label_tag :search %>
-  <%= text_field_tag :search, params[:search] %><br />
-  <%= submit_tag "Search" %>
-<% end %>
+    <h2>Listing my peeps</h2>
 
-<table>
-  <tr>
-    <th>Pic</th>
-    <th>Name</th>
-    <th>Surname</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+    <%= form_tag @person_path, :method => :get do %>
+      <%= label_tag :search %>
+      <%= text_field_tag :search, params[:search] %>
+      <%= submit_tag "Search" %>
+    <% end %>
 
-<% @people.each do |person| %>
-  <tr>
-    <% url = person.get_primary_photo_tag %>
-    <td><%= image_tag(url) if !url.blank? %></td>
-    <td><%= person.name %></td>
-    <td><%= person.surname %></td>
-    <td><%= link_to 'Show', person %></td>
-    <td><%= link_to 'Edit', edit_person_path(person) %></td>
-    <td><%= link_to 'Destroy', person, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-<% end %>
+	<h2><%= @people.size %></h2>
+    <table>
+      <tbody id="results_body">
+      <tr>
+        <th>Pic</th>
+        <th>Name</th>
+      </tr>
+
+    <% @people.each do |person| %>
+      <tr id="results">
+        <% url = person.get_primary_photo_tag %>
+        <td><%= image_tag(url) if !url.blank? %></td>
+        <td><%= link_to person.fullname_surname_first, person %></td>
+<!--        <td><%= link_to 'Destroy', person, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
+      </tr>
+    <% end %>
+  </tbody>
 </table>
 
 <%= paginate @people %>
 
 <br />
+
+<div>
+  <h2>Create new person</h2>
+</div>
+<%= simple_form_for(Person.new, :url => people_path, :method => :post, :remote => true) do |f| %>
+    <%= f.input :name %>
+    <%= f.submit %>
+<% end  %>
 
 <%= link_to 'New Person', new_person_path %>

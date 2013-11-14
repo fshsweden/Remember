@@ -4,7 +4,7 @@ class CreatePhotos < ActiveRecord::Migration
       t.string :title
       t.string :description
       t.string :location
-
+      t.belongs_to :person
       t.timestamps
     end
   end

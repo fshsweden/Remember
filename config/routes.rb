@@ -1,16 +1,34 @@
+
 Remember::Application.routes.draw do
 
+  resources :blogs
+
+  mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
+  root to: 'welcome#index'
+
+  #resources :welcome
+  get "welcome/index"
+  get "welcome/show"
+
+  get "people/search"
+  get "people/search_with_param"
+
+  # Cart stuff
+  post '/add_to_cart/:product_id' => 'carts#add_to_cart', :as => 'add_to_cart'   #with param PERSON_ID ??
+  get '/carts/remove_item' => 'carts#remove_item', :as => 'remove_from_cart'
+
+  resources :people do
+	  get 'add_story'
+  end
   resources :stories
-
-
   resources :photos
   resources :categories
   resources :products
   resources :events
-  resources :people
-  resources :welcome
   resources :cards
-  resources :authentications
+  resources :authentications, :only => [:index, :create, :destroy]
+  resources :cart_items
+  resources :carts
 
   #get "profile/index"                # no profile_path created?
   match '/profile' => 'profile#index'
@@ -19,68 +37,67 @@ Remember::Application.routes.draw do
              path_names:  {sign_in: "login"},
              controllers: {omniauth_callbacks: "authentications", registrations: "registrations"}
 
-  root to: 'welcome#index'
-
   match 'facebook' => 'facebook#index'
 
   get "facebook/send_hello"
   get "facebook/show_fb_friends"
 
-
-  # The priority is based upon order of creation:
-  # first created -> highest priority.
-
-  # Sample of regular route:
-  #   match 'products/:id' => 'catalog#view'
-  # Keep in mind you can assign values other than :controller and :action
-
-  # Sample of named route:
-  #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
-  # This route can be invoked with purchase_url(:id => product.id)
-
-  # Sample resource route (maps HTTP verbs to controller actions automatically):
-  #   resources :products
-
-  # Sample resource route with options:
-  #   resources :products do
-  #     member do
-  #       get 'short'
-  #       post 'toggle'
-  #     end
-  #
-  #     collection do
-  #       get 'sold'
-  #     end
-  #   end
-
-  # Sample resource route with sub-resources:
-  #   resources :products do
-  #     resources :comments, :sales
-  #     resource :seller
-  #   end
-
-  # Sample resource route with more complex sub-resources
-  #   resources :products do
-  #     resources :comments
-  #     resources :sales do
-  #       get 'recent', :on => :collection
-  #     end
-  #   end
-
-  # Sample resource route within a namespace:
-  #   namespace :admin do
-  #     # Directs /admin/products/* to Admin::ProductsController
-  #     # (app/controllers/admin/products_controller.rb)
-  #     resources :products
-  #   end
-
-  # You can have the root of your site routed with "root"
-  # just remember to delete public/old_index.html.
-  # root :to => 'welcome#index'
-
-  # See how all your routes lay out with "rake routes"
-
-  # This is a legacy wild controller route that's not recommended for RESTful applications.
-  # Note: This route will make all actions in every controller accessible via GET requests.
-  # match ':controller(/:action(/:id))(.:format)'
 end
+
+
+# The priority is based upon order of creation:
+# first created -> highest priority.
+
+# Sample of regular route:
+#   match 'products/:id' => 'catalog#view'
+# Keep in mind you can assign values other than :controller and :action
+
+# Sample of named route:
+#   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
+# This route can be invoked with purchase_url(:id => product.id)
+
+# Sample resource route (maps HTTP verbs to controller actions automatically):
+#   resources :products
+
+# Sample resource route with options:
+#   resources :products do
+#     member do
+#       get 'short'
+#       post 'toggle'
+#     end
+#
+#     collection do
+#       get 'sold'
+#     end
+#   end
+
+# Sample resource route with sub-resources:
+#   resources :products do
+#     resources :comments, :sales
+#     resource :seller
+#   end
+
+# Sample resource route with more complex sub-resources
+#   resources :products do
+#     resources :comments
+#     resources :sales do
+#       get 'recent', :on => :collection
+#     end
+#   end
+
+# Sample resource route within a namespace:
+#   namespace :admin do
+#     # Directs /admin/products/* to Admin::ProductsController
+#     # (app/controllers/admin/products_controller.rb)
+#     resources :products
+#   end
+
+# You can have the root of your site routed with "root"
+# just remember to delete public/old_index.html.
+# root :to => 'welcome#index'
+
+# See how all your routes lay out with "rake routes"
+
+# This is a legacy wild controller route that's not recommended for RESTful applications.
+# Note: This route will make all actions in every controller accessible via GET requests.
+# match ':controller(/:action(/:id))(.:format)'

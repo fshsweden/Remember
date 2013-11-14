@@ -1,9 +1,10 @@
+
 <%= simple_nested_form_for @person, :html => {:class => "form-horizontal"} do |f| %>
 
+<!--
     <% if @person.errors.any? %>
         <div id="error_explanation">
           <h2><%= pluralize(@person.errors.count, "error") %> prohibited this person from being saved:</h2>
-
           <ul>
             <% @person.errors.full_messages.each do |msg| %>
                 <li><%= msg %></li>
@@ -11,79 +12,103 @@
           </ul>
         </div>
     <% end %>
+-->
 
-    <div class="field">
-      <%= f.input :name, :readonly => readonly %>
+    <div class="row">
+      <div class="large-12 small-12 columns">
+        <div class="row">
+          <%= f.input :name %>
+          <%= f.input :surname %>
+        </div>
+      </div>
     </div>
 
-    <div class="field">
-      <%= f.input :surname, :readonly => readonly %>
+    <div class="row">
+      <div class="large-12 small-12 columns">
+        <div class="row">
+          <div class="large-4 small-4 columns">
+            <% if !@person.new_record? %>
+                <fieldset>
+                  <legend>Events in <%= @person.fullname %>'s life</legend>
+                  <%= f.simple_fields_for :events do |event_form| %>
+                      <%= event_form.input :name, :label_html => {:class => 'horiz_input'}, :input_html => {:class => 'horiz_input'}, :label => false, :placeholder => 'Event name', :readonly => readonly %>
+                      <%= event_form.input :date, :label_html => {:class => 'horiz_input'}, :input_html => {:class => 'horiz_input'}, :label => false, :placeholder => 'Event date', :readonly => readonly %>
+                      <%= event_form.input :comment, :label_html => {:class => 'horiz_input'}, :input_html => {:class => 'horiz_input'}, :label => false, :placeholder => 'Event comment', :readonly => readonly %>
+                      <%= event_form.link_to_remove "Delete this event" %>
+                  <% end %>
+                  <% if !readonly %>
+                      <p><%= f.link_to_add "Add an event", :events %></p>
+                  <% end %>
+                </fieldset>
+            <% end %>
+          </div>
+
+          <div class="large-4 small-4 columns">
+            <fieldset>
+              <legend>Administrators</legend>
+              <%= f.simple_fields_for :admins do |event_form| %>
+                  <%= event_form.input :email, :readonly => readonly %>
+                  <%= event_form.link_to_remove "Delete this admin" %>
+              <% end %>
+
+              <% if !readonly %>
+                  <p><%= f.link_to_add "Add an admin", :admins %></p>
+              <% end %>
+            </fieldset>
+          </div>
+
+          <div class="large-4 small-4 columns">
+            <fieldset>
+              <legend>Photos</legend>
+              <%= f.simple_fields_for :photos do |photo_form| %>
+                  <%= photo_form.input :image, :as => :avatar, :label => false, :readonly => readonly %>
+                  <% if !readonly %>
+                      <%= photo_form.link_to_remove "Remove photo" %>
+                  <% end %>
+                  <hr>
+              <% end %>
+
+              <% if !readonly %>
+                  <p><%= f.link_to_add "Add a photo", :photos %></p>
+              <% end %>
+            </fieldset>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="large-4 small-4 columns">
+            <fieldset>
+              <legend>Stories</legend>
+              <h3>Stories</h3>
+
+              <%= f.simple_fields_for :stories do |story_form| %>
+                  <%= story_form.input :title, :readonly => readonly %>
+                  <%= story_form.input :content, :readonly => readonly %>
+                  <% if !readonly %>
+                      <%= story_form.link_to_remove "Remove story" %>
+                  <% end %>
+                  <hr>
+              <% end %>
+
+              <% if !readonly %>
+                  <p><%= f.link_to_add "Add a story", :stories %></p>
+              <% end %>
+
+            </fieldset>
+          </div>
+        </div>
+
+        <% if !readonly %>
+            <div class="actions">
+              <%= f.button :submit %>
+            </div>
+
+            <div class="actions">
+              <%= link_to "Destroy this Person's site", @person, method: :delete, data: {confirm: 'Are you sure?'} %>
+            </div>
+        <% end %>
+
+      </div>
     </div>
 
-    <% if !@person.new_record? %>
-
-        <h3>Events in <%= @person.fullname %>'s life </h3>
-        <%= f.simple_fields_for  :events do |event_form| %>
-            <%= event_form.input :name,    :label_html => {:class => 'horiz_input'}, :input_html => {:class => 'horiz_input'}, :placeholder => 'Event name',    :readonly => readonly %>
-            <%= event_form.input :date,    :label_html => {:class => 'horiz_input'}, :input_html => {:class => 'horiz_input'}, :placeholder => 'Event date',    :readonly => readonly %>
-            <%= event_form.input :comment, :label_html => {:class => 'horiz_input'}, :input_html => {:class => 'horiz_input'}, :placeholder => 'Event comment', :readonly => readonly %>
-            <%= event_form.link_to_remove "Delete this event" %>
-        <% end %>
-
-        <hr>
-
-        <% if !readonly %>
-            <p><%= f.link_to_add "Add an event", :events %></p>
-        <% end %>
-
-
-        <h3>Administrators </h3>
-        <%= f.simple_fields_for :admins do |event_form| %>
-            <%= event_form.input :email, :readonly => readonly  %>
-            <%= event_form.link_to_remove "Delete this admin" %>
-        <% end %>
-
-        <% if !readonly %>
-            <p><%= f.link_to_add "Add an admin", :admins %></p>
-        <% end %>
-
-        <h3>Photos</h3>
-        <%= f.simple_fields_for :photos do |photo_form| %>
-            <%= photo_form.input :image, :as => :avatar, :label => false, :readonly => readonly %>
-            <% if !readonly %>
-                <%= photo_form.link_to_remove "Remove photo" %>
-            <% end %>
-            <hr>
-        <% end %>
-
-        <% if !readonly %>
-            <p><%= f.link_to_add "Add a photo", :photos %></p>
-        <% end %>
-
-        <h3>Stories</h3>
-        <%= f.simple_fields_for :stories do |story_form| %>
-            <%= story_form.input :title, :readonly => readonly %>
-            <%= story_form.input :content, :readonly => readonly %>
-            <% if !readonly %>
-                <%= story_form.link_to_remove "Remove story" %>
-            <% end %>
-            <hr>
-        <% end %>
-
-        <% if !readonly %>
-            <p><%= f.link_to_add "Add a story", :stories %></p>
-        <% end %>
-
-    <% end %>
-
-    <% if !readonly %>
-        <div class="actions">
-          <%= f.submit %>
-        </div>
-
-        <div class="actions">
-          <%= link_to "Destroy this Person's site", @person, method: :delete, data: { confirm: 'Are you sure?' } %>
-        </div>
-    <% end %>
-
-<% end %>
+<% end %> <!-- simple_form -->

@@ -1,4 +1,4 @@
-<h1>New card for user <%= current_user.email  %></h1>
+<h1>New card for user <%= current_user.email if current_user  %></h1>
 
 <%= render 'form' %>
 

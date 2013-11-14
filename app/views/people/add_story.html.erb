@@ -1,0 +1,15 @@
+<% st = Story.new  %>
+<% st.person_id = @person.id %>
+
+<%= simple_form_for st, :html => {:class => "form-horizontal"} do |f| %>
+
+	<h1>Add a story about <%= @person.fullname %></h1>
+
+	<%= f.hidden_field :person_id %>
+	<%= f.input :title %>
+	<%= f.input :content %>
+
+	<div class="actions">
+	  <%= f.button :submit %>
+	</div>
+<% end %>

@@ -6,36 +6,31 @@
 <!--[if (gte IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
   <head>
   	<meta charset="utf-8" />
-
   	<!-- Uncomment to make IE8 render like IE7 -->
   	<!-- <meta http-equiv="X-UA-Compatible" content="IE=7" /> -->
-
   	<!-- Set the viewport width to device width for mobile -->
   	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   	<title><%= content_for?(:title) ? yield(:title) : "Untitled" %></title>
-
   	<%= stylesheet_link_tag    "application" %>
   	<%= javascript_include_tag "vendor/custom.modernizr" %>
     <%= csrf_meta_tags %>
   </head>
 
   <body>
-
     <%= render 'shared/topnav' %>
-
-    <div class="large-12 small-12 columns">
-      <div class="row">
-
-        <p class="notice"><%= notice %></p>
-        <p class="alert"><%= alert %></p>
-
+    <div id="container">
+      <%= render "shared/sidebars" %>
+      <div id="left-sidebar" class="left-sidebar letterpress large-2 small-2 columns">
+        <%= yield :left_sidebar %>
+      </div>
+      <div class="content large-8 small-8 columns">
         <%= yield %>
       </div>
+      <div id="right-sidebar" class="right-sidebar letterpress large-2 small-2 columns">
+        <%= yield :right_sidebar %>
+      </div>
     </div>
-
     <%= render 'shared/footer' %>
-
     <%= javascript_include_tag "application" %>
   </body>
 </html>

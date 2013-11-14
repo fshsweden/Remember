@@ -51,8 +51,9 @@ $em-base: 16 !default;
 
 $default-float: left;
 
-// $body-bg: #fff;
-// $body-font-color: #222;
+// IMPORTANT: BACKGROUND COLOR
+$body-bg: #ffffff;
+$body-font-color: #254aa1;
 // $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // $body-font-weight: normal;
 // $body-font-style: normal;
@@ -160,7 +161,7 @@ $default-float: left;
 
 // Control header font styles
 
-// $header-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$header-font-family: "Libre Baskerville", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // $header-font-weight: bold;
 // $header-font-style: normal;
 // $header-font-color: #222;
@@ -1234,15 +1235,16 @@ $default-float: left;
 
 // Background color for the top bar
 
-// $topbar-bg: #111;
+$topbar-bg: #254aa1;
 
 // Height and margin
 
-// $topbar-height: 45px;
+$topbar-height: 90px;  // 45px
 // $topbar-margin-bottom: emCalc(30);
 
 // Control Input height for top bar
 
+// $topbar-input-height: 2.45em;
 // $topbar-input-height: 2.45em;
 
 // Controlling the styles for the title in the top bar
@@ -1261,11 +1263,11 @@ $default-float: left;
 
 // Set the link colors and styles for top-level nav
 
-// $topbar-link-color: #fff;
+$topbar-link-color: #ffffff;
 // $topbar-link-color-hover: #fff;
 // $topbar-link-color-active: #fff;
-// $topbar-link-weight: bold;
-// $topbar-link-font-size: emCalc(13);
+$topbar-link-weight: normal;  // bold
+$topbar-link-font-size: emCalc(23); // 13
 // $topbar-link-hover-lightness: -30%; // Darken by 30%
 // $topbar-link-bg-hover: darken($topbar-bg, 3%);
 // $topbar-link-bg-active: darken($topbar-bg, 3%);
@@ -1293,7 +1295,7 @@ $default-float: left;
 
 // Divider Styles
 
-// $topbar-divider-border-bottom: solid 1px lighten($topbar-bg, 10%);
+$topbar-divider-border-bottom: solid 1px lighten($topbar-bg, 10%);
 // $topbar-divider-border-top: solid 1px darken($topbar-bg, 10%);
 
 // Sticky Class
@@ -1301,3 +1303,19 @@ $default-float: left;
 // $topbar-sticky-class: ".sticky";
 
 @import 'foundation';
+
+/* override some .has-form settings */
+// section .top-bar-section (right) li .has-form
+.has-button {
+  padding-left:0 !important;
+  padding-right:5px !important;
+}
+
+.field_with_errors input {
+  border: 2px solid red;
+}
+.error {
+  background-color: white !important;
+  color: red  !important;
+  font-style: italic;
+}

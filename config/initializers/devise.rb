@@ -1,3 +1,5 @@
+require "omniauth-google-oauth2"
+
 # Use this hook to configure devise mailer, warden hooks and so forth.
 # Many of these configuration options can be set straight in your model.
 Devise.setup do |config|
@@ -286,7 +288,6 @@ Devise.setup do |config|
   # See here for generating long-lived Page access tokens that do not expire after 60 days.
 
   # PUBLIC PROFILE AND FRIENDS LIST
-  Public Profile and Friend List
 
   # When a user logs into your app and you request no additional permissions, the app will have access to only the user's public profile and also their friend list. Public profile refers to the following properties by default:
 
@@ -305,13 +306,19 @@ Devise.setup do |config|
     # DEV versions of API keys
     config.omniauth :twitter, "DGEVy4Z0WMm1qfsJPs5TQ", "PBY3HUtppttMsGEIJWjXeksQQeLybOACzlwzpUaUU"
     config.omniauth :facebook, '430836557026587', 'f8171469fe0860f32207002a00b90465', {:scope => 'publish_stream, email'}
+
+    config.omniauth :google_oauth2, "373797744960.apps.googleusercontent.com", "6heg9Lsuz3Rua208UPkxBnQH", { access_type: "offline", approval_prompt: "" }
   end
 
   if Rails.env.production?
     # PROD versions of API keys
     config.omniauth :twitter, "-------------", "-----------------------------"
     config.omniauth :facebook, '1383730465191729', '8627fdbaeefebf7a79a3f80b9e36ccbe', {:scope => 'publish_stream, email'}
+
+    config.omniauth :google_oauth2, "---", "---", { access_type: "offline", approval_prompt: "" }
   end
+
+  config.secret_key = '2f483399d2a12f731d05f1a7b35e2fbb0bc01828e8f638db166fb63b0ad984f007cba0a959a6ffc7a899a7313bd4879321186cd3070387b568953441d078a8d8'
 
   # ==> Warden configuration
   # If you want to use other strategies, that are not supported by Devise, or

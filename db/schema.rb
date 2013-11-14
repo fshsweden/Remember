@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130925095952) do
+ActiveRecord::Schema.define(:version => 20131104173854) do
 
   create_table "authentications", :force => true do |t|
     t.integer  "user_id"
@@ -21,6 +21,13 @@ ActiveRecord::Schema.define(:version => 20130925095952) do
     t.string   "token_secret"
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
+  end
+
+  create_table "blogs", :force => true do |t|
+    t.string   "title"
+    t.text     "content"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "cards", :force => true do |t|
@@ -37,10 +44,29 @@ ActiveRecord::Schema.define(:version => 20130925095952) do
 
   add_index "cards", ["user_id"], :name => "index_cards_on_user_id"
 
+  create_table "cart_items", :force => true do |t|
+    t.integer  "cart_id"
+    t.integer  "product_id"
+    t.integer  "qty"
+    t.float    "price"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "carts", :force => true do |t|
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
   create_table "categories", :force => true do |t|
     t.string   "name"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+  end
+
+  create_table "categories_products", :force => true do |t|
+    t.integer "category_id"
+    t.integer "product_id"
   end
 
   create_table "clicks", :force => true do |t|
@@ -48,7 +74,7 @@ ActiveRecord::Schema.define(:version => 20130925095952) do
     t.integer "count"
   end
 
-  add_index "clicks", ["person_id"], :name => "index_clicks_on_user_id_and_person_id"
+  add_index "clicks", ["person_id"], :name => "index_clicks_on_person_id"
 
   create_table "credit_cards", :force => true do |t|
     t.integer  "user_id"
@@ -107,13 +133,13 @@ ActiveRecord::Schema.define(:version => 20130925095952) do
     t.string   "title"
     t.string   "description"
     t.string   "location"
+    t.integer  "person_id"
     t.datetime "created_at",         :null => false
     t.datetime "updated_at",         :null => false
     t.string   "image_file_name"
     t.string   "image_content_type"
     t.integer  "image_file_size"
     t.datetime "image_updated_at"
-    t.integer  "person_id"
   end
 
   create_table "products", :force => true do |t|
@@ -121,7 +147,21 @@ ActiveRecord::Schema.define(:version => 20130925095952) do
     t.integer  "category_id"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
+    t.decimal  "price"
   end
+
+  create_table "rails_admin_histories", :force => true do |t|
+    t.text     "message"
+    t.string   "username"
+    t.integer  "item"
+    t.string   "table"
+    t.integer  "month",      :limit => 2
+    t.integer  "year",       :limit => 5
+    t.datetime "created_at",              :null => false
+    t.datetime "updated_at",              :null => false
+  end
+
+  add_index "rails_admin_histories", ["item", "table", "month", "year"], :name => "index_rails_admin_histories"
 
   create_table "stories", :force => true do |t|
     t.integer  "person_id"
@@ -135,9 +175,9 @@ ActiveRecord::Schema.define(:version => 20130925095952) do
 
   create_table "update_actions", :force => true do |t|
     t.integer  "person_id"
+    t.string   "comment"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
-    t.string   "comment"
   end
 
   create_table "users", :force => true do |t|

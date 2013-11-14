@@ -1,11 +1,8 @@
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
-
-one:
-  person: 
-  title: MyString
-  content: MyText
-
-two:
-  person: 
-  title: MyString
-  content: MyText
+---
+stories_001:
+  id: 1
+  person_id: 1
+  title: A funny story
+  content: lkha lkh alkjh lkjha lkhl aklkjh lkaslkh ajklh klh
+  created_at: '2013-09-27 09:25:12.118963'
+  updated_at: '2013-09-27 09:25:12.118963'

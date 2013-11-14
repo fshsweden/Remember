@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7 ]> <html class="ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<!-- Uncomment to make IE8 render like IE7 -->
+	<!-- <meta http-equiv="X-UA-Compatible" content="IE=7" /> -->
+	<!-- Set the viewport width to device width for mobile -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title><%= content_for?(:title) ? yield(:title) : "Untitled" %></title>
+	<%= stylesheet_link_tag    "application" %>
+	<%= javascript_include_tag "vendor/custom.modernizr" %>
+	<%= csrf_meta_tags %>
+</head>
+
+<body>
+
+<style type="text/css">
+
+	.column1 {
+		background-color: red;
+		border: 1px solid red;
+	}
+	.column2 {
+		background-color: green;
+		border: 1px solid green;
+	}
+	.column3 {
+		background-color: yellowgreen;
+		border: 1px solid yellowgreen;
+	}
+
+	.column {
+		display:inline;
+	}
+
+	.columns-6 {
+		width: 49%;
+		display:inline;
+	}
+
+	.columns-4 {
+		width: 33%;
+		display:inline;
+	}
+
+	fieldset {
+		display: inline;
+		top: auto;
+		vertical-align: top;
+	}
+
+	fieldset legend {
+		margin: 0;
+		padding: 0;
+		position: static;
+		border: 0;
+		top: auto; left: auto;
+		float: none;
+		display: block;
+		font-size: 14px;
+		line-height: 18px;
+	}
+
+
+</style>
+
+
+<form method="post" action="/">
+
+<div class="columns-4 column1">
+
+	<div class="column">
+		<fieldset>
+			<legend>Row1-Col1-1</legend>
+			<%= f.input :name, :readonly => readonly, :label => false, :placeholder => 'Name' %>
+			<%= f.input :surname, :readonly => readonly, :label => false, :placeholder => 'Surname' %>
+		</fieldset>
+		<fieldset>
+			<legend>Row1-Col1-2</legend>
+			<%= f.input :name, :readonly => readonly, :label => false, :placeholder => 'Name' %>
+			<%= f.input :surname, :readonly => readonly, :label => false, :placeholder => 'Surname' %>
+		</fieldset>
+	</div>
+
+</div>
+
+<div class="columns-4 column2">
+
+	<div class="column">
+		<fieldset>
+			<legend>Row1-Col2-1</legend>
+			<%= f.input :name, :readonly => readonly, :label => false, :placeholder => 'Name' %>
+			<%= f.input :surname, :readonly => readonly, :label => false, :placeholder => 'Surname' %>
+		</fieldset>
+
+		<fieldset>
+			<legend>Row1-Col2-2</legend>
+			<%= f.input :name, :readonly => readonly, :label => false, :placeholder => 'Name' %>
+			<%= f.input :surname, :readonly => readonly, :label => false, :placeholder => 'Surname' %>
+			<%= f.input :name, :readonly => readonly, :label => false, :placeholder => 'Name' %>
+			<%= f.input :surname, :readonly => readonly, :label => false, :placeholder => 'Surname' %>
+			<%= f.input :name, :readonly => readonly, :label => false, :placeholder => 'Name' %>
+			<%= f.input :surname, :readonly => readonly, :label => false, :placeholder => 'Surname' %>
+		</fieldset>
+
+		<fieldset>
+			<legend>Row1-Col2-3</legend>
+			<%= f.input :name, :readonly => readonly, :label => false, :placeholder => 'Name' %>
+			<%= f.input :surname, :readonly => readonly, :label => false, :placeholder => 'Surname' %>
+			<%= f.input :name, :readonly => readonly, :label => false, :placeholder => 'Name' %>
+			<%= f.input :surname, :readonly => readonly, :label => false, :placeholder => 'Surname' %>
+			<%= f.input :name, :readonly => readonly, :label => false, :placeholder => 'Name' %>
+			<%= f.input :surname, :readonly => readonly, :label => false, :placeholder => 'Surname' %>
+			<%= f.input :name, :readonly => readonly, :label => false, :placeholder => 'Name' %>
+			<%= f.input :surname, :readonly => readonly, :label => false, :placeholder => 'Surname' %>
+		</fieldset>
+	</div>
+</div>
+
+<div class="columns-4 column3">
+	<fieldset>
+		<legend>Row1-Col3-1</legend>
+		<%= f.input :name, :readonly => readonly, :label => false, :placeholder => 'Name' %>
+		<%= f.input :surname, :readonly => readonly, :label => false, :placeholder => 'Surname' %>
+	</fieldset>
+	<fieldset>
+		<legend>Row1-Col3-2</legend>
+		<%= f.input :name, :readonly => readonly, :label => false, :placeholder => 'Name' %>
+		<%= f.input :surname, :readonly => readonly, :label => false, :placeholder => 'Surname' %>
+		<%= f.input :name, :readonly => readonly, :label => false, :placeholder => 'Name' %>
+		<%= f.input :surname, :readonly => readonly, :label => false, :placeholder => 'Surname' %>
+		<%= f.input :name, :readonly => readonly, :label => false, :placeholder => 'Name' %>
+		<%= f.input :surname, :readonly => readonly, :label => false, :placeholder => 'Surname' %>
+	</fieldset>
+</div>
+
+</body>
+</html>

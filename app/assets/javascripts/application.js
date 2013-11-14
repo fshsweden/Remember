@@ -11,9 +11,19 @@
 // GO AFTER THE REQUIRES BELOW.
 //
 //= require jquery
+//= require jquery.ui.all
 //= require jquery_ujs
 //= require foundation
 //= require_tree .
 //= require jquery_nested_form
 
-$(function(){ $(document).foundation(); });
+$(function() {
+    // alert(jQuery.ui.version);
+    $( "#tabs" ).tabs();
+    $('.datepicker').datepicker();
+    $("#expmonth").datepicker({
+        dateFormat: "mm"
+    });
+    $(document).foundation();
+
+});

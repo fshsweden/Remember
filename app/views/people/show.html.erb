@@ -1,8 +1,117 @@
-<h1><%= @person.fullname %></h1>
-
 <p id="notice"><%= notice %></p>
 
-<%= render 'form', :readonly => true %>
+<div class="row">
+  <div class="large-10 small-10 columns">
+  </div>
+  <div class="large-2 small-2 columns">
+	<%= current_cart.cart_items.count %> artiklar
+	  <% sum = 0.0 %>
+	  <% for item in current_cart.cart_items %>
+		<% sum =  (1 * 5) %>
+	  <% end %>
+	 <%= sum %> kr
+  </div>
+</div>
 
-<%= link_to 'Edit', edit_person_path(@person) %> |
-<%= link_to 'Back', root_path %>
+<div class="row">
+  <div class="large-10 small-10 columns">
+  </div>
+  <div class="large-2 small-2 columns">
+	<%= link_to "List all sites", people_path %>
+  </div>
+</div>
+
+<h1><%= @person.fullname %></h1>
+
+<div class="row">
+  <div class="large-8 small-8 columns">
+	<div id="tabs">
+	  <ul>
+		<li><a href="#tabs-1">Events</a></li>
+		<li><a href="#tabs-2">Stories</a></li>
+		<li><a href="#tabs-3">Dates</a></li>
+	  </ul>
+	  <div id="tabs-1">
+		<div class="row">
+		  <div class="large-12 small-12 columns">
+			<fieldset>
+			  <legend>Events in <%= @person.fullname %>'s life</legend>
+			  <% @person.events.each do |evt| %>
+				  <h4 class="event"><%= evt.name %></h4>
+
+				  <p class="event"><%= evt.date %></p>
+
+				  <p class="event"><%= evt.comment %></p>
+			  <% end %>
+			</fieldset>
+		  </div>
+		</div>
+	  </div>
+	  <div id="tabs-2">
+		<div class="row">
+		  <div class="large-12 small-12 columns">
+			<fieldset>
+			  <legend>Stories</legend>
+			  <% @person.stories.each do |st| %>
+				  <h4><%= st.title %></h4>
+
+				  <p><%= st.content %></p>
+				  <hr>
+			  <% end %>
+			</fieldset>
+		  </div>
+		</div>
+	  </div>
+	  <div id="tabs-3">
+		<%= image_tag("placeholder_image.jpg") %>
+
+		<% if @person.photos.size > 0 %>
+			<ul data-orbit>
+			  <% @person.photos.each do |p| %>
+				  <li>
+					<%= image_tag(p.image) %>
+					<div class="orbit-caption"><%= p.image_file_name %></div>
+				  </li>
+			  <% end %>
+			</ul>
+		<% end %>
+	  </div>
+	</div>
+  </div>
+  <div class="large-4 small-4 column">
+	<h3>Items in cart:</h3>
+	<table>
+	<% for item in current_cart.cart_items %>
+		<tr class="<%= cycle :odd, :even %>">
+		  <td><%= h item.product.name %></td>
+		  <td><%= h item.person.fullname %></td>
+		  <td><%= item.qty %></td>
+		  <td><%= item.price %></td>
+		  <td><%= link_to "Remove ", {:controller => "carts", :action => "remove_item", :id => item.product_id} %></td>
+		</tr>
+	<% end %>
+	</table>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-12 small-12 columns">
+	<p>Would you like to contribute a story about <%= @person.fullname %>? Then click
+	  here: <%= link_to "Add Story", person_add_story_path(@person) %> </p>
+
+	<p>Would you like to buy an item to salute the memory of <%= @person.fullname %>? Then click
+	  here: <%= link_to "Buy Item", products_path %> </p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-12 small-12 columns">
+	<fieldset>
+	  <legend>Administrators</legend>
+	  <% @person.admins.each do |adm| %>
+		  <div class="admin"><%= adm.email %></div>
+	  <% end %>
+	</fieldset>
+  </div>
+</div>
+

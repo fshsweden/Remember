@@ -1,0 +1,4 @@
+/* $('#results tr:last').after("<tr><td></td><td><%= escape_javascript(@person.name) %></td><td></td></tr>"); */
+
+$('#results_body').append('<tr><td></td><td><%= escape_javascript(@person.name) %></td></tr>');
+

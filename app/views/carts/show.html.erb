@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Cart # <%= @cart.id %></h1>
+<table id="line_items">
+  <tr>
+    <th>Product</th>
+    <th>Qty</th>
+    <th>Price</th>
+    <th></th>
+  </tr>
+
+  <% for item in @cart.cart_items %>
+      <tr class="<%= cycle :odd, :even %>">
+        <td><%=h item.product.name %></td>
+        <td><%= item.qty %></td>
+        <td><%= item.price %></td>
+        <td><%= link_to "Remove " + item.id.to_s, { :controller => "carts", :action => "remove_item", :id => item.product_id }  %></td>
+      </tr>
+  <% end %>
+  <tr>
+
+    <td class="total price" colspan="4">
+      <!--Total: < % = @cart.total_price % > -->
+    </td>
+  </tr>
+</table>
+
+<%= link_to 'Edit', edit_cart_path(@cart) %> |
+<%= link_to 'Back', carts_path %>
