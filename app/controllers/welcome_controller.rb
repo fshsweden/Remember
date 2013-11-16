@@ -7,6 +7,12 @@ class WelcomeController < ApplicationController
     @people_created_lately  = Person.limit(5).order("created_at DESC")
     @people_updated_lately  = Person.limit(5).order("updated_at DESC")
 
+	@selected = Person.all.sample(9)
+
+	#@selected.each_slice((@selected.size/2.0).ceil) { |slice|
+	#	logger.info "Slice is: "  + slice.to_s
+	#} if @selected.size > 0
+
     #if current_user
     #  auth = current_user.authentications.find_by_provider('facebook')
     #  if auth

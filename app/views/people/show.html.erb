@@ -5,11 +5,11 @@
   </div>
   <div class="large-2 small-2 columns">
 	<%= current_cart.cart_items.count %> artiklar
-	  <% sum = 0.0 %>
-	  <% for item in current_cart.cart_items %>
-		<% sum =  (1 * 5) %>
-	  <% end %>
-	 <%= sum %> kr
+	<% sum = 0.0 %>
+	<% for item in current_cart.cart_items %>
+		<% sum = (1 * 5) %>
+	<% end %>
+	<%= sum %> kr
   </div>
 </div>
 
@@ -81,16 +81,17 @@
   <div class="large-4 small-4 column">
 	<h3>Items in cart:</h3>
 	<table>
-	<% for item in current_cart.cart_items %>
-		<tr class="<%= cycle :odd, :even %>">
-		  <td><%= h item.product.name %></td>
-		  <td><%= h item.person.fullname %></td>
-		  <td><%= item.qty %></td>
-		  <td><%= item.price %></td>
-		  <td><%= link_to "Remove ", {:controller => "carts", :action => "remove_item", :id => item.product_id} %></td>
-		</tr>
-	<% end %>
+	  <% for item in current_cart.cart_items %>
+		  <tr class="<%= cycle :odd, :even %>">
+			<td><%= h item.product.name %></td>
+			<td><%= h item.person.fullname %></td>
+			<td><%= item.qty %></td>
+			<td><%= item.price %></td>
+			<td><%= link_to "Remove ", {:controller => "carts", :action => "remove_item", :id => item.product_id} %></td>
+		  </tr>
+	  <% end %>
 	</table>
+	<%= link_to "Checkout", present_checkout_view_path %>
   </div>
 </div>
 

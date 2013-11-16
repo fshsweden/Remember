@@ -16,6 +16,16 @@ Remember::Application.routes.draw do
   # Cart stuff
   post '/add_to_cart/:product_id' => 'carts#add_to_cart', :as => 'add_to_cart'   #with param PERSON_ID ??
   get '/carts/remove_item' => 'carts#remove_item', :as => 'remove_from_cart'
+  get '/carts/present_checkout_view' => 'carts#present_checkout_view', :as => 'present_checkout_view'
+  get '/carts/checkout' => 'carts#checkout', :as => 'checkout'
+  get '/carts/credit_card_payment' => 'carts#credit_card_payment', :as => 'credit_card_payment'
+  get '/carts/paypal_payment' => 'carts#paypal_payment', :as => 'paypal_payment'
+  get '/carts/payment_history' => 'carts#payment_history'
+
+  get '/carts/store_credit_card' => 'carts#store_credit_card'
+  get '/carts/show_stored_credit_card' => 'carts#show_stored_credit_card'
+
+  get '/payment/execute' => 'carts#payment_execute'
 
   resources :people do
 	  get 'add_story'
@@ -43,7 +53,6 @@ Remember::Application.routes.draw do
   get "facebook/show_fb_friends"
 
 end
-
 
 # The priority is based upon order of creation:
 # first created -> highest priority.

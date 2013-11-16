@@ -1,0 +1,19 @@
+<h1>Payment history</h1>
+
+# List Payments
+<% @payment_history.payments.each do |payment| %>
+	<ul>
+		<li>ID:<%= payment.id %></li>
+		<li>Intent:<%= payment.intent %></li>
+		<li>Payer.PaymentMethod:<%= payment.payer.payment_method %></li>
+		<li>Payer.payer_info.email:<%= payment.payer.payer_info.email %></li>
+		<li>Payer.payer_info.first_name:<%= payment.payer.payer_info.first_name %></li>
+		<li>Payer.payer_info.last_name:<%= payment.payer.payer_info.last_name %></li>
+		<li>Payer.payer_info.payer_id:<%= payment.payer.payer_info.payer_id %></li>
+		<li>Payer.payer_info.phone:<%= payment.payer.payer_info.phone %></li>
+		<li>Payer.payer_info.shipping_address:<%= payment.payer.payer_info.shipping_address %></li>
+		<li>State:<%= payment.state %></li>
+	  	<hr>
+	</ul>
+<% end %>
+# End of Payments

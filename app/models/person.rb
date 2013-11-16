@@ -48,7 +48,7 @@ class Person < ActiveRecord::Base
 
   def get_primary_photo_tag
     if photos && photos.count > 0
-      photos.first.image.url(:thumb)
+      image_tag(photos.first.image.url(:thumb))
     else
       ''
     end

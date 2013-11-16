@@ -2,40 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6991852d-49b5-49be-805e-829646ef492d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/shared/_footer.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/inputs/avatar_input.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/facebook/show_fb_friends.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/carts/payment_history.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/carts/present_checkout_view.html.erb" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/cards.css.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/categories.css.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/credit_cards.css.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/events.css.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/facebook.css.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/photos.css.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/products.css.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/profile.css.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/scaffolds.css.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/stories.css.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/welcome.css.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20130917170506_add_join_model_for_user_and_people.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20130918103055_add_clicks_table.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20130918111939_add_clickcount_to_clicks.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20130919073946_add_belongs_to_person_to_photos.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20130923143201_remove_user_id_from_clicks.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20130924101219_add_comment_to_update_actions.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20130924144741_add_timestamps_to_persons.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/functional/credit_cards_controller_test.rb" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Remember.iml" afterPath="$PROJECT_DIR$/.idea/Remember.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/people/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/people/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/authentications_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/authentications_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/functional/authentications_controller_test.rb" afterPath="$PROJECT_DIR$/test/functional/authentications_controller_test.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/click.rb" afterPath="$PROJECT_DIR$/app/models/click.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/devise.rb" afterPath="$PROJECT_DIR$/config/initializers/devise.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/people/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/people/edit.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/facebook_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/facebook_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/fixtures/gifts.yml" afterPath="$PROJECT_DIR$/test/fixtures/gifts.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/authentications/home.html.erb" afterPath="$PROJECT_DIR$/app/views/authentications/home.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/facebook/index.html.erb" afterPath="$PROJECT_DIR$/app/views/facebook/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/people/index.html.erb" afterPath="$PROJECT_DIR$/app/views/people/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/carts_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/carts_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/welcome/index.html.erb" afterPath="$PROJECT_DIR$/app/views/welcome/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/people_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/people_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/person.rb" afterPath="$PROJECT_DIR$/app/models/person.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/people/show.html.erb" afterPath="$PROJECT_DIR$/app/views/people/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/simple_form.rb" afterPath="$PROJECT_DIR$/config/initializers/simple_form.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/fixtures/users.yml" afterPath="$PROJECT_DIR$/test/fixtures/users.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/welcome_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/welcome_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Remember.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/application.html.erb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1380014804139" ignored="false" />
-    <file path="/routes.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1380106193852" ignored="false" />
-    <file path="/welcome_controller.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1380036402495" ignored="false" />
+    <file path="/routes.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1384517508537" ignored="false" />
+    <file path="/welcome_controller.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1384425041788" ignored="false" />
     <file path="$PROJECT_DIR$/../Grave/app/controllers/users_controller.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1378880787703" ignored="false" />
     <file path="/users_controller.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1378880786917" ignored="false" />
     <file path="$PROJECT_DIR$/../Grave/app/views/users/show,html.erb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1378880810178" ignored="false" />
@@ -62,7 +64,7 @@
     <file path="/devise.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1380143464897" ignored="false" />
     <file path="$PROJECT_DIR$/../Grave/app/views/layouts/welcome_layout.html.erb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1378969523407" ignored="false" />
     <file path="$PROJECT_DIR$/../Grave/app/views/individuals/show.html.erb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1378914738647" ignored="false" />
-    <file path="/show.html.erb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1380014749315" ignored="false" />
+    <file path="/show.html.erb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1384438580694" ignored="false" />
     <file path="$PROJECT_DIR$/../Grave/app/helpers/application_helper.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1378968645392" ignored="false" />
     <file path="/application_helper.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1378968645392" ignored="false" />
     <file path="$PROJECT_DIR$/../Grave/app/models/cart.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1378915924742" ignored="false" />
@@ -71,7 +73,7 @@
     <file path="/foundation_and_overrides.scss" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1378976851754" ignored="false" />
     <file path="/welcome_layout.html.erb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1378969367593" ignored="false" />
     <file path="$PROJECT_DIR$/../Grave/app/views/welcome/index.html.erb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1378995227884" ignored="false" />
-    <file path="/index.html.erb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1380106369133" ignored="false" />
+    <file path="/index.html.erb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1384426834485" ignored="false" />
     <file path="$PROJECT_DIR$/../Grave/app/assets/stylesheets/fonts.css" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1378970060947" ignored="false" />
     <file path="/fonts.css" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1378970044290" ignored="false" />
     <file path="$PROJECT_DIR$/../Grave/app/assets/stylesheets/custom.css.scss" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1378970087748" ignored="false" />
@@ -91,11 +93,11 @@
     <file path="$PROJECT_DIR$/../Grave/app/views/credit_cards/show.html.erb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1378992159672" ignored="false" />
     <file path="$PROJECT_DIR$/../Grave/app/assets/javascripts/application.js" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1378992466011" ignored="false" />
     <file path="/application.js" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1378992368293" ignored="false" />
-    <file path="/a.dummy" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379932097435" ignored="false" />
+    <file path="/a.dummy" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1384534576369" ignored="false" />
     <file path="$PROJECT_DIR$/../Grave/app/views/devise/sessions/new.html.erb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1378995060891" ignored="false" />
     <file path="/new.html.erb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379370881512" ignored="false" />
     <file path="/20130906193317_devise_create_users.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379000969232" ignored="false" />
-    <file path="/Dummy.txt" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379620822335" ignored="false" />
+    <file path="/Dummy.txt" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1384441331419" ignored="false" />
     <file path="/20130912194929_add_authentications.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379015394087" ignored="false" />
     <file path="/authentication.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379052516416" ignored="false" />
     <file path="/authentications_controller.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379504145695" ignored="false" />
@@ -113,7 +115,7 @@
     <file path="/home.html.erb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379504891500" ignored="false" />
     <file path="/facebook_controller.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1380142597867" ignored="false" />
     <file path="/send_hello.html.erb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379328828225" ignored="false" />
-    <file path="/person.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1380103249125" ignored="false" />
+    <file path="/person.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1384426179836" ignored="false" />
     <file path="/20130916175116_create_events.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379353971359" ignored="false" />
     <file path="/event.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379354210086" ignored="false" />
     <file path="/a.html" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1379371490681" ignored="false" />
@@ -162,6 +164,9 @@
     <file path="/20130924144741_add_timestamps_to_persons.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1380034122775" ignored="false" />
     <file path="/story.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1380105588536" ignored="false" />
     <file path="/show_fb_friends.html.erb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1380107572172" ignored="false" />
+    <file path="/carts_controller.rb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1384534722206" ignored="false" />
+    <file path="/present_checkout_view.html.erb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1384441235644" ignored="false" />
+    <file path="/payment_history.html.erb" changelist="6991852d-49b5-49be-805e-829646ef492d" time="1384527998618" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,28 +186,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="show_fb_friends.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/facebook/show_fb_friends.html.erb">
+      <file leaf-file-name="carts_controller.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/carts_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="14" selection-start="100" selection-end="100" vertical-scroll-proportion="-2.909091">
+            <state line="359" column="25" selection-start="8112" selection-end="8112" vertical-scroll-proportion="0.65724814">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="facebook_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/facebook_controller.rb">
+      <file leaf-file-name="payment_history.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/carts/payment_history.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="46" selection-start="899" selection-end="899" vertical-scroll-proportion="0.0">
+            <state line="6" column="0" selection-start="130" selection-end="130" vertical-scroll-proportion="-4.3636365">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="devise.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/config/initializers/devise.rb">
+      <file leaf-file-name="slask.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/slask.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="270" column="58" selection-start="16427" selection-end="16427" vertical-scroll-proportion="0.6012024">
+            <state line="44" column="4" selection-start="851" selection-end="851" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -226,22 +231,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/db/migrate/20130924101219_add_comment_to_update_actions.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/people_controller.rb" />
-        <option value="$PROJECT_DIR$/app/inputs/avatar_input.rb" />
-        <option value="$PROJECT_DIR$/app/models/update_action.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20130924144741_add_timestamps_to_persons.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/welcome_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/welcome/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/models/person.rb" />
-        <option value="$PROJECT_DIR$/app/views/people/_form.html.erb" />
-        <option value="$PROJECT_DIR$/app/models/story.rb" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/app/views/facebook/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/authentications/home.html.erb" />
         <option value="$PROJECT_DIR$/app/views/facebook/show_fb_friends.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/facebook_controller.rb" />
         <option value="$PROJECT_DIR$/config/initializers/devise.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/welcome_controller.rb" />
+        <option value="$PROJECT_DIR$/app/models/person.rb" />
+        <option value="$PROJECT_DIR$/app/views/welcome/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/people/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/people/present_checkout_view.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/carts/present_checkout_view.html.erb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/slask.js" />
+        <option value="$PROJECT_DIR$/app/views/carts/payment_history.html.erb" />
+        <option value="$PROJECT_DIR$/slask.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/carts_controller.rb" />
       </list>
     </option>
   </component>
@@ -253,10 +258,9 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="172" />
-    <option name="y" value="61" />
-    <option name="width" value="1834" />
-    <option name="height" value="1159" />
+    <option name="y" value="22" />
+    <option name="width" value="2560" />
+    <option name="height" value="1363" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -304,6 +308,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -379,6 +385,72 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="wrappers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Remember" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="paypal-sdk-rest (v0.6.0, RVM: ruby-1.9.3-p429) [gem]" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Remember" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="paypal-sdk-rest (v0.6.0, RVM: ruby-1.9.3-p429) [gem]" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="paypal-sdk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Remember" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="paypal-sdk-rest (v0.6.0, RVM: ruby-1.9.3-p429) [gem]" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="paypal-sdk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rest" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -534,163 +606,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="activerecord (v3.2.13, RVM: ruby-1.9.3-p429) [gem]" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
               <option name="myItemId" value="Remember" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="activerecord (v3.2.13, RVM: ruby-1.9.3-p429) [gem]" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="active_record" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Remember" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="activerecord (v3.2.13, RVM: ruby-1.9.3-p429) [gem]" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="active_record" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="connection_adapters" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Remember" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="activerecord (v3.2.13, RVM: ruby-1.9.3-p429) [gem]" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="active_record" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="connection_adapters" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abstract" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Remember" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="activemodel (v3.2.13, RVM: ruby-1.9.3-p429) [gem]" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Remember" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Remember" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Remember" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Remember" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Remember" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Remember" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Remember" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Remember" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="initializers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -726,7 +642,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -741,24 +661,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Remember" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Remember" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="inputs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -780,70 +682,30 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Remember" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Remember" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Remember" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Remember" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javascripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="RailsProjectView" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="editing.templates" />
     <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="editing.templates" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../ZurbTest" />
     <property name="FullScreen" value="false" />
-    <property name="GoToClass.includeJavaFiles" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="GoToClass.includeJavaFiles" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/config/initializers" />
       <recent name="$PROJECT_DIR$/app/views/registrations" />
       <recent name="$PROJECT_DIR$/app/controllers" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/views/carts" />
       <recent name="$PROJECT_DIR$/app/views/cards" />
     </key>
   </component>
@@ -1036,6 +898,13 @@
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
       <method />
     </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Remote" singleton="true">
+      <JSRemoteDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSRemoteDebuggerConfigurationSettings>
+      <method />
+    </configuration>
     <configuration default="true" type="CucumberRunConfigurationType" factoryName="Cucumber">
       <predefined_log_file id="RUBY_CUCUMBER" enabled="true" />
       <module name="" />
@@ -1069,13 +938,6 @@
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="CUCUMBER_RUNNER_PATH" VALUE="" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_RUNNER" VALUE="false" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SETTINGS_VERSION" VALUE="2" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugSession" factoryName="Remote" singleton="true">
-      <JSRemoteDebuggerConfigurationSettings>
-        <option name="engineId" value="embedded" />
-        <option name="fileUrl" />
-      </JSRemoteDebuggerConfigurationSettings>
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
@@ -1267,15 +1129,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="172" y="61" width="1834" height="1159" extended-state="0" />
+    <frame x="0" y="22" width="2560" height="1363" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31612903" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18232661" sideWeight="0.6434494" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18490416" sideWeight="0.683871" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
@@ -1351,114 +1213,114 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/facebook_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="2" selection-start="605" selection-end="605" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/shared/_topnav.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/facebook/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="96" selection-start="209" selection-end="209" vertical-scroll-proportion="-0.72727275">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/authentication.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/authentications_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/welcome/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/welcome/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="13" selection-start="437" selection-end="437" vertical-scroll-proportion="-12.363636">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/registrations/edit.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/authentications/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/authentications/home.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="945" selection-end="945" vertical-scroll-proportion="-15.272727">
+        <state line="30" column="46" selection-start="853" selection-end="853" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/facebook/show_fb_friends.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="14" selection-start="100" selection-end="100" vertical-scroll-proportion="-2.909091">
+        <state line="5" column="4" selection-start="101" selection-end="101" vertical-scroll-proportion="0.09771987">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p429/gems/fb_graph-2.7.8/lib/fb_graph/node.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/welcome/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="139" column="55" selection-start="4355" selection-end="4355" vertical-scroll-proportion="0.61523044">
+        <state line="177" column="0" selection-start="4666" selection-end="4666" vertical-scroll-proportion="1.6058632">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p429/gems/fb_graph-2.7.8/lib/fb_graph/user.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/people/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="17" selection-start="32" selection-end="32" vertical-scroll-proportion="0.023738872">
+        <state line="94" column="0" selection-start="2217" selection-end="2272" vertical-scroll-proportion="-23.878788">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/facebook_controller.rb">
+    <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="46" selection-start="899" selection-end="899" vertical-scroll-proportion="0.0">
+        <state line="19" column="0" selection-start="519" selection-end="519" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/initializers/devise.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/person.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="270" column="58" selection-start="16427" selection-end="16427" vertical-scroll-proportion="0.6012024">
+        <state line="52" column="6" selection-start="1181" selection-end="1181" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/cart_items_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/initializers/paypal.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="161" selection-start="83" selection-end="83" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/paypal.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="126" selection-start="284" selection-end="284" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/carts/present_checkout_view.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="9" selection-start="27" selection-end="27" vertical-scroll-proportion="-0.72727275">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="7" selection-start="1135" selection-end="1135" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/slask.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="44" selection-start="46" selection-end="46" vertical-scroll-proportion="0.02948403">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p429/gems/paypal-sdk-rest-0.6.0/lib/paypal-sdk/rest/data_types.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="10" selection-start="571" selection-end="571" vertical-scroll-proportion="0.7960688">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/carts/payment_history.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="130" selection-end="130" vertical-scroll-proportion="-4.3636365">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/slask.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="4" selection-start="851" selection-end="851" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/carts_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="359" column="25" selection-start="8112" selection-end="8112" vertical-scroll-proportion="0.65724814">
           <folding />
         </state>
       </provider>

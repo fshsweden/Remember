@@ -45,17 +45,19 @@ ActiveRecord::Schema.define(:version => 20131104173854) do
   add_index "cards", ["user_id"], :name => "index_cards_on_user_id"
 
   create_table "cart_items", :force => true do |t|
+    t.integer  "person_id"
     t.integer  "cart_id"
     t.integer  "product_id"
     t.integer  "qty"
     t.float    "price"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "carts", :force => true do |t|
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+    t.datetime "purchased_at"
   end
 
   create_table "categories", :force => true do |t|
