@@ -1,4 +1,4 @@
 class Event < ActiveRecord::Base
-  attr_accessible :comment, :date, :name, :person
+  attr_accessible :comment, :name, :date, :person
   belongs_to :person
 end

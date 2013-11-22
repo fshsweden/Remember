@@ -322,42 +322,17 @@ class CartsController < ApplicationController
 
 	def store_credit_card
 
-		@cc = CreditCard.new({
-			:number => "4024007151372884",
-			:type => "visa",
-			:expire_month => "11",
-			:expire_year => "2015",
-			:cvv2 => "428",
-			:first_name => "Peter",
-			:last_name => "Andersson",
-			:billing_address => {
-				:line1 => "Mackmyra byväg 36",
-				:city => "Valbo",
-				:state => "OH",
-				:postal_code => "81832",
-				:country_code => "SE"
-			}
-		 })
-
-		if @cc.create
-			logger.info @cc.id + ": Credit Card stored in vault!"
-			#logger.info @cc.inspect
+		if current_user.store_credit_card(params)
+			redirect_to :back, :flash => "Invalid parameters"
 		else
-			logger.info "FAILED TO : Credit Card stored in vault!"
-			logger.info @cc.error
-
-			puts @cc.error.name
-			puts @cc.error.message
-			puts @cc.error.information_link
-			puts @cc.error.debug_id
-			@cc.error.details.each do |e|
-				puts e.field + " = " + e.issue
-			end
+			redirect_to
 		end
 		redirect_to root_path
 	end
+
+
 	def show_stored_credit_card
-	  @cc = CreditCard.find("CARD-8H93797015690882YKKDDZHA")
+	  @cc = PayPal::SDK::REST::DataTypes::Base::CreditCard.find("CARD-8H93797015690882YKKDDZHA")
 		if @cc
 			logger.info @cc.inspect
 		else

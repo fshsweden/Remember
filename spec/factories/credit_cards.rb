@@ -1,7 +1,7 @@
 require 'faker'
 
 FactoryGirl.define do
-	factory :credit_card do |f|
+	factory :my_credit_card do |f|
 		f.user_id 1
 		f.cc_cvc 428
 		f.cc_exp_month "12"

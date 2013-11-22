@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class CreditCardTest < ActiveSupport::TestCase
+class MyCreditCardTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end

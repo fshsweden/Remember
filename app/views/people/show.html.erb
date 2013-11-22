@@ -1,5 +1,8 @@
 <p id="notice"><%= notice %></p>
 
+<!--                            -->
+<!-- Display the CART somewhere -->
+<!--                            -->
 <div class="row">
   <div class="large-10 small-10 columns">
   </div>
@@ -23,6 +26,10 @@
 
 <h1><%= @person.fullname %></h1>
 
+
+<!--                                                   -->
+<!-- <div> with id=tabs will be handled by jquery code -->
+<!--                                                   -->
 <div class="row">
   <div class="large-8 small-8 columns">
 	<div id="tabs">
@@ -95,13 +102,19 @@
   </div>
 </div>
 
+
+
+<!--                            -->
+<!-- Display the CART somewhere -->
+<!--                            -->
 <div class="row">
   <div class="large-12 small-12 columns">
-	<p>Would you like to contribute a story about <%= @person.fullname %>? Then click
-	  here: <%= link_to "Add Story", person_add_story_path(@person) %> </p>
-
-	<p>Would you like to buy an item to salute the memory of <%= @person.fullname %>? Then click
-	  here: <%= link_to "Buy Item", products_path %> </p>
+	<ul>
+		<li>Would you like to contribute a story about <%= @person.fullname %>? Then click
+	  here: <%= link_to "Add Story", person_add_story_path(@person) %> </li>
+		<li>Would you like to buy an item to salute the memory of <%= @person.fullname %>? Then click
+	  here: <%= link_to "Buy Item", products_path %> </li>
+	</ul>
   </div>
 </div>
 

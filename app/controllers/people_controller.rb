@@ -134,10 +134,15 @@ class PeopleController < ApplicationController
 		end
 	end
 
+
+
+
+
+
 	def add_story
 
-	logger.info params.inspect
+		logger.info params.inspect
 		@person = Person.find(params[:person_id])
-		@person.stories.build
+
 	end
 end

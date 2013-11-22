@@ -78,20 +78,6 @@ ActiveRecord::Schema.define(:version => 20131104173854) do
 
   add_index "clicks", ["person_id"], :name => "index_clicks_on_person_id"
 
-  create_table "credit_cards", :force => true do |t|
-    t.integer  "user_id"
-    t.string   "cc_number"
-    t.string   "cc_cvc"
-    t.string   "cc_exp_year"
-    t.string   "cc_exp_month"
-    t.string   "cc_name"
-    t.string   "cc_type"
-    t.datetime "created_at",   :null => false
-    t.datetime "updated_at",   :null => false
-  end
-
-  add_index "credit_cards", ["user_id"], :name => "index_credit_cards_on_user_id"
-
   create_table "events", :force => true do |t|
     t.string   "name"
     t.string   "date"
@@ -118,6 +104,20 @@ ActiveRecord::Schema.define(:version => 20131104173854) do
   end
 
   add_index "histories", ["user_id"], :name => "index_histories_on_user_id"
+
+  create_table "my_credit_cards", :force => true do |t|
+    t.integer  "user_id"
+    t.string   "cc_number"
+    t.string   "cc_cvc"
+    t.string   "cc_exp_year"
+    t.string   "cc_exp_month"
+    t.string   "cc_name"
+    t.string   "cc_type"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+  end
+
+  add_index "my_credit_cards", ["user_id"], :name => "index_credit_cards_on_user_id"
 
   create_table "people", :force => true do |t|
     t.string   "name",       :limit => 50

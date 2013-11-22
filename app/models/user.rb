@@ -25,9 +25,9 @@ class User < ActiveRecord::Base
   #
   # C R E D I T   C A R D S (NOT USED)
   #
-  has_many :credit_cards, :dependent => :destroy
-  accepts_nested_attributes_for :credit_cards, :allow_destroy => true
-  attr_accessible :credit_cards_attributes
+  has_many :my_credit_cards, :dependent => :destroy
+  accepts_nested_attributes_for :my_credit_cards, :allow_destroy => true
+  attr_accessible :my_credit_cards_attributes
 
   #
   #  C A R D S
