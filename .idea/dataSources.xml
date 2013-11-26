@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="24563259">
-    <data-source source="LOCAL" name="Rails Remember: development" product="SQLite" version="3.7.2" jdbc-version="2.1" driver-name="SQLiteJDBC" driver-version="native" uuid="a22f6f7d-358a-4ea7-907c-c9418923087d">
-      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/db/development.sqlite3</jdbc-url>
-      <libraries>
-        <library>
-          <url>file://$USER_HOME$/Library/Preferences/RubyMine40/jdbc-drivers/xerial-sqlite-license.txt</url>
-        </library>
-        <library>
-          <url>file://$USER_HOME$/Library/Preferences/RubyMine40/jdbc-drivers/sqlite-jdbc-3.7.2.jar</url>
-        </library>
-      </libraries>
-    </data-source>
-    <data-source source="LOCAL" name="Rails Remember: test" product="SQLite" version="3.7.2" jdbc-version="2.1" driver-name="SQLiteJDBC" driver-version="native" uuid="719dcc34-2a4a-44be-8691-6d4d34dd4741">
+  <component name="DataSourceManagerImpl" format="xml" hash="2416100306">
+    <data-source source="LOCAL" name="Rails Remember: test" product="SQLite" version="3.7.2" jdbc-version="2.1" driver-name="SQLiteJDBC" driver-version="native" uuid="c2a8d1cf-28cb-4884-913b-ee768b927802">
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
       <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/db/test.sqlite3</jdbc-url>
       <libraries>
@@ -25,9 +13,9 @@
         </library>
       </libraries>
     </data-source>
-    <data-source source="LOCAL" name="Rails Remember: production" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="73f5fcb3-bd0d-4e57-8422-fad865089226">
+    <data-source source="LOCAL" name="Rails Remember: production" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="1868c15b-8082-4b7f-b833-a92ed4776426">
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql:db/production.sqlite3</jdbc-url>
+      <jdbc-url>jdbc:postgresql://ec2-184-73-162-34.compute-1.amazonaws.com/d8oaeudfn5krus</jdbc-url>
       <user-name>pufeygaxwwzbff</user-name>
       <user-password>df9cdfcedfe1dfc2df92dfcfdf9adfe9dfebdfd9dfd3dfdedfcfdf93dfe8dfe9dfd8dfdbdffbdf98dfcddfd8dff3dfffdfe1dfcc</user-password>
       <libraries>
@@ -36,6 +24,18 @@
         </library>
         <library>
           <url>file://$USER_HOME$/Library/Preferences/RubyMine40/jdbc-drivers/postgresql-9.1-901.jdbc3.jar</url>
+        </library>
+      </libraries>
+    </data-source>
+    <data-source source="LOCAL" name="Rails Remember: development" product="SQLite" version="3.7.2" jdbc-version="2.1" driver-name="SQLiteJDBC" driver-version="native" uuid="54b89e89-45da-4a11-bca3-541d3cfcc6ab">
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/db/development.sqlite3</jdbc-url>
+      <libraries>
+        <library>
+          <url>file://$USER_HOME$/Library/Preferences/RubyMine40/jdbc-drivers/xerial-sqlite-license.txt</url>
+        </library>
+        <library>
+          <url>file://$USER_HOME$/Library/Preferences/RubyMine40/jdbc-drivers/sqlite-jdbc-3.7.2.jar</url>
         </library>
       </libraries>
     </data-source>
