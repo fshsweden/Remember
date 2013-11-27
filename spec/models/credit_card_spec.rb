@@ -26,7 +26,4 @@
 	it "is invalid without a cc_type" do
 		FactoryGirl.build(:my_credit_card, cc_type: nil).should_not be_valid
 	end
-	it "returns a credit cards full details as a string" do
-		FactoryGirl.build(:my_credit_card, cc_type: nil).should = ""
-	end
  end
