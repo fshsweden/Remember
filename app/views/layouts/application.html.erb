@@ -12,23 +12,20 @@
   	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
   	<title><%= content_for?(:title) ? yield(:title) : "Untitled" %></title>
   	<%= stylesheet_link_tag    "application" %>
-  	<%= javascript_include_tag "vendor/custom.modernizr" %>
+  	<%= javascript_include_tag "modernizr.js" %>
     <%= csrf_meta_tags %>
   </head>
 
   <body>
-    <%= render 'shared/topnav' %>
-    <div id="container">
-      <%= render "shared/sidebars" %>
-      <div id="left-sidebar" class="left-sidebar letterpress large-2 small-2 columns">
-        <%= yield :left_sidebar %>
-      </div>
-      <div class="content large-8 small-8 columns">
-        <%= yield %>
-      </div>
-      <div id="right-sidebar" class="right-sidebar letterpress large-2 small-2 columns">
-        <%= yield :right_sidebar %>
-      </div>
+    <div id="container-area">
+	  <div class="row">
+	      <div class="nav-area large-12 small-12 columns">
+			<%= render 'shared/topnav' %>
+      	</div>
+		<div class="content-area large-12 small-12 columns">
+		  <%= yield %>
+		</div>
+	  </div>
     </div>
     <%= render 'shared/footer' %>
     <%= javascript_include_tag "application" %>

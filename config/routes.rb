@@ -6,6 +6,7 @@ Remember::Application.routes.draw do
   #resources :welcome
   get "welcome/index"
   get "welcome/show"
+  get "welcome/email_with_sidebar"
 
   get "people/search"
   get "people/search_with_param"

@@ -1,239 +1,237 @@
+
+<div class="row">
+  <div class="large-12 small-12 columns">
+	<h3>Gravestone, Picture and Presents</h3>
+	<div class="section_wrapper">
+	  <table class="invisible_table" rows="1" cols="3" border="0">
+		<tr>
+		  <td align="center"><img src="http://dummyimage.com/400x400/dadada/000.png" width="100%" alt=""></td>
+		  <td align="center"><img src="http://dummyimage.com/400x400/dadada/000.png" width="100%" alt=""></td>
+		  <td align="center"><img src="http://dummyimage.com/400x400/dadada/000.png" width="100%" alt=""></td>
+		</tr>
+	  </table>
+	</div>
+  </div>
+</div>
+
+<div class="row">
+	<div class="large-12 small-12 columns">
+	  <ul class="large-block-grid-6">
+		<li>
+			<a class="fancybox-thumbs" data-fancybox-group="thumb" href="http://dummyimage.com/200x100/dadada/000.png">
+				<img src="http://dummyimage.com/200x100/dadada/000.png" class='thumbnail-image' alt="">
+			</a>
+		</li>
+		<li><img src="http://dummyimage.com/200x100/dadada/000.png" class='thumbnail-image' alt=""></li>
+		<li><img src="http://dummyimage.com/200x100/dadada/000.png" class='thumbnail-image' alt=""></li>
+		<li><img src="http://dummyimage.com/200x100/dadada/000.png" class='thumbnail-image' alt=""></li>
+		<li><img src="http://dummyimage.com/200x100/dadada/000.png" class='thumbnail-image' alt=""></li>
+		<li><img src="http://dummyimage.com/200x100/dadada/000.png" class='thumbnail-image' alt=""></li>
+		<li><img src="http://dummyimage.com/200x100/dadada/000.png" class='thumbnail-image' alt=""></li>
+		<li><img src="http://dummyimage.com/200x100/dadada/000.png" class='thumbnail-image' alt=""></li>
+		<li><img src="http://dummyimage.com/200x100/dadada/000.png" class='thumbnail-image' alt=""></li>
+		<li><img src="http://dummyimage.com/200x100/dadada/000.png" class='thumbnail-image' alt=""></li>
+		<li><img src="http://dummyimage.com/200x100/dadada/000.png" class='thumbnail-image' alt=""></li>
+		<li><img src="http://dummyimage.com/200x100/dadada/000.png" class='thumbnail-image' alt=""></li>
+	  </ul>
+	</div>
+</div>
+
 <!-- ------------------------------------------ -->
 <!-- TOP ROW
 <!-- ------------------------------------------ -->
 <div class="row">
-  <div class="wrapper large-12 columns">
-    <h1>Catchphrase here</h1>
+  <div class="large-12 small-12 columns">
+
+	<h3>Thumbnail helper</h3>
+
+	<div id="lightbox_container">
+
+	  <a class="lightbox_contents fancybox-thumbs" data-fancybox-group="thumb" href="/assets/8.jpg">
+		<img src="http://dummyimage.com/100x100/dadada/000.png" class='thumbnail-image' alt="" width='100%' height='100%'>
+	  </a>
+	  <a class="lightbox_contents fancybox-thumbs" data-fancybox-group="thumb" href="/assets/9.jpg">
+		<img src="http://dummyimage.com/100x100/dadada/000.png" class='thumbnail-image' alt="" width='100%' height='100%'>
+	  </a>
+	  <a class="lightbox_contents fancybox-thumbs" data-fancybox-group="thumb" href="/assets/10.jpg">
+		<img src="http://dummyimage.com/100x100/dadada/000.png" class='thumbnail-image' alt="" width='100%' height='100%'>
+	  </a>
+	  <a class="lightbox_contents fancybox-thumbs" data-fancybox-group="thumb" href="/assets/11.jpg">
+		<img src="http://dummyimage.com/100x100/dadada/000.png" class='thumbnail-image' alt="" width='100%' height='100%'>
+	  </a>
+
+	  <a class="lightbox_contents fancybox-thumbs" data-fancybox-group="thumb" href="/assets/flower1.jpg">
+		<img src="http://dummyimage.com/100x100/dadada/000.png" class='thumbnail-image' alt="" width='100%' height='100%'>
+	  </a>
+	  <a class="lightbox_contents fancybox-thumbs" data-fancybox-group="thumb" href="/assets/flower2.jpg">
+		<img src="http://dummyimage.com/100x100/dadada/000.png" class='thumbnail-image' alt="" width='100%' height='100%'>
+	  </a>
+	  <a class="lightbox_contents fancybox-thumbs" data-fancybox-group="thumb" href="/assets/flower3.jpg">
+		<img src="http://dummyimage.com/100x100/dadada/000.png" class='thumbnail-image' alt="" width='100%' height='100%'>
+	  </a>
+	</div>
+
   </div>
 </div>
 
-<!-- ------------------------------------------ -->
-<!-- LEFT COLUMN -->
-<!-- ------------------------------------------ -->
-<div class="large-2 columns">
 
-  <div class="alert-panel" data-alert>
-    <div class="alert-panel-title">
-      alert-panel / alert-panel-title
-      <!-- a href="#" class="alert-panel close">&times;</a  -->
-    </div>
-    <div class="alert-panel-message">
-	  alert-panel-message
-    </div>
-    <div class="alert-panel-action">
-      <a href="#" class="small button radius secondary">Cancel</a>
-      <a href="#" class="small button radius">Continue</a>
-    </div>
-  </div>
-
-  <div class="pink_panel">
-    <ul>
-      <h5>Recently added sites</h5>
-      <% @people_created_lately.each do |p| %>
-          <li><%= link_to p.name, person_path(p) %></li>
-      <% end %>
-    </ul>
-  </div>
-
-  <div class="cyan_panel callout">
-    <ul>
-      <h5>Recently modified sites</h5>
-      <% @people_updated_lately.each do |p| %>
-          <li><%= link_to p.name, person_path(p) %></li>
-      <% end %>
-    </ul>
-  </div>
-
-  <div class="panel callout">
-    <ul>
-      <h5>Recently visited sites</h5>
-      <% @people_with_activity.each do |clk| %>
-          <% if clk.person && clk.person.name %>
-              <li><%= link_to clk.person.name, person_path(clk.person) %></li>
-          <% end %>
-      <% end %>
-    </ul>
-  </div>
-
-</div>  <!-- large-2 columns -->
 
 
 <!-- ------------------------------------------ -->
 <!-- CENTER COLUMN -->
 <!-- ------------------------------------------ -->
-<div class="wrapper large-8 columns">
+<div class="row">
+  <div class="large-12 small-12 columns">
+	<div class="panel">
+	  <h4>A selection of sites</h4>
+	</div>
+  </div>
+</div>
 
-  <div class="row">
-    <div class="large-3 columns">
+<div class="row">
+  <% @selected.each_slice(3) do |slice| %>
+	  <% slice.each do |item| %>
+		  <%= content_tag :div, :class => 'large-4 columns' do %>
+			  <img src="http://placehold.it/400x300&text=[img]"/>
+			  <%= link_to(item.fullname, person_path(item)) %>
+			  <%= item.get_primary_photo_tag %>
+		  <% end %>
+	  <% end %>
+  <% end %>
+</div>
 
-    </div>
-    <div class="large-9 columns">
 
-      <!--
-      <ul class="right button-group">
-        <li><a href="#" class="button">Link 1</a></li>
-        <li><a href="#" class="button">Link 2</a></li>
-        <li><a href="#" class="button">Link 3</a></li>
-        <li><a href="#" class="button">Link 4</a></li>
-      </ul>
-      -->
+<!-- Call to Action Panel -->
+<div class="row">
+  <div class="large-12 columns">
 
-    </div>
+	<div class="panel">
+	  <h4>Get in touch!</h4>
+
+	  <div class="row">
+		<div class="large-9 columns">
+		  <p>We'd love to hear from you, you attractive person you.</p>
+		</div>
+		<div class="large-3 columns">
+		  <a href="#" class="radius button right">Contact Us</a>
+		</div>
+	  </div>
+	</div>
+
+  </div>
+</div>
+
+
+
+
+
+<style type="text/css">
+	.person-common {
+		padding: 5px;
+		font-family: 'Akzidenz-Grotesk BQ', sans-serif;
+		font-size: 2em;
+		font-weight: lighter;
+	}
+
+	.person-name {
+		color: black;
+		margin: 10px 0 10px 0;
+	}
+
+	.person-header {
+
+	}
+
+	.person-text {
+		color: gray;
+		letter-spacing: -1px;
+	}
+
+	.person-status-image i.foundicon-mail {
+		font-size: 0.7em;
+		margin-right: 10px;
+		vertical-align: middle;
+		color: darkgray;
+	}
+
+	.person-status-image span {
+		font-size: 0.5em;
+		vertical-align: middle;
+		color: darkgray;
+	}
+
+</style>
+
+<div class="row">
+  <div class="large-4 small-12 columns">
+	<div class="person-common">
+	  <div class="person-header">
+		<div class="person-name">
+		  John Doe
+		</div>
+		<div class="person-status-image">
+		  <i class="foundicon-mail"></i><span>Message</span><i class="foundicon-"
+		</div>
+	  </div>
+	  <hr/>
+	  <div class="person-icon-flags">
+
+	  </div>
+	  <div class="person-text">
+		<p>Nunc. Sagittis odio urna, sed urna integer egestas mattis urna? Cursus? Ut? Montes a montes eros, urna cum!
+		  Scelerisque in augue arcu velit diam? Magnis mus penatibus augue, placerat dis tortor urna integer vel porta,
+		  odio! Elementum tempor, tortor. Augue? Dapibus scelerisque, montes ut egestas ultricies lectus elementum!
+		  Rhoncus duis magna dignissim? Pellentesque elementum, a, cras et? Ridiculus, magna dignissim? Aliquet sagittis
+		  nec tempor rhoncus, rhoncus tincidunt massa augue integer et cursus, elit tristique auctor eu! Turpis. Sociis
+		  a nec! Phasellus lorem aliquam scelerisque, turpis, sociis magna nec, sit sagittis, ac eu. Turpis elementum
+		  nunc ac platea rhoncus? A facilisis sociis sit a porttitor penatibus! Sociis et sed phasellus dapibus vel
+		  nisi, cursus scelerisque sit duis aliquet, ac purus adipiscing.</p>
+
+		<p>Hac rhoncus porttitor pulvinar urna etiam? Dis nisi, risus. Augue parturient vel nec, ut rhoncus cras urna
+		  porttitor et! Ridiculus, porttitor parturient dis tortor urna nisi mid parturient, turpis mauris ridiculus
+		  nisi augue mauris odio, porta vel pulvinar. Turpis? Adipiscing proin porta? Urna, placerat, odio sit non.
+		  Rhoncus non non ac odio rhoncus. In ultrices. Parturient tempor a dapibus ultricies adipiscing pid habitasse
+		  mauris egestas, sociis sit amet, elementum! Mid sed! Porta penatibus dignissim ultrices ac ut tempor
+		  scelerisque, nascetur porttitor vut lundium? Diam, eu tempor natoque, montes ultrices! Cras magna etiam vut
+		  vut sagittis? Dolor, in, platea nisi elementum urna ut dolor risus amet, habitasse ultricies, platea nascetur
+		  nisi nunc ultricies diam sit montes duis tincidunt! Amet dolor.</p>
+
+		<p>Ridiculus arcu, ut vut facilisis et egestas, cras magnis massa a, vut nunc velit rhoncus, elementum quis! Mid
+		  nascetur. Phasellus pulvinar duis ultrices, ultrices est turpis dignissim, duis lundium, auctor adipiscing
+		  lorem turpis mus, nunc. Dapibus ac lectus. Placerat. Natoque massa proin penatibus aliquam lorem tortor magna?
+		  Enim ac! Dignissim eros eros nisi porta elementum adipiscing, augue tincidunt aenean. Natoque cum porttitor
+		  vel nunc aenean proin platea etiam a arcu velit odio turpis mattis. Lorem, etiam sit urna, sed. Adipiscing
+		  integer ac aliquet. Urna dapibus ut et ut rhoncus, dignissim porta ridiculus, turpis in tincidunt, cras eu
+		  sagittis porta, amet aenean, scelerisque, egestas, cursus ultrices diam platea, magna et, mus, amet etiam
+		  scelerisque adipiscing placerat habitasse ac egestas lectus.</p>
+	  </div>
+	</div>
   </div>
 
-  <!-- End Header and Nav -->
-
-
-  <!-- First Band (Slider) -->
-
-  <div class="row">
-    <div class="large-12 columns">
-      <div id="slider">
-        <div class="preloader"></div>
-
-        <ul data-orbit>
-          <li data-orbit-slide="headline-1">
-            <%= image_tag "welcome1-1000x400.png", :style => 'width:100%;height:100%;' %>
-            <!-- <div class="orbit-caption">Remember your loved ones</div> -->
-          </li>
-          <li data-orbit-slide="headline-2">
-            <%= image_tag "welcome2-1000x400.png", :style => 'width:100%;height:100%;' %>
-            <!-- <div class="orbit-caption">Remember your loved ones</div> -->
-          </li>
-          <li data-orbit-slide="headline-3">
-            <%= image_tag "welcome3-1000x400.png", :style => 'width:100%;height:100%;' %>
-            <!-- <div class="orbit-caption">Remember your loved ones</div> -->
-          </li>
-        </ul>
-
-      </div>
-
-      <hr/>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="large-12 columns">
-      <div class="panel">
-        <h4>A selection of sites</h4>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-	<% @selected.each_slice(3) do |slice| %>
-		<% slice.each do |item|  %>
-			<%= content_tag :div, :class => 'large-4 columns' do %>
-				<img src="http://placehold.it/400x300&text=[img]"/>
-				<%= link_to(item.fullname, person_path(item)) %>
-				<%= item.get_primary_photo_tag %>
-			<% end %>
-		<% end %>
-	<% end %>
-  </div>
-
-
-  <!-- Call to Action Panel -->
-  <div class="row">
-    <div class="large-12 columns">
-
-      <div class="panel">
-        <h4>Get in touch!</h4>
-
-        <div class="row">
-          <div class="large-9 columns">
-            <p>We'd love to hear from you, you attractive person you.</p>
-          </div>
-          <div class="large-3 columns">
-            <a href="#" class="radius button right">Contact Us</a>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
 
   <!-- Footer -->
 
   <footer class="row">
-    <div class="large-12 columns">
-      <hr/>
-      <div class="row">
-        <div class="large-6 columns">
-          <p>&copy; Copyright no one at all. Go to town.</p>
-        </div>
-        <div class="large-6 columns">
-          <ul class="inline-list right">
-            <li><a href="#">Link 1</a></li>
-            <li><a href="#">Link 2</a></li>
-            <li><a href="#">Link 3</a></li>
-            <li><a href="#">Link 4</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
+	<div class="large-12 columns">
+	  <hr/>
+	  <div class="row">
+		<div class="large-6 columns">
+		  <p>&copy; Copyright no one at all. Go to town.</p>
+		</div>
+		<div class="large-6 columns">
+		  <ul class="inline-list right">
+			<li><a href="#">Link 1</a></li>
+			<li><a href="#">Link 2</a></li>
+			<li><a href="#">Link 3</a></li>
+			<li><a href="#">Link 4</a></li>
+		  </ul>
+		</div>
+	  </div>
+	</div>
   </footer>
 
 
   <h5>Welcome <%= current_user.email if current_user %></h5>
 
-  <% if current_user %>
-      <h1>Select one of your sites</h1>
-      <ul>
-        <% current_user.clients.each do |p| %>
-            <li><%= link_to p.fullname, edit_person_path(p) %></li>
-        <% end %>
-
-        <h3>Recently created sites:</h3>
-        <% @people_created_lately.each do |p| %>
-            <h5><%= link_to p.fullname, person_path(p) %></h5>
-        <% end %>
-
-        <h3>Recently updated sites:</h3>
-        <% @people_updated_lately.each do |p| %>
-            <h5><%= link_to p.fullname, person_path(p) %></h5>
-        <% end %>
-      </ul>
-
-      <%= link_to "Add new site", new_person_path %>
-  <% else %>
-
-      <h5>Recent activity:</h5>
-      <% @people_with_activity.each do |c| %>
-          <% if c.person %>
-              <h5><%= link_to c.person.fullname, person_path(c.person) %>(clicks:<%= c.count %>)</h5>
-          <% else %>
-              <h1>ERROR IN DATA</h1>
-          <% end %>
-      <% end %>
-
-  <% end %>
 </div>
 
-<!-- ------------------------------------------ -->
-<!-- RIGHT COLUMN -->
-<!-- ------------------------------------------ -->
-<div class="wrapper large-2 columns">
-  <div class="alert-panel" data-alert>
-    <div class="alert-panel-title">
-	  alert-panel-title
-      <!-- a href="#" class="alert-panel close">&times;</a  -->
-    </div>
-    <div class="alert-panel-message">
-	  alert-panel-message
-    </div>
-    <div class="alert-panel-action">
-      <a href="#" class="small button radius secondary">alert-panel secondary</a>
-      <a href="#" class="small button radius">alert-panel</a>
-    </div>
-  </div>
-
-  <div class="pink_panel">
-    <ul>
-      <h5>Recently added sites</h5>
-      <% @people_created_lately.each do |p| %>
-          <li><%= link_to p.name, person_path(p) %></li>
-      <% end %>
-    </ul>
-  </div>
-</div>

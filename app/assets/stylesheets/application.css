@@ -10,9 +10,9 @@
  *
  *= require_self
  *= require fonts
- *= require foundation_and_overrides
- *= require appstyles
+ *= require foundation_and_overrides_ORIGINAL
  *= require jquery.ui.all
  *= require foundation-icons
- *
+ *= require appstyles
+ * require_tree
  */

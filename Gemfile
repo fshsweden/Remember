@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 
 gem 'rails'
 gem 'devise'
@@ -56,7 +56,8 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
   gem 'jquery-ui-rails'
   gem 'compass-rails' #NEW
-  gem 'zurb-foundation'
+  #gem 'zurb-foundation'
+  gem 'foundation-rails'
 end
 
 # Keeping these inside :assets group causes error when running rake assets:precompile:all in production!!!

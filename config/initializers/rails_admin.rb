@@ -27,10 +27,10 @@ RailsAdmin.config do |config|
   # config.default_items_per_page = 20
 
   # Exclude specific models (keep the others):
-  # config.excluded_models = ['Authentication', 'Card', 'Category', 'Click', 'CreditCard', 'Event', 'Gift', 'History', 'Person', 'Photo', 'Product', 'Story', 'UpdateAction', 'User']
+  # config.excluded_models = ['Authentication', 'Card', 'Category', 'Click', 'CreditCard', 'Event', 'Gift', 'History', 'Person', 'Photo', 'Product', 'Story', 'Action', 'User']
 
   # Include specific models (exclude the others):
-  # config.included_models = ['Authentication', 'Card', 'Category', 'Click', 'CreditCard', 'Event', 'Gift', 'History', 'Person', 'Photo', 'Product', 'Story', 'UpdateAction', 'User']
+  # config.included_models = ['Authentication', 'Card', 'Category', 'Click', 'CreditCard', 'Event', 'Gift', 'History', 'Person', 'Photo', 'Product', 'Story', 'Action', 'User']
 
   # Label methods for model instances:
   # config.label_methods << :description # Default is [:name, :title]
@@ -611,11 +611,11 @@ RailsAdmin.config do |config|
   # end
 
 
-  ###  UpdateAction  ###
+  ###  Action  ###
 
-  # config.model 'UpdateAction' do
+  # config.model 'Action' do
 
-  #   # You can copy this to a 'rails_admin do ... end' block inside your update_action.rb model definition
+  #   # You can copy this to a 'rails_admin do ... end' block inside your action.rb model definition
 
   #   # Found associations:
 

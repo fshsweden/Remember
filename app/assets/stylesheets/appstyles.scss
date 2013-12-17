@@ -1,4 +1,18 @@
+BODY {
+  border: 1px solid red;
+}
 
+.container-area {
+
+}
+
+.nav-area {
+
+}
+
+.content-area {
+
+}
 @mixin rounded_corners($radius) {
   border-radius: $radius;
   -moz-border-radius: $radius;
@@ -33,10 +47,10 @@
 }
 
 body {
-  background-image: image-url('pattern-8ffa.png');
+
 }
 
-.content {
+.XXXcontent {
   background-color: white;
   border: 2px solid #888888;
   padding: 50px;
@@ -48,3 +62,73 @@ body {
   padding: 10px;
 }
 
+.section_wrapper {
+}
+
+
+
+#carousel {
+  width: 600px;
+  height: 150px;
+  overflow: hidden;
+}
+
+.hidden {
+  display: none;
+}
+
+.scroll {
+  overflow: scroll;
+}
+
+.picturebox {
+  height:260px;
+}
+
+#lightbox_container {
+  width: 100%;
+  background-color: #CCC;
+  overflow: auto;
+  white-space:nowrap;
+}
+
+.lightbox_contents {
+  /* width: 35px;
+  height: 60px; */
+  display:inline-block;
+}
+
+/* use a table for some layout only */
+table.invisible_table {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+
+  caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+  }
+}
+
+.rounded {
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+
+.thumbnail-image {
+  /*  border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    margin: 10px;
+    border: 3px solid #800000; */
+}

@@ -72,22 +72,22 @@
 								mousedown: $.proxy(this.mousedown, this)
 							});
 		if (this.closeButton){
-			this.picker.find('a.datepicker-close').show();
+			this.picker.find('a.foundation-datepicker-close').show();
 		}
 
 		if(this.isInline) {
-			this.picker.addClass('datepicker-inline');
+			this.picker.addClass('foundation-datepicker-inline');
 		} else {
-			this.picker.addClass('datepicker-dropdown dropdown-menu');
+			this.picker.addClass('foundation-datepicker-dropdown dropdown-menu');
 		}
 		if (this.isRTL){
-			this.picker.addClass('datepicker-rtl');
+			this.picker.addClass('foundation-datepicker-rtl');
 			this.picker.find('.prev i, .next i')
 						.toggleClass('icon-arrow-left icon-arrow-right');
 		}
 		$(document).on('mousedown', function (e) {
-			// Clicked outside the datepicker, hide it
-			if ($(e.target).closest('.datepicker.datepicker-inline, .datepicker.datepicker-dropdown').length === 0) {
+			// Clicked outside the foundation-datepicker, hide it
+			if ($(e.target).closest('.foundation-datepicker.foundation-datepicker-inline, .foundation-datepicker.foundation-datepicker-dropdown').length === 0) {
 				that.hide();
 			}
 		});
@@ -180,7 +180,7 @@
 					}]
 				];
 			}
-						else if (this.element.is('div')) {  // inline datepicker
+						else if (this.element.is('div')) {  // inline foundation-datepicker
 							this.isInline = true;
 						}
 			else {
@@ -362,13 +362,13 @@
 			if(this.calendarWeeks){
 				var cell = '<th class="cw">&nbsp;</th>';
 				html += cell;
-				this.picker.find('.datepicker-days thead tr:first-child').prepend(cell);
+				this.picker.find('.foundation-datepicker-days thead tr:first-child').prepend(cell);
 			}
 			while (dowCnt < this.weekStart + 7) {
 				html += '<th class="dow">'+dates[this.language].daysMin[(dowCnt++)%7]+'</th>';
 			}
 			html += '</tr>';
-			this.picker.find('.datepicker-days thead').append(html);
+			this.picker.find('.foundation-datepicker-days thead').append(html);
 		},
 
 		fillMonths: function(){
@@ -377,7 +377,7 @@
 			while (i < 12) {
 				html += '<span class="month">'+dates[this.language].monthsShort[i++]+'</span>';
 			}
-			this.picker.find('.datepicker-months td').html(html);
+			this.picker.find('.foundation-datepicker-months td').html(html);
 		},
 
 		fill: function() {
@@ -390,7 +390,7 @@
 				endMonth = this.endDate !== Infinity ? this.endDate.getUTCMonth() : Infinity,
 				currentDate = this.date && this.date.valueOf(),
 				today = new Date();
-			this.picker.find('.datepicker-days thead th.date-switch')
+			this.picker.find('.foundation-datepicker-days thead th.date-switch')
 						.text(dates[this.language].months[month]+' '+year);
 			this.picker.find('tfoot th.today')
 						.text(dates[this.language].today)
@@ -443,10 +443,10 @@
 				}
 				prevMonth.setUTCDate(prevMonth.getUTCDate()+1);
 			}
-			this.picker.find('.datepicker-days tbody').empty().append(html.join(''));
+			this.picker.find('.foundation-datepicker-days tbody').empty().append(html.join(''));
 			var currentYear = this.date && this.date.getUTCFullYear();
 
-			var months = this.picker.find('.datepicker-months')
+			var months = this.picker.find('.foundation-datepicker-months')
 						.find('th:eq(1)')
 							.text(year)
 							.end()
@@ -466,7 +466,7 @@
 
 			html = '';
 			year = parseInt(year/10, 10) * 10;
-			var yearCont = this.picker.find('.datepicker-years')
+			var yearCont = this.picker.find('.foundation-datepicker-years')
 								.find('th:eq(1)')
 									.text(year + '-' + (year + 9))
 									.end()
@@ -769,15 +769,15 @@
 			}
 			/*
 				vitalets: fixing bug of very special conditions:
-				jquery 1.7.1 + webkit + show inline datepicker in bootstrap popover.
-				Method show() does not set display css correctly and datepicker is not shown.
+				jquery 1.7.1 + webkit + show inline foundation-datepicker in bootstrap popover.
+				Method show() does not set display css correctly and foundation-datepicker is not shown.
 				Changed to .css('display', 'block') solve the problem.
 				See https://github.com/vitalets/x-editable/issues/37
 
 				In jquery 1.7.2+ everything works fine.
 			*/
-			//this.picker.find('>div').hide().filter('.datepicker-'+DPGlobal.modes[this.viewMode].clsName).show();
-			this.picker.find('>div').hide().filter('.datepicker-'+DPGlobal.modes[this.viewMode].clsName).css('display', 'block');
+			//this.picker.find('>div').hide().filter('.foundation-datepicker-'+DPGlobal.modes[this.viewMode].clsName).show();
+			this.picker.find('>div').hide().filter('.foundation-datepicker-'+DPGlobal.modes[this.viewMode].clsName).css('display', 'block');
 			this.updateNavArrows();
 		}
 	};
@@ -973,30 +973,30 @@
 		contTemplate: '<tbody><tr><td colspan="7"></td></tr></tbody>',
 		footTemplate: '<tfoot><tr><th colspan="7" class="today"></th></tr></tfoot>'
 	};
-	DPGlobal.template = '<div class="datepicker">'+
+	DPGlobal.template = '<div class="foundation-datepicker">'+
 							
-							'<div class="datepicker-days">'+
+							'<div class="foundation-datepicker-days">'+
 								'<table class=" table-condensed">'+
 									DPGlobal.headTemplate+
 									'<tbody></tbody>'+
 									DPGlobal.footTemplate+
 								'</table>'+
 							'</div>'+
-							'<div class="datepicker-months">'+
+							'<div class="foundation-datepicker-months">'+
 								'<table class="table-condensed">'+
 									DPGlobal.headTemplate+
 									DPGlobal.contTemplate+
 									DPGlobal.footTemplate+
 								'</table>'+
 							'</div>'+
-							'<div class="datepicker-years">'+
+							'<div class="foundation-datepicker-years">'+
 								'<table class="table-condensed">'+
 									DPGlobal.headTemplate+
 									DPGlobal.contTemplate+
 									DPGlobal.footTemplate+
 								'</table>'+
 							'</div>'+
-							'<a class="button datepicker-close small alert right" style="width:auto;"><i class="icon-remove"></i></a>'+
+							'<a class="button foundation-datepicker-close small alert right" style="width:auto;"><i class="icon-remove"></i></a>'+
 						'</div>';
 
 	$.fn.fdatepicker.DPGlobal = DPGlobal;

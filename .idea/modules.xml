@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Remember.iml" filepath="$PROJECT_DIR$/.idea/Remember.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../rails3-devise-rspec-cucumber/.idea/rails3-devise-rspec-cucumber.iml" filepath="$PROJECT_DIR$/../rails3-devise-rspec-cucumber/.idea/rails3-devise-rspec-cucumber.iml" />
     </modules>
   </component>
 </project>

@@ -17,14 +17,39 @@
 //= require_tree .
 //= require jquery_nested_form
 
+
 $(function() {
+
     // alert(jQuery.ui.version);
     $( "#tabs" ).tabs();
     $('.datepicker').datepicker();
     $("#expmonth").datepicker({
         dateFormat: "mm"
     });
+
     $(document).foundation();
+
+    // Using custom configuration
+
+    /*
+     *  Thumbnail helper. Disable animations, hide close button, arrows and slide to next gallery item if clicked
+     */
+
+    $('.fancybox-thumbs').fancybox({
+        prevEffect : 'none',
+        nextEffect : 'none',
+
+        closeBtn  : true,
+        arrows    : false,
+        nextClick : true,
+
+        helpers : {
+            thumbs : {
+                width  : "20%",
+                height : "50"
+            }
+        }
+    });
 
 });
 

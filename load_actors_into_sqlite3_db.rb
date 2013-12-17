@@ -27,11 +27,17 @@ require  'dm-migrations'
 	DataMapper.finalize
 	DataMapper.auto_migrate!
 
-  
-  CSV.foreach('./50000.csv', :headers => true) do |row|
-    puts row[1] + " - " + row[0]
-    p = Person.new
-    p.name =row[0]
-    p.surname = row[1]
-    p.save!
+  filename = ARGV[0] || './50000.csv'
+
+  begin
+	  CSV.foreach(filename, :headers => true) do |row|
+		puts row[1] + " - " + row[0]
+		p = Person.new
+		p.name =row[0]
+		p.surname = row[1]
+		p.save!
+	  end
+  rescue
+	  puts 'Syntax: load_actors.... <filename>'
+	  puts 'Database is expected to be SQLITE3 and located in ./db/development.sqlite3'
   end

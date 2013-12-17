@@ -82,7 +82,7 @@ class PeopleController < ApplicationController
 
 		respond_to do |format|
 			if @person.save
-				c = UpdateAction.new(:person_id => @person.id, :comment => 'Created')
+				c = Action.new(:person_id => @person.id, :comment => 'Created')
 				c.save!
 
 				format.html { redirect_to @person, notice: 'Person was successfully created.' }
@@ -106,10 +106,10 @@ class PeopleController < ApplicationController
 		respond_to do |format|
 			if @person.update_attributes(params[:person])
 
-				c = UpdateAction.find_by_id(@person.id)
+				c = Action.find_by_id(@person.id)
 				if c != nil
 				else
-					c = UpdateAction.new(:person_id => @person.id, :comment => 'Updated')
+					c = Action.new(:person_id => @person.id, :comment => 'Updated')
 				end
 				c.save!
 

@@ -1,15 +1,15 @@
 # spec/models/contact.rb
 require 'spec_helper'
 
-describe User do
+describe User, type: :model do
 
 	before (:each) do
-		@user = FactoryGirl.create :user
-		sign_in @user
+		@current_user = FactoryGirl.create :user
 	end
+
 	it "can register a credit card" do
 
-		@cc = current_user.store_credit_card(
+		@cc = @current_user.store_credit_card(
 			:number          => "4024007151371111ss4",
 			:type            => "visa",
 			:expire_month    => "11",
