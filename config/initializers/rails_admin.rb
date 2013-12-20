@@ -27,10 +27,10 @@ RailsAdmin.config do |config|
   # config.default_items_per_page = 20
 
   # Exclude specific models (keep the others):
-  # config.excluded_models = ['Authentication', 'Card', 'Category', 'Click', 'CreditCard', 'Event', 'Gift', 'History', 'Person', 'Photo', 'Product', 'Story', 'Action', 'User']
+  # config.excluded_models = ['Authentication', 'CreditCard', 'Category', 'Click', 'CreditCard', 'Event', 'Gift', 'History', 'Person', 'Photo', 'Product', 'Story', 'Action', 'User']
 
   # Include specific models (exclude the others):
-  # config.included_models = ['Authentication', 'Card', 'Category', 'Click', 'CreditCard', 'Event', 'Gift', 'History', 'Person', 'Photo', 'Product', 'Story', 'Action', 'User']
+  # config.included_models = ['Authentication', 'CreditCard', 'Category', 'Click', 'CreditCard', 'Event', 'Gift', 'History', 'Person', 'Photo', 'Product', 'Story', 'Action', 'User']
 
   # Label methods for model instances:
   # config.label_methods << :description # Default is [:name, :title]
@@ -99,11 +99,11 @@ RailsAdmin.config do |config|
   # end
 
 
-  ###  Card  ###
+  ###  CreditCard  ###
 
-  # config.model 'Card' do
+  # config.model 'CreditCard' do
 
-  #   # You can copy this to a 'rails_admin do ... end' block inside your card.rb model definition
+  #   # You can copy this to a 'rails_admin do ... end' block inside your credit_cardit_card.rb model definition
 
   #   # Found associations:
 
@@ -665,7 +665,7 @@ RailsAdmin.config do |config|
 
   #     configure :authentications, :has_many_association 
   #     configure :credit_cards, :has_many_association 
-  #     configure :cards, :has_many_association 
+  #     configure :credit_cards, :has_many_association
   #     configure :clients, :has_and_belongs_to_many_association 
 
   #   # Found columns:

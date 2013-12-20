@@ -28,11 +28,8 @@ class FacebookController < ApplicationController
       @fr = me.friends
 
       @fr.each do |fr|
-        logger.info "User.new"
         user = FbGraph::User.new(fr.identifier, :access_token => auth.token)
-        logger.info "User.fetch"
         user = user.fetch
-        logger.info user.email
         @friends << user
       end
 

@@ -1,6 +1,6 @@
 class CreateCards < ActiveRecord::Migration
   def change
-    create_table :cards do |t|
+    create_table :credit_cards do |t|
       t.references :user
       t.string :cc_type
       t.string :cc_number

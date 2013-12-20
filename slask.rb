@@ -65,12 +65,12 @@
 
 @links=[
 	#<PayPal::SDK::REST::DataTypes::Links:0x007fae7988f3b8 @error=nil,
-	# @href="https://api.sandbox.paypal.com/v1/vault/credit-card/CARD-2X189563M3443135VKKDDW6Y",
+	# @href="https://api.sandbox.paypal.com/v1/vault/credit-credit_card/CARD-2X189563M3443135VKKDDW6Y",
 	# @rel="self", @method="GET">,
 	# #<PayPal::SDK::REST::DataTypes::Links:0x007fae7988edc8 @error=nil,
-	# @href="https://api.sandbox.paypal.com/v1/vault/credit-card/CARD-2X189563M3443135VKKDDW6Y",
+	# @href="https://api.sandbox.paypal.com/v1/vault/credit-credit_card/CARD-2X189563M3443135VKKDDW6Y",
 	# @rel="delete", @method="DELETE">,
 	# #<PayPal::SDK::REST::DataTypes::Links:0x007fae7988e940 @error=nil,
-	# @href="https://api.sandbox.paypal.com/v1/vault/credit-card/CARD-2X189563M3443135VKKDDW6Y",
+	# @href="https://api.sandbox.paypal.com/v1/vault/credit-credit_card/CARD-2X189563M3443135VKKDDW6Y",
 	# @rel="patch",
 	# @method="PATCH">]>

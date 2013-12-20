@@ -24,8 +24,10 @@ class PeopleController < ApplicationController
 		if params[:search]
 			@people = Person.where("name LIKE '#{params[:search]}' or surname LIKE '#{params[:search]}'").page(params[:page])
 			render 'index'
+		else
+			@people = Person.where("").page(params[:page])
+			render 'index'
 		end
-		@people
 	end
 
 	# GET /people/1

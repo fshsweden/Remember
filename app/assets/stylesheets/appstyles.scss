@@ -1,5 +1,5 @@
 BODY {
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .container-area {
@@ -44,10 +44,6 @@ BODY {
 
   /*text stroke*/
   -webkit-text-stroke: 4px rgba(0, 0, 0, .6);
-}
-
-body {
-
 }
 
 .XXXcontent {
@@ -131,4 +127,43 @@ table.invisible_table {
     -webkit-border-radius: 10px;
     margin: 10px;
     border: 3px solid #800000; */
+}
+
+
+
+
+
+
+.person-info {
+  padding: 5px;
+  font-family: 'Akzidenz-Grotesk BQ', sans-serif;
+  font-size: 2em;
+  font-weight: lighter;
+
+  .person-header {
+
+    .person-name {
+      color: black;
+      margin: 10px 0 10px 0;
+    }
+
+    .person-status-image span {
+      font-size: 0.5em;
+      vertical-align: middle;
+      color: darkgray;
+    }
+  }
+
+  .person-text {
+    color: gray;
+    letter-spacing: -1px;
+  }
+
+  .person-status-image i.foundicon-mail {
+    font-size: 0.7em;
+    margin-right: 10px;
+    vertical-align: middle;
+    color: darkgray;
+  }
+
 }

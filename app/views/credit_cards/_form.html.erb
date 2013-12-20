@@ -1,0 +1,23 @@
+<%= simple_form_for(@credit_card) do |f| %>
+
+    <% if @credit_card.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@credit_card.errors.count, "error") %> prohibited this card from being saved:</h2>
+
+          <ul>
+            <% @credit_card.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+
+    <%= f.input :user_id, :as => :hidden %>
+    <%= f.input :cc_type, :placeholder => 'Credit CreditCard Type', :collection => ['VISA', 'AMEX','DINERS'] %>
+    <%= f.input :cc_number, :placeholder => 'Credit CreditCard Number'  %>
+    <%= f.input :cc_cvc, :placeholder => 'CVC Code'  %>
+    <%= f.input :cc_exp_month, :placeholder => 'Expiration Month'  %>
+    <%= f.input :cc_exp_year, :placeholder => 'Expiration Year'  %>
+    <%= f.input :cc_name, :placeholder => 'Name on CreditCard'  %>
+    <%= f.submit %>
+<% end %>

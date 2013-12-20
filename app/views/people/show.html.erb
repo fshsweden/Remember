@@ -4,101 +4,65 @@
 <!-- Display the CART somewhere -->
 <!--                            -->
 <div class="row">
-  <div class="large-10 small-10 columns">
-  </div>
-  <div class="large-2 small-2 columns">
+  <div class="large-12 small-12 columns">
+	<h5>This is the shopping cart:</h5>
 	<%= current_cart.cart_items.count %> artiklar
 	<% sum = 0.0 %>
 	<% for item in current_cart.cart_items %>
 		<% sum = (1 * 5) %>
 	<% end %>
 	<%= sum %> kr
+	<hr>
+	<%= link_to "Checkout", present_checkout_view_path %>
   </div>
 </div>
+
+<hr>
 
 <div class="row">
-  <div class="large-10 small-10 columns">
-  </div>
-  <div class="large-2 small-2 columns">
-	<%= link_to "List all sites", people_path %>
+  <div class="large-12 small-12 columns">
+	<%= link_to "Search", people_path %>
   </div>
 </div>
 
-<h1><%= @person.fullname %></h1>
+<hr>
+
+<h1>This is the site of: <%= @person.fullname %></h1>
 
 
 <!--                                                   -->
 <!-- <div> with id=tabs will be handled by jquery code -->
 <!--                                                   -->
 <div class="row">
-  <div class="large-8 small-8 columns">
-	<div id="tabs">
-	  <ul>
-		<li><a href="#tabs-1">Events</a></li>
-		<li><a href="#tabs-2">Stories</a></li>
-		<li><a href="#tabs-3">Dates</a></li>
-	  </ul>
-	  <div id="tabs-1">
-		<div class="row">
-		  <div class="large-12 small-12 columns">
-			<fieldset>
-			  <legend>Events in <%= @person.fullname %>'s life</legend>
-			  <% @person.events.each do |evt| %>
-				  <h4 class="event"><%= evt.name %></h4>
+  <div class="large-12 small-12 columns">
 
-				  <p class="event"><%= evt.date %></p>
+	<h5>Events in <%= @person.fullname %>'s life</h5>
+	<% @person.events.each do |evt| %>
+		<h4 class="event"><%= evt.name %></h4>
+		<p class="event"><%= evt.date %></p>
+		<p class="event"><%= evt.comment %></p>
+	<% end %>
 
-				  <p class="event"><%= evt.comment %></p>
-			  <% end %>
-			</fieldset>
-		  </div>
-		</div>
-	  </div>
-	  <div id="tabs-2">
-		<div class="row">
-		  <div class="large-12 small-12 columns">
-			<fieldset>
-			  <legend>Stories</legend>
-			  <% @person.stories.each do |st| %>
-				  <h4><%= st.title %></h4>
+	<hr>
 
-				  <p><%= st.content %></p>
-				  <hr>
-			  <% end %>
-			</fieldset>
-		  </div>
-		</div>
-	  </div>
-	  <div id="tabs-3">
-		<%= image_tag("placeholder_image.jpg") %>
+	<h5>Stories</h5>
+	<% @person.stories.each do |st| %>
+		<h4><%= st.title %></h4>
+		<p><%= st.content %></p>
+		<hr>
+  <% end %>
 
-		<% if @person.photos.size > 0 %>
-			<ul data-orbit>
-			  <% @person.photos.each do |p| %>
-				  <li>
-					<%= image_tag(p.image) %>
-					<div class="orbit-caption"><%= p.image_file_name %></div>
-				  </li>
-			  <% end %>
-			</ul>
-		<% end %>
-	  </div>
-	</div>
-  </div>
-  <div class="large-4 small-4 column">
-	<h3>Items in cart:</h3>
-	<table>
-	  <% for item in current_cart.cart_items %>
-		  <tr class="<%= cycle :odd, :even %>">
-			<td><%= h item.product.name %></td>
-			<td><%= h item.person.fullname %></td>
-			<td><%= item.qty %></td>
-			<td><%= item.price %></td>
-			<td><%= link_to "Remove ", {:controller => "carts", :action => "remove_item", :id => item.product_id} %></td>
-		  </tr>
+	<hr>
+
+	<%= image_tag("placeholder_image.jpg") %>
+
+	<hr>
+
+	<% @person.photos.each do |p| %>
+			<%= image_tag(p.image) %>
+			<div class="orbit-caption"><%= p.image_file_name %></div>
 	  <% end %>
-	</table>
-	<%= link_to "Checkout", present_checkout_view_path %>
+
   </div>
 </div>
 

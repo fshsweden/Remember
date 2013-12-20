@@ -7,7 +7,7 @@ describe User, type: :model do
 		@current_user = FactoryGirl.create :user
 	end
 
-	it "can register a credit card" do
+	it "can register a credit credit_card" do
 
 		@cc = @current_user.store_credit_card(
 			:number          => "4024007151371111ss4",

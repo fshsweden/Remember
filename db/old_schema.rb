@@ -38,7 +38,7 @@ ActiveRecord::Schema.define(:version => 20131125100756) do
     t.datetime "updated_at", :null => false
   end
 
-  create_table "cards", :force => true do |t|
+  create_table "credit_cards", :force => true do |t|
     t.integer  "user_id"
     t.string   "cc_type"
     t.string   "cc_number"
@@ -50,7 +50,7 @@ ActiveRecord::Schema.define(:version => 20131125100756) do
     t.datetime "updated_at",   :null => false
   end
 
-  add_index "cards", ["user_id"], :name => "index_cards_on_user_id"
+  add_index "credit_cards", ["user_id"], :name => "index_cards_on_user_id"
 
   create_table "cart_items", :force => true do |t|
     t.integer  "person_id"

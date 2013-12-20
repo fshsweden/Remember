@@ -14,7 +14,7 @@
     <th></th>
   </tr>
 
-<% @cards.each do |card| %>
+<% @credit_cards.each do |card| %>
   <tr>
     <td><%= card.user_id %></td>
     <td><%= card.cc_type %></td>
@@ -23,13 +23,13 @@
     <td><%= card.cc_exp_month %></td>
     <td><%= card.cc_exp_year %></td>
     <td><%= card.cc_name %></td>
-    <td><%= link_to 'Show', card %></td>
-    <td><%= link_to 'Edit', edit_card_path(card) %></td>
-    <td><%= link_to 'Destroy', card, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= link_to 'Show', credit_card %></td>
+    <td><%= link_to 'Edit', edit_credit_card_path(card) %></td>
+    <td><%= link_to 'Destroy', credit_card, method: :delete, data: { confirm: 'Are you sure?' } %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Card', new_card_path %>
+<%= link_to 'New CreditCard', new_credit_card_path %>
