@@ -2,6 +2,7 @@
  require 'spec_helper'
 
  describe MyCreditCard do
+
 	it "has a valid factory" do
 		FactoryGirl.create(:my_credit_card).should be_valid
 	end
@@ -26,4 +27,5 @@
 	it "is invalid without a cc_type" do
 		FactoryGirl.build(:my_credit_card, cc_type: nil).should_not be_valid
 	end
+
  end

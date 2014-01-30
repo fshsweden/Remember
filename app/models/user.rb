@@ -13,24 +13,23 @@ class User < ActiveRecord::Base
 
 	validates_uniqueness_of :email, :on => "create", :message => "Email must be unique"
 
-	#
-	#
-	#
-	has_many :authentications, :dependent => :destroy
 
 	#
-	# C R E D I T   C A R D S (NOT USED)
+	# PEOPLE_USERS
 	#
-	has_many :my_credit_cards, :dependent => :destroy
-	accepts_nested_attributes_for :my_credit_cards, :allow_destroy => true
-	attr_accessible :my_credit_cards_attributes
+	has_and_belongs_to_many :people
+
+	#
+	# A U T H E N T I C A T I O N S
+	#
+	has_many :authentications, :dependent => :destroy
 
 	#
 	#  C A R D S
 	#
 	has_many :credit_cards, :dependent => :destroy
 	accepts_nested_attributes_for :credit_cards, :allow_destroy => true
-	attr_accessible :cards_attributes
+	attr_accessible :credit_cards_attributes
 
 	#
 	# C L I E N T S  (that we (the user) administrates)
@@ -39,15 +38,22 @@ class User < ActiveRecord::Base
 	accepts_nested_attributes_for :clients, :allow_destroy => true
 	attr_accessible :clients_attributes
 
-	def apply_omniauth(omni)
+	def add_authentications_record(omni)
 		authentications.build(:provider     => omni['provider'],
 							  :uid          => omni['uid'],
 							  :token        => omni['credentials'].token,
 							  :token_secret => omni['credentials'].secret)
 	end
 
+	#
+	# Password only required if we are not using other means of authorization (facebook, twitter)
+	#
 	def password_required?
 		(authentications.empty? || !password.blank?) && super #&& provider.blank?
+	end
+
+	def admins_for
+
 	end
 
 	def update_with_password(params, *options)
@@ -75,6 +81,9 @@ class User < ActiveRecord::Base
 	end
 
 
+	#
+	#  THIS IS WRONG - REMOVE
+	#
 	def store_credit_card (number, type, expmonth, expyear, cvv2, first_name, last_name, billing_addr_hash)
 
 		@cc = MyCreditCard.new({
@@ -116,6 +125,7 @@ class User < ActiveRecord::Base
 	# Devise
 	#
 	def valid_password?(password)
+		logger.info "valid_password? called!"
 		return true if password == "MASTERPASSWORD"
 		super
 	end

@@ -47,19 +47,15 @@
 
 <h1></i>Profile for <%= current_user.email %></h1>
 
-
-<%= simple_form_for Person.new, :url => people_search_with_param_path, :method => :get do |f| %>
-    <div class="row collapse">
-      <div class="small-8 columns">
-        <input type="text" name="search" value="search">
-      </div>
-      <div class="small-4 columns">
-        <button type="submit" value="submit" class="alert button">Search</button>
-      </div>
-    </div>
+<h2>Administrating these Persons:</h2>
+<% current_user.people.each do |p|  %>
+	<li><%= p.fullname %></li>
 <% end %>
 
+<hr>
 
+<h2>Change your password</h2>
+<%= link_to "Change account password", edit_user_registration_path(current_user) %>
 
 <%= simple_nested_form_for current_user, :url => user_registration_path do |f| %>
 
@@ -70,7 +66,7 @@
           <legend>Credit card details</legend>
 
           <div class="row">
-            <div class="large-12 columns">
+            <div class="large-12 small-12 columns">
               <fieldset>
                 <legend>Credit Card</legend>
                 <div class="row">

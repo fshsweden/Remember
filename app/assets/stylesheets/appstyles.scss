@@ -2,6 +2,71 @@ BODY {
   /* border: 1px solid red; */
 }
 
+
+.person-title {
+  border-bottom: 1px solid gray;
+  height: 50px; /* should be 1,6 times font size */
+}
+
+.person-photo {
+  margin: 15px 15px 15px 0 !important;
+  padding: 0 !important;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border: 2px solid grey;
+}
+
+.facebook-frame {
+  background-color: #EDEFF4;
+  border: 1px solid #3b5998;
+  margin: 10px 0 0 0;
+  padding: 10px;
+  font-family: 'lucida grande', tahoma, verdana, arial, sans-serif;
+  font-size: 11px;
+  line-height: 14px;
+  color: #3b5998;
+
+  ul {
+    font-size: 11px;
+  }
+
+  div i {
+
+  }
+
+  .facebook-bold-text {
+    font-family: 'lucida grande', tahoma, verdana, arial, sans-serif;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 14px;
+    color: #3b5998;
+    margin-bottom: 0px; /* otherwise p will have 20 px margin */
+  }
+
+  facebook-link {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .container-area {
 
 }

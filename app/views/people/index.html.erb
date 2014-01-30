@@ -35,6 +35,7 @@
 </div>
 <%= simple_form_for(Person.new, :url => people_path, :method => :post, :remote => true) do |f| %>
     <%= f.input :name %>
+	<%= f.input :surname %>
     <%= f.submit %>
 <% end  %>
 

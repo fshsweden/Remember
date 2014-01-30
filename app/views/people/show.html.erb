@@ -1,34 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<!--                            -->
-<!-- Display the CART somewhere -->
-<!--                            -->
-<div class="row">
-  <div class="large-12 small-12 columns">
-	<h5>This is the shopping cart:</h5>
-	<%= current_cart.cart_items.count %> artiklar
-	<% sum = 0.0 %>
-	<% for item in current_cart.cart_items %>
-		<% sum = (1 * 5) %>
-	<% end %>
-	<%= sum %> kr
-	<hr>
-	<%= link_to "Checkout", present_checkout_view_path %>
-  </div>
-</div>
-
-<hr>
-
-<div class="row">
-  <div class="large-12 small-12 columns">
-	<%= link_to "Search", people_path %>
-  </div>
-</div>
-
-<hr>
-
 <h1>This is the site of: <%= @person.fullname %></h1>
-
 
 <!--                                                   -->
 <!-- <div> with id=tabs will be handled by jquery code -->
@@ -50,34 +22,28 @@
 		<h4><%= st.title %></h4>
 		<p><%= st.content %></p>
 		<hr>
-  <% end %>
-
-	<hr>
-
-	<%= image_tag("placeholder_image.jpg") %>
+	<% end %>
 
 	<hr>
 
 	<% @person.photos.each do |p| %>
-			<%= image_tag(p.image) %>
-			<div class="orbit-caption"><%= p.image_file_name %></div>
-	  <% end %>
+		<%= image_tag(p.image) %>
+		<div class="orbit-caption"><%= p.image_file_name %></div>
+	<% end %>
 
   </div>
 </div>
 
 
 
-<!--                            -->
-<!-- Display the CART somewhere -->
-<!--                            -->
 <div class="row">
   <div class="large-12 small-12 columns">
 	<ul>
-		<li>Would you like to contribute a story about <%= @person.fullname %>? Then click
-	  here: <%= link_to "Add Story", person_add_story_path(@person) %> </li>
-		<li>Would you like to buy an item to salute the memory of <%= @person.fullname %>? Then click
-	  here: <%= link_to "Buy Item", products_path %> </li>
+	  <li>Would you like to contribute a story about <%= @person.fullname %>? Then click
+		here: <%= link_to "Add Story", person_add_story_path(@person) %> </li>
+
+	  <li>Would you like to buy an item to salute the memory of <%= @person.fullname %>? Then click
+		here: <%= link_to "Buy Item", products_path %> </li>
 	</ul>
   </div>
 </div>

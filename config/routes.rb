@@ -32,7 +32,6 @@ Remember::Application.routes.draw do
 	  get 'add_story'
   end
   get "/search"				=> 'people#search'
-  get "/search_with_param"	=> 'people#search_with_param'
 
   match '/profile' => 'profile#index'
 

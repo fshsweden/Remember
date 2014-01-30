@@ -1,33 +1,70 @@
 <!DOCTYPE html>
 <!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
-<!--[if lt IE 7 ]> <html class="ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]>    <html class="ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]>    <html class="ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
-  <head>
-  	<meta charset="utf-8" />
-  	<!-- Uncomment to make IE8 render like IE7 -->
-  	<!-- <meta http-equiv="X-UA-Compatible" content="IE=7" /> -->
-  	<!-- Set the viewport width to device width for mobile -->
-  	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  	<title><%= content_for?(:title) ? yield(:title) : "Miss U" %></title>
-  	<%= stylesheet_link_tag    "application" %>
-  	<%= javascript_include_tag "modernizr.js" %>
-    <%= csrf_meta_tags %>
-  </head>
+<!--[if lt IE 7 ]>
+<html class="ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>
+<html class="ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>
+<html class="ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8"/>
+  <!-- Uncomment to make IE8 render like IE7 -->
+  <!-- <meta http-equiv="X-UA-Compatible" content="IE=7" /> -->
+  <!-- Set the viewport width to device width for mobile -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title><%= content_for?(:title) ? yield(:title) : "Miss U" %></title>
+  <%= stylesheet_link_tag "application" %>
+  <%= javascript_include_tag "modernizr.js" %>
+  <%= csrf_meta_tags %>
+</head>
 
-  <body>
-    <div id="container-area">
-	  <div class="row">
-	      <div class="nav-area large-12 small-12 columns">
-			<%= render 'shared/topnav' %>
-      	</div>
-		<div class="content-area large-12 small-12 columns">
-		  <%= yield %>
+<body>
+<div id="container-area">
+  <div class="row">
+	<div class="nav-area large-12 small-12 columns">
+	  <%= render 'shared/topnav' %>
+	</div>
+	<div class="content-area large-6 small-6 columns">
+
+	  <div class="facebook-frame">
+		<a class="facebook-bold-text facebook-link" href="#">Shopping cart</a>
+		<div>
+		  <%= current_cart.cart_items.count %> artiklar
+		  <% sum = 0.0 %>
+		  <% for item in current_cart.cart_items %>
+			  <% sum += (1 * 5) %>
+		  <% end %>
+		  <%= sum %> kr
+		</div>
+		<div><%= link_to "Checkout", present_checkout_view_path %></div>
+	  </div>
+
+
+	  <div class="facebook-frame">
+		<p class="facebook-bold-text">Current_user</p>
+
+		<div>
+		  <p class="facebook-bold-text"><%= current_user.email if current_user %></p>
+		  <p class="facebook-bold-text"><%= raw session.except(:token, :credentials, :_csrf_token).to_s %></p>
+		  <p class="facebook-bold-text">Authenticated by:<%= session[:auth_method] %></p>
 		</div>
 	  </div>
-    </div>
-    <%= render 'shared/footer' %>
-    <%= javascript_include_tag "application" %>
-  </body>
+
+	  <hr>
+
+	</div>
+	<div class="large-6 small-6 columns">
+
+	</div>
+	<div class="large-12 small-12 columns">
+		<%= yield %>
+	</div>
+
+  </div>
+</div>
+<%= render 'shared/footer' %>
+<%= javascript_include_tag "application" %>
+</body>
 </html>

@@ -12,20 +12,12 @@ class PeopleController < ApplicationController
 		end
 	end
 
-	def search(args)
-		if args && !args.empty?
-			Person.where("name LIKE '#{args}' or surname LIKE '#{args}'").page(params[:page])
-		else
-			Person.order(:surname, :name).page(params[:page])
-		end
-	end
-
-	def search_with_param
-		if params[:search]
+	def search
+		if params[:search] && params[:search] != ""
 			@people = Person.where("name LIKE '#{params[:search]}' or surname LIKE '#{params[:search]}'").page(params[:page])
 			render 'index'
 		else
-			@people = Person.where("").page(params[:page])
+			@people = Person.order(:surname, :name).page(params[:page])
 			render 'index'
 		end
 	end

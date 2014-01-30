@@ -1,7 +1,7 @@
 <nav class="top-bar" data-topbar>
   <ul class="title-area">
 	<li class="name">
-	  <h1><a href="#">Miss U</a></h1>
+	  <h1><a href="/">Miss U</a></h1>
 	</li>
 	<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
   </ul>
@@ -11,7 +11,7 @@
 	<ul class="right">
 	  <li class="has-form has-button">
 		<% if current_user %>
-			<%= link_to "Logout", destroy_user_session_path, :method => :delete, :class => 'button' %>
+			<%= link_to "Logout " + current_user.email, destroy_user_session_path, :method => :delete, :class => 'button' %>
 		<% else %>
 			<%= link_to "Login", new_user_session_path, :class => 'button' %>
 		<% end %>
